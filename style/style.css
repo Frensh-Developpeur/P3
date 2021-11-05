@@ -1,17 +1,91 @@
-/* Error: Expected expression.
- *   ,
- * 4 |     font-size: 
- *   |                ^
- *   '
- *   sass/style.scss 4:16  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a   \2577 \a 4 \2502      font-size: \a   \2502                 ^\a   \2575 \a   sass/style.scss 4:16  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap");
+h1 {
+  font-family: "Shrikhand";
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 200px;
+}
+
+#mobile-first-width {
+  width: 425px;
+}
+
+header {
+  text-align: center;
+}
+header #logo {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+header #logo img {
+  width: 170px;
+}
+
+form {
+  height: 50px;
+  background: #e1dddd;
+  border-top: 2px solid #00000017 !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+form .text-localisation {
+  border: hidden;
+  background: #e1dddd;
+  font-size: 1rem;
+  font-weight: bold;
+}
+form .fas.fa-map-marker-alt {
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+}
+
+.bloc-one {
+  background: #f2f2f2;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.bloc-one div {
+  text-align: center;
+}
+.bloc-one div h2 {
+  font-family: "Roboto";
+  margin-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 55px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 70%;
+}
+.bloc-one div h3 {
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  padding-left: 40px;
+  width: 80%;
+}
+.bloc-one div a p {
+  font-family: "Roboto";
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  padding: 20px 10px;
+  border-radius: 30px/30px;
+  color: white;
+  background: #9356DC;
+  box-shadow: inset 0px 0px 20px 6px #f583b2ad;
+  width: 200px;
+}
+
+/*# sourceMappingURL=style.css.map */

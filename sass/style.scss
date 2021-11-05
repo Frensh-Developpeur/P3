@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+$color-primaire: #9356DC ;
+$color-secondaire: #FF79DA;
+$color-tertiaire: #99E2D0;
+
+h1
+{
+   font-family: 'Shrikhand';
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+img
+{
+    width: 200px;
+}
+
+
+#mobile-first-width
+{
+width: 425px;
+
+}
+
+
+
+
+
+
+header{
+
+    text-align:center;
+    
+        #logo
+      {
+          padding-top: 10px;
+          padding-bottom: 5px;
+        img
+        {
+         width: 170px
+        }
+    }
+}
+
+form
+{
+   height: 50px;
+   background: #e1dddd;
+   border-top: 2px solid #00000017!important;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   
+
+      .text-localisation
+    {
+         border: hidden;
+         background: #e1dddd;
+         font-size: 1rem;
+         font-weight:bold;
+     }
+      .fas.fa-map-marker-alt
+     {
+         padding-right: 10px;
+         padding-bottom: 5px;
+         padding-left: 40px;
+     }
+
+}
+.bloc-one
+{
+    background: #f2f2f2;
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: center;
+
+      div
+     {
+        text-align: center;
+
+         h2
+        {
+           font-family:'Roboto';
+           margin-top: 30px;
+           padding-bottom: 10px;
+           padding-left: 55px;
+           font-size: 1.6rem;
+           font-weight: bold;
+           width: 70%;
+
+        }
+         h3
+        {
+           font-family: 'Roboto';
+           font-size: 1.2rem;
+           padding-left: 40px;
+           width: 80%;
+      
+
+     }
+        a 
+         {
+
+          p
+         {
+            font-family:'Roboto';
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            margin-left: 100px;
+            padding: 20px 10px;
+            border-radius: 30px / 30px;
+            color: white;
+            background: $color-primaire ;
+            box-shadow: inset 0px 0px 20px 6px #f583b2ad;
+            width: 200px;
+            
+        }
+    }
+  }
+}
+
+
+ 
