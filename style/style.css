@@ -25,11 +25,11 @@ img {
 header {
   text-align: center;
 }
-header #logo {
+header .logo {
   padding-top: 10px;
   padding-bottom: 5px;
 }
-header #logo img {
+header .logo img {
   width: 170px;
 }
 
