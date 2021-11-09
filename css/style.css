@@ -36,6 +36,10 @@ body {
   line-height: 1;
 }
 
+ol, ul {
+  list-style-type: none;
+}
+
 blockquote, q {
   quotes: none;
 }
@@ -178,8 +182,7 @@ section .fas.fa-mobile-alt {
 }
 section .number-one-sec-two {
   position: absolute;
-  left: 20px;
-  top: 460px;
+  left: 18px;
   color: white;
   padding: 5px 8px;
   border-radius: 50%;
@@ -187,8 +190,7 @@ section .number-one-sec-two {
 }
 section .number-two-sec-two {
   position: absolute;
-  left: 20px;
-  top: 540x;
+  left: 18px;
   color: white;
   padding: 5px 8px;
   border-radius: 50%;
@@ -196,8 +198,7 @@ section .number-two-sec-two {
 }
 section .number-tree-sec-two {
   position: absolute;
-  left: 20px;
-  top: 640x;
+  left: 18px;
   color: white;
   padding: 5px 8px;
   border-radius: 50%;
@@ -207,6 +208,32 @@ section .text-li-sec-two {
   font-family: "Roboto";
   font-weight: bold;
   font-size: 1rem;
+}
+
+/* Fin de la section 2 */
+/* Main == BACKGROUND COLOR AND MARGING */
+main {
+  margin-top: 40px;
+  background: #f2f2f2;
+}
+
+/* Début section 3 */
+.title-sec-tree {
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: "Roboto";
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+a article {
+  text-align: center;
+  border-radius: 50%;
+}
+a article img {
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 300px;
 }
 
 /* Fin de la page one  */
