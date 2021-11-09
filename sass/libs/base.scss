@@ -3,12 +3,8 @@
 {
 width: 425px;
 
-@media all and (min-width:425px) {
+@media all and (min-width:426px) {
     
-    width: 768px;
-}
-@media all and (min-width: 768px)
-{
     width: auto;
 }
 }
@@ -31,7 +27,7 @@ header{
 }
 /* Fin du header générique  */
 
-img,a,li
+img,a
 {
     width: 200px;
     text-decoration: none;

@@ -11,8 +11,8 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ul, ol, li fieldset,
-form, label, legend,
+dl, dt, dd,
+fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
@@ -146,69 +146,20 @@ form .fas.fa-map-marker-alt {
 
 /* Fin de la 1ère section */
 /* Création d'une extension pour la section 2  */
-.card-fonctionnement, section .li-sec-two {
+.card-fonctionnement, section .fas.fa-mobile-alt, section .fas.fa-list-ul, section .fas.fa-store {
   padding: 20px 40px;
-  padding-left: 0px;
   margin-bottom: 20px;
-  margin-left: 30px;
-  background-color: #f4f4f4;
-  box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
-  width: 330px;
-  border-radius: 15px/15px;
+  margin-left: 20px;
+  background-color: #99E2D0;
 }
 
 /* Début de la 2ème section */
-section {
-  /* Partie modification item section 2 */
-}
 section .title-sec-two {
   font-family: "Roboto";
   font-size: 1.3rem;
   margin: 40px 0px 20px 20px;
   font-weight: bold;
 }
-section .fas.fa-mobile-alt, section .fas.fa-list-ul, section .fas.fa-store {
-  padding: 0px 35px;
-  padding-right: 20px;
-  color: #939393;
-  font-size: 20px;
-}
-section .fas.fa-mobile-alt {
-  padding-left: 40px;
-}
-section .number-one-sec-two {
-  position: absolute;
-  left: 20px;
-  top: 460px;
-  color: white;
-  padding: 5px 8px;
-  border-radius: 50%;
-  background-color: #9356DC;
-}
-section .number-two-sec-two {
-  position: absolute;
-  left: 20px;
-  top: 540x;
-  color: white;
-  padding: 5px 8px;
-  border-radius: 50%;
-  background-color: #9356DC;
-}
-section .number-tree-sec-two {
-  position: absolute;
-  left: 20px;
-  top: 640x;
-  color: white;
-  padding: 5px 8px;
-  border-radius: 50%;
-  background-color: #9356DC;
-}
-section .text-li-sec-two {
-  font-family: "Roboto";
-  font-weight: bold;
-  font-size: 1rem;
-}
-
 /* Fin de la page one  */
 
 /*# sourceMappingURL=style.css.map */

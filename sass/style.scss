@@ -1,6 +1,8 @@
 @import 'libs/import.scss';
 
+/* Gestion de la page 1 */
 
+/* Formulaire de recherche */
 form
 {
    height: 50px;
@@ -24,8 +26,10 @@ form
          padding-bottom: 5px;
          padding-left: 40px;
      }
-
 }
+/* Fin du formulaire de recherche */
+
+/* Gestion de la première section  */
 .bloc-one
 {
     background: #f2f2f2;
@@ -38,7 +42,7 @@ form
      {
         text-align: center;
 
-         h2
+         .title-sec-one
         {
            font-family:'Roboto';
            margin-top: 30px;
@@ -49,19 +53,19 @@ form
            width: 70%;
 
         }
-         h3
+         .sous-title-sec-one
         {
            font-family: 'Roboto';
            font-size: 1.2rem;
            padding-left: 40px;
-           width: 80%;
-      
+           width: 80%;   
 
      }
+
         a 
          {
 
-          p
+          .text-sec-one
          {
             font-family:'Roboto';
             font-weight: bold;
@@ -78,6 +82,97 @@ form
     }
   }
 }
+/* Fin de la 1ère section */
 
+/* Création d'une extension pour la section 2  */
+.card-fonctionnement
+{
+    padding: 20px 40px;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 5px 10px 0px rgb(194 194 194 / 78%);
+    width: 330px;
+    border-radius: 15px / 15px;
+    
+
+}
+
+
+
+/* Début de la 2ème section */
+section
+  {
+   .title-sec-two
+   {
+       font-family: 'Roboto';
+       font-size: 1.3rem;
+       margin: 40px 0px 20px 20px;
+       font-weight: bold;
+   }
+   .li-sec-two
+   {
+       @extend .card-fonctionnement
+
+    
+   }
+
+   /* Partie modification item section 2 */
+
+    .fas.fa-mobile-alt,.fas.fa-list-ul,.fas.fa-store
+       {
+        padding: 0px 35px;
+        padding-right: 20px;
+        color: #939393;;
+        font-size: 20px;
+       }
+       .fas.fa-mobile-alt
+       {
+           padding-left: 40px;
+       }
+
+    .number-one-sec-two
+    {
+     position: absolute;
+     left: 20px;
+     top: 460px;
+     color: white;
+     padding: 5px 8px;
+     border-radius: 50%;
+     background-color: #9356DC;
+    }
+    .number-two-sec-two
+    {
+     position: absolute;
+     left: 20px;
+     top: 540x;
+     color: white;
+     padding: 5px 8px;
+     border-radius: 50%;
+     background-color: #9356DC;
+    }
+    .number-tree-sec-two
+    {
+    position: absolute;
+     left: 20px;
+     top: 640x;
+     color: white;
+     padding: 5px 8px;
+     border-radius: 50%;
+     background-color: #9356DC;
+    }
+    .text-li-sec-two
+    {
+        font-family: 'Roboto';
+        font-weight: bold;
+        font-size: 1rem;
+    }
+  }
+
+
+
+
+/* Fin de la page one  */
 
  
