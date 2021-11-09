@@ -1,51 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+@import 'libs/import.scss';
 
-$color-primaire: #9356DC ;
-$color-secondaire: #FF79DA;
-$color-tertiaire: #99E2D0;
-
-h1
-{
-   font-family: 'Shrikhand';
-}
-
-a
-{
-    text-decoration: none;
-    color: black;
-}
-
-img
-{
-    width: 200px;
-}
-
-
-.mobile-first-width
-{
-width: 425px;
-
-@media only screen and (min-width:425px) {
-    width: 100%;
-}
-
-}
-
-header{
-
-    text-align:center;
-    
-        .logo
-      {
-          padding-top: 10px;
-          padding-bottom: 5px;
-        img
-        {
-         width: 170px
-        }
-    }
-}
 
 form
 {

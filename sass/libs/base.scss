@@ -1,0 +1,39 @@
+/* Bloc-page all version */
+.mobile-first-width
+{
+width: 425px;
+
+@media all and (min-width:425px) {
+    
+    width: 768px;
+}
+@media all and (min-width: 768px)
+{
+    width: auto;
+}
+}
+/* Fin du bloc page */
+
+/*  Header générique pour toutes les pages du sites  */
+header{
+
+    text-align:center;
+    
+        .logo
+      {
+          padding-top: 10px;
+          padding-bottom: 5px;
+        img
+        {
+         width: 170px
+        }
+    }
+}
+/* Fin du header générique  */
+
+img,a,li
+{
+    width: 200px;
+    text-decoration: none;
+    color: black;
+}
