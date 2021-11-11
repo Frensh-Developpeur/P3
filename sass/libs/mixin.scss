@@ -1,10 +1,68 @@
 @mixin card-restaurant {
-    border-radius: 50%;
+
+     border-radius: 10px / 10px;
+     margin-left: 30px;
+     margin-top: 20px;
+     width: 375px;
+     border: 1px solid #f2f2f2;
+     background: white;
+     height: 250px;
+
     img
     {
-
-        margin-left: 10px;
-        margin-top: 20px;
-        width: 300px;
+        width: 375px;
+        border-radius: 10px / 10px;
+        height: 180px;
+        object-fit: cover;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding-bottom: 10px;
+        
     }
+    .green-new
+    {
+        position: relative;
+        bottom: 170px;
+        left: 290px;
+        color: #278870;
+        padding: 5px 10px;
+        background: #99E2D0;
+        border-radius: 5px / 5px;
+        
+    }
+    .h3-sec-one
+    {
+
+        font-family: 'Roboto';
+        font-weight: bold;
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+    .h3-sec-two
+    {
+        font-family: 'Roboto';
+        font-weight: bold;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    h4 
+    {
+    
+        font-family: 'Roboto';
+        margin-left: 10px;
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+      .far.fa-heart
+    {
+       position: relative;
+       bottom: 40px;
+        margin-bottom: 20px;
+        margin-left: 330px;
+        font-size: 30px;
+        
+    
+    }
+   
 }

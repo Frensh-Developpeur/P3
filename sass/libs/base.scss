@@ -33,3 +33,33 @@ img,a
     text-decoration: none;
     color: black;
 }
+footer
+{
+    background-color: #353535;
+    height: 200px;
+    
+    h2
+    { 
+        font-family: 'Shrikhand';
+        color: white;
+        font-size: 1.3rem;
+        
+        padding: 20px;
+    }
+    li
+    {
+     padding-left: 20px;
+     padding-bottom: 5px;
+     
+     .marg-text-foot-one
+     {
+      margin-left: 12px;
+     }
+    }
+ i,a
+ {
+     color: white;
+     
+     
+ }
+}

@@ -85,6 +85,27 @@ img, a {
   color: black;
 }
 
+footer {
+  background-color: #353535;
+  height: 200px;
+}
+footer h2 {
+  font-family: "Shrikhand";
+  color: white;
+  font-size: 1.3rem;
+  padding: 20px;
+}
+footer li {
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+footer li .marg-text-foot-one {
+  margin-left: 12px;
+}
+footer i, footer a {
+  color: white;
+}
+
 /* Gestion de la page 1 */
 /* Formulaire de recherche */
 form {
@@ -150,7 +171,7 @@ form .fas.fa-map-marker-alt {
 
 /* Fin de la 1ère section */
 /* Création d'une extension pour la section 2  */
-.card-fonctionnement, section .li-sec-two {
+.card-fonctionnement, section .li-sec {
   padding: 20px 40px;
   padding-left: 0px;
   margin-bottom: 20px;
@@ -170,6 +191,16 @@ section .title-sec-two {
   font-size: 1.3rem;
   margin: 40px 0px 20px 20px;
   font-weight: bold;
+}
+section .title-sec-fonc {
+  font-family: "Roboto";
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 70%;
 }
 section .fas.fa-mobile-alt, section .fas.fa-list-ul, section .fas.fa-store {
   padding: 0px 35px;
@@ -214,6 +245,7 @@ section .text-li-sec-two {
 /* Main == BACKGROUND COLOR AND MARGING */
 main {
   margin-top: 40px;
+  height: 1220px;
   background: #f2f2f2;
 }
 
@@ -227,13 +259,57 @@ main {
 }
 
 a article {
-  text-align: center;
-  border-radius: 50%;
+  border-radius: 10px/10px;
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 375px;
+  border: 1px solid #f2f2f2;
+  background: white;
+  height: 250px;
 }
 a article img {
+  width: 375px;
+  border-radius: 10px/10px;
+  height: 180px;
+  object-fit: cover;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-bottom: 10px;
+}
+a article .green-new {
+  position: relative;
+  bottom: 170px;
+  left: 290px;
+  color: #278870;
+  padding: 5px 10px;
+  background: #99E2D0;
+  border-radius: 5px/5px;
+}
+a article .h3-sec-one {
+  font-family: "Roboto";
+  font-weight: bold;
   margin-left: 10px;
-  margin-top: 20px;
-  width: 300px;
+  font-size: 1rem;
+}
+a article .h3-sec-two {
+  font-family: "Roboto";
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+a article h4 {
+  font-family: "Roboto";
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+a article .far.fa-heart {
+  position: relative;
+  bottom: 40px;
+  margin-bottom: 20px;
+  margin-left: 330px;
+  font-size: 30px;
 }
 
 /* Fin de la page one  */

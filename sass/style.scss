@@ -111,7 +111,7 @@ section
        margin: 40px 0px 20px 20px;
        font-weight: bold;
    }
-   .li-sec-two
+   .li-sec
    {
        @extend .card-fonctionnement
 
@@ -119,6 +119,17 @@ section
    }
 
    /* Partie modification item section 2 */
+    .title-sec-fonc
+    { 
+           font-family:'Roboto';
+           margin-top: 30px;
+           margin-bottom: 15px;
+           padding-bottom: 10px;
+           padding-left: 30px;
+           font-size: 1.3rem;
+           font-weight: bold;
+           width: 70%;
+    }
 
     .fas.fa-mobile-alt,.fas.fa-list-ul,.fas.fa-store
        {
@@ -172,6 +183,7 @@ section
 main
 {
     margin-top: 40px;
+    height: 1220px;
     background: #f2f2f2;
 }
 /* Début section 3 */
@@ -184,14 +196,16 @@ main
     padding-top: 40px;
     padding-left: 20px;
 }
+
 a {
   article 
 {
-    text-align: center;
+    
     @include card-restaurant;
 }
 
 }
+
 
 /* Fin de la page one  */
 
