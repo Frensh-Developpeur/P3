@@ -13,52 +13,85 @@ width: 425px;
 /*  Header générique pour toutes les pages du sites  */
 header{
 
-    text-align:center;
-    
+     text-align:center;
+     position: relative;
+     height: 75px;
+
+    h1 
+   {
+       padding-top: 20px;
+   }
+    .fas.fa-arrow-left
+    {
+        font-size: 30px;
+        color: black;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+
+        &:hover
+        {
+           transform: scale(1.25);
+           transition: 200ms;
+        }
+
+    }
         .logo
       {
           padding-top: 10px;
           padding-bottom: 5px;
-        img
-        {
-         width: 170px
-        }
     }
 }
 /* Fin du header générique  */
 
-img,a
+a
 {
-    width: 200px;
     text-decoration: none;
     color: black;
 }
+img
+{
+    width: 200px;
+}
+
+
+
 footer
 {
     background-color: #353535;
     height: 200px;
     
+    
     h2
     { 
         font-family: 'Shrikhand';
         color: white;
-        font-size: 1.3rem;
-        
+        font-size: 1.3rem;  
         padding: 20px;
+
     }
     li
     {
      padding-left: 20px;
      padding-bottom: 5px;
      
+     
+
      .marg-text-foot-one
      {
       margin-left: 12px;
      }
     }
- i,a
+
+ i,a,h2
  {
      color: white;
+
+     &:hover
+     {
+         color: red;
+         cursor: pointer;
+     }
      
      
  }

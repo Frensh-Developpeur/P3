@@ -69,20 +69,36 @@ table {
 /*  Header générique pour toutes les pages du sites  */
 header {
   text-align: center;
+  position: relative;
+  height: 75px;
+}
+header h1 {
+  padding-top: 20px;
+}
+header .fas.fa-arrow-left {
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+header .fas.fa-arrow-left:hover {
+  transform: scale(1.25);
+  transition: 200ms;
 }
 header .logo {
   padding-top: 10px;
   padding-bottom: 5px;
 }
-header .logo img {
-  width: 170px;
-}
 
 /* Fin du header générique  */
-img, a {
-  width: 200px;
+a {
   text-decoration: none;
   color: black;
+}
+
+img {
+  width: 200px;
 }
 
 footer {
@@ -102,8 +118,12 @@ footer li {
 footer li .marg-text-foot-one {
   margin-left: 12px;
 }
-footer i, footer a {
+footer i, footer a, footer h2 {
   color: white;
+}
+footer i:hover, footer a:hover, footer h2:hover {
+  color: red;
+  cursor: pointer;
 }
 
 /* Gestion de la page 1 */
@@ -140,6 +160,7 @@ form .fas.fa-map-marker-alt {
 }
 .bloc-one div {
   text-align: center;
+  margin-top: 20px;
 }
 .bloc-one div .title-sec-one {
   font-family: "Roboto";
@@ -156,17 +177,24 @@ form .fas.fa-map-marker-alt {
   padding-left: 40px;
   width: 80%;
 }
-.bloc-one div a .text-sec-one {
+.bloc-one div a {
+  text-align: center;
+}
+.bloc-one div a span {
+  display: inline-block;
   font-family: "Roboto";
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 50px;
-  margin-left: 100px;
   padding: 20px 10px;
   border-radius: 30px/30px;
   color: white;
   background: linear-gradient(to top, #9356DC, #FF79DA);
-  width: 200px;
+  padding: 20px 10px;
+}
+.bloc-one div a span:active {
+  transform: scale(1.15);
+  transition-duration: 400ms;
 }
 
 /* Fin de la 1ère section */
@@ -181,11 +209,12 @@ form .fas.fa-map-marker-alt {
   width: 330px;
   border-radius: 15px/15px;
 }
+.card-fonctionnement:hover, section .li-sec:hover {
+  background: #e4d5f6;
+  cursor: pointer;
+}
 
 /* Début de la 2ème section */
-section {
-  /* Partie modification item section 2 */
-}
 section .title-sec-two {
   font-family: "Roboto";
   font-size: 1.3rem;
@@ -258,25 +287,25 @@ main {
   padding-left: 20px;
 }
 
-a article {
+article {
+  position: relative;
   border-radius: 10px/10px;
-  margin-left: 30px;
+  margin-left: 25px;
   margin-top: 20px;
   width: 375px;
   border: 1px solid #f2f2f2;
   background: white;
   height: 250px;
 }
-a article img {
+article img {
   width: 375px;
   border-radius: 10px/10px;
   height: 180px;
   object-fit: cover;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  padding-bottom: 10px;
 }
-a article .green-new {
+article .green-new {
   position: relative;
   bottom: 170px;
   left: 290px;
@@ -285,31 +314,52 @@ a article .green-new {
   background: #99E2D0;
   border-radius: 5px/5px;
 }
-a article .h3-sec-one {
+article .h3-sec-one {
   font-family: "Roboto";
   font-weight: bold;
   margin-left: 10px;
   font-size: 1rem;
 }
-a article .h3-sec-two {
+article .h3-sec-two {
   font-family: "Roboto";
   font-weight: bold;
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 1rem;
 }
-a article h4 {
+article h4 {
   font-family: "Roboto";
   margin-left: 10px;
   margin-top: 5px;
   font-size: 1rem;
 }
-a article .far.fa-heart {
-  position: relative;
-  bottom: 40px;
-  margin-bottom: 20px;
-  margin-left: 330px;
+article .far.fa-heart {
   font-size: 30px;
+  color: red;
+}
+article .far.fa-heart:hover {
+  content: "\f004";
+  font-weight: bold;
+  background-image: linear-gradient(45deg, red);
+  transition-duration: 800ms;
+  transform: rotate(360deg);
+}
+article .full-card-tp {
+  position: absolute;
+  font-size: 0px;
+  width: 375px;
+  height: 250px;
+  top: 0px;
+  z-index: 1;
+}
+article .heart-active {
+  z-index: 2;
+  position: absolute;
+  bottom: 20px;
+  left: 330px;
+}
+article .heart-active:hover {
+  color: rosybrown;
 }
 
 /* Fin de la page one  */

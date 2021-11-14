@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/cd1442c33f.js" crossorigin="anonymous"></script>
     <title>OhMyFood -- Réservation de restaurant en ligne</title>
 </head>
@@ -13,10 +13,11 @@
 <body>
     <!-- Bloc-page mobile first -->
     <div class="mobile-first-width">
+
         <!-- Header ( logo + formulaire) -->
         <header>
             <h1 class="logo">
-                <img src="images/logo/ohmyfood.png" alt="logo du site ohmyfood">
+                <img src="assets/images/logo/ohmyfood.png" alt="logo du site ohmyfood">
             </h1>
 
             <form action="#">
@@ -37,7 +38,7 @@
                 <h2 class="title-sec-one">Réservez le menu qui vous convient</h2>
                 <h3 class="sous-title-sec-one">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h3>
                 <a href="#restaurant">
-                    <p class="text-sec-one">Explorer nos restaurants </p>
+                    <span>Explorer nos restaurants</span>
                 </a>
             </div>
         </section>
@@ -70,6 +71,7 @@
                 </li>
             </ul>
 
+
         </section>
         <!-- Fin de la section 2 -->
 
@@ -79,55 +81,57 @@
             <section id="restaurant">
                 <h2 class="title-sec-tree">Restaurants</h2>
 
-                <a href="libs-html/la_palette.html">
-                    <article>
-                        <img src="images/restaurants/la_palette_du_gout.jpg"
-                            alt="Plat du restaurant la palette du gôut">
-                        <span class="green-new">Nouveau</span>
-                        <h3 class="h3-sec-one">La palette de goût</h3>
-                        <h4>Ménilmontant</h4>
-                        <i class="far fa-heart"></i>
+
+                <article>
+                    <img src="assets/images/restaurants/la_palette_du_gout.jpg"
+                        alt="Plat du restaurant la palette du gôut">
+                    <span class="green-new">Nouveau</span>
+                    <h3 class="h3-sec-one">La palette de goût</h3>
+                    <h4>Ménilmontant</h4>
+                    <a class="full-card-tp" href="menus/la_palette.html">Voir le menu enchanter</a>
+                    <a class="heart-active" href="#article"><i class="far fa-heart"></i></a>
 
 
-                    </article>
-                </a>
+                </article>
 
-                <a href="libs-html/la_note.html">
 
-                    <article>
 
-                        <img src="images/restaurants/la_note_enchanter.jpg" alt="Plat du restaurant la note enchantée">
-                        <span class="green-new">Nouveau</span>
-                        <h3 class="h3-sec-one">La note enchantée</h3>
-                        <h4>Charonne</h4>
-                        <i class="far fa-heart"></i>
 
-                    </article>
-                </a>
+                <article>
 
-                <a href="libs-html/la_francaise.html">
+                    <img src="assets/images/restaurants/la_note_enchanter.jpg"
+                        alt="Plat du restaurant la note enchantée">
+                    <span class="green-new">Nouveau</span>
+                    <h3 class="h3-sec-one">La note enchantée</h3>
+                    <h4>Charonne</h4>
+                    <a class="full-card-tp" href="menus/la_note.html">Voir le menu enchanter</a>
+                    <a class="heart-active" href="#article"><i class="far fa-heart"></i></a>
 
-                    <article>
+                </article>
 
-                        <img src="images/restaurants/a_la_francaise.jpg" alt="Plat du restaurant à la francaise">
-                        <h3 class="h3-sec-two">À la française</h3>
-                        <h4>Cité Rouge</h4>
-                        <i class="far fa-heart"></i>
 
-                    </article>
-                </a>
 
-                <a href="libs-html/le_delice.html">
 
-                    <article>
+                <article>
 
-                        <img src="images/restaurants/le_delice_des_sens.jpg"
-                            alt="plat du restaurant le délice des sens">
-                        <h3 class="h3-sec-two">Le délice des sens</h3>
-                        <h4>Folie-Méricourt</h4>
-                        <i class="far fa-heart"></i>
-                    </article>
-                </a>
+                    <img src="assets/images/restaurants/a_la_francaise.jpg" alt="Plat du restaurant à la francaise">
+                    <h3 class="h3-sec-two">À la française</h3>
+                    <h4>Cité Rouge</h4>
+                    <a class="full-card-tp" href="menus/la_francaise.html">Voir le menu enchanter</a>
+                    <a class="heart-active" href="#article"><i class="far fa-heart"></i></a>
+
+                </article>
+
+                <article>
+
+                    <img src="assets/images/restaurants/le_delice_des_sens.jpg"
+                        alt="plat du restaurant le délice des sens">
+                    <h3 class="h3-sec-two">Le délice des sens</h3>
+                    <h4>Folie-Méricourt</h4>
+                    <a class="full-card-tp" href="menus/le_delice.html">Voir le menu enchanter</a>
+                    <a class="heart-active" href="#article"><i class="far fa-heart"></i></a>
+                </article>
+
             </section>
             <!-- Fin de la section du contenu princiapal -->
 
