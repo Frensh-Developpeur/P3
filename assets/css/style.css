@@ -186,7 +186,6 @@ form .fas.fa-map-marker-alt {
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 50px;
-  padding: 20px 10px;
   border-radius: 30px/30px;
   color: white;
   background: linear-gradient(to top, #9356DC, #FF79DA);
@@ -199,7 +198,7 @@ form .fas.fa-map-marker-alt {
 
 /* Fin de la 1ère section */
 /* Création d'une extension pour la section 2  */
-.card-fonctionnement, section .li-sec {
+.card-fonctionnement, .bloc-two .li-sec {
   padding: 20px 40px;
   padding-left: 0px;
   margin-bottom: 20px;
@@ -209,19 +208,22 @@ form .fas.fa-map-marker-alt {
   width: 330px;
   border-radius: 15px/15px;
 }
-.card-fonctionnement:hover, section .li-sec:hover {
+.card-fonctionnement:hover, .bloc-two .li-sec:hover {
   background: #e4d5f6;
   cursor: pointer;
 }
 
 /* Début de la 2ème section */
-section .title-sec-two {
+.bloc-two .title-sec-two {
   font-family: "Roboto";
   font-size: 1.3rem;
   margin: 40px 0px 20px 20px;
   font-weight: bold;
 }
-section .title-sec-fonc {
+.bloc-two .li-sec {
+  position: relative;
+}
+.bloc-two .title-sec-fonc {
   font-family: "Roboto";
   margin-top: 30px;
   margin-bottom: 15px;
@@ -229,42 +231,25 @@ section .title-sec-fonc {
   padding-left: 30px;
   font-size: 1.3rem;
   font-weight: bold;
-  width: 70%;
 }
-section .fas.fa-mobile-alt, section .fas.fa-list-ul, section .fas.fa-store {
+.bloc-two .fas.fa-mobile-alt, .bloc-two .fas.fa-list-ul, .bloc-two .fas.fa-store {
   padding: 0px 35px;
   padding-right: 20px;
   color: #939393;
   font-size: 20px;
 }
-section .fas.fa-mobile-alt {
+.bloc-two .fas.fa-mobile-alt {
   padding-left: 40px;
 }
-section .number-one-sec-two {
+.bloc-two .number-one-sec-two {
   position: absolute;
-  left: 18px;
+  left: -10px;
   color: white;
   padding: 5px 8px;
   border-radius: 50%;
   background-color: #9356DC;
 }
-section .number-two-sec-two {
-  position: absolute;
-  left: 18px;
-  color: white;
-  padding: 5px 8px;
-  border-radius: 50%;
-  background-color: #9356DC;
-}
-section .number-tree-sec-two {
-  position: absolute;
-  left: 18px;
-  color: white;
-  padding: 5px 8px;
-  border-radius: 50%;
-  background-color: #9356DC;
-}
-section .text-li-sec-two {
+.bloc-two .text-li-sec-two {
   font-family: "Roboto";
   font-weight: bold;
   font-size: 1rem;
@@ -306,9 +291,9 @@ article img {
   border-bottom-right-radius: 0px;
 }
 article .green-new {
-  position: relative;
-  bottom: 170px;
-  left: 290px;
+  position: absolute;
+  top: 10px;
+  right: 5px;
   color: #278870;
   padding: 5px 10px;
   background: #99E2D0;
@@ -319,6 +304,7 @@ article .h3-sec-one {
   font-weight: bold;
   margin-left: 10px;
   font-size: 1rem;
+  margin-top: 10px;
 }
 article .h3-sec-two {
   font-family: "Roboto";
@@ -347,8 +333,8 @@ article .far.fa-heart:hover {
 article .full-card-tp {
   position: absolute;
   font-size: 0px;
-  width: 375px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   top: 0px;
   z-index: 1;
 }
@@ -356,12 +342,62 @@ article .heart-active {
   z-index: 2;
   position: absolute;
   bottom: 20px;
-  left: 330px;
+  right: 10px;
 }
 article .heart-active:hover {
   color: rosybrown;
 }
 
-/* Fin de la page one  */
+/* Fin de la première page  */
+/* Version tablette et desktop */
+@media all and (min-width: 426px) and (max-width: 992px) {
+  .bloc-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bloc-one .title-sec-one {
+    width: initial !important;
+    padding-left: 0px !important;
+  }
+  .bloc-one .sous-title-sec-one {
+    width: 90% !important;
+  }
+
+  .bloc-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bloc-two ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #restaurant {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #restaurant article {
+    width: 80%;
+  }
+  #restaurant img {
+    width: 100%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  footer ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
