@@ -242,6 +242,11 @@ section li {
   font-family: "Roboto";
   font-size: 0.9rem;
 }
+section li:hover {
+  color: white;
+  cursor: pointer;
+  background: #03a9f4;
+}
 section h4 {
   font-family: "Roboto";
   font-weight: bold;

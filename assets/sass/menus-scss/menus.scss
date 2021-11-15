@@ -86,6 +86,13 @@ section
         box-shadow: 2px 2px 9px #0000003b;
         font-family: 'Roboto';
         font-size: 0.9rem;
+        
+        &:hover
+        {
+            color: white;
+           cursor: pointer;
+           background: #03a9f4;
+        }
     }
     h4 
     {
