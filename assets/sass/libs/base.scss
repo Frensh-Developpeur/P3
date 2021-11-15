@@ -1,4 +1,13 @@
 /* Bloc-page all version */
+body {
+    @media all and (min-width:1200px)
+    {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+    }
+}
+
 .mobile-first-width
 {
 width: 425px;
@@ -6,6 +15,12 @@ width: 425px;
 @media all and (min-width:426px) {
     
     width: auto;
+    
+}
+@media all and (min-width:1200px)
+{
+    width: 1200px;
+   
 }
 }
 /* Fin du bloc page */
@@ -94,5 +109,9 @@ footer
      }
      
      
- }
+    }
 }
+
+
+
+

@@ -1,4 +1,4 @@
-@import 'libs/import.scss';
+@import 'libs/import/import_style.scss';
 
 /* Gestion de la page 1 */
 
@@ -189,79 +189,6 @@ main
 
 /* Fin de la première page  */
 
-/* Version tablette et desktop */
- @media all and (min-width: 426px ) and (max-width: 992px)  {
-     .bloc-one
-
-     {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .title-sec-one
-        {
-            width: initial!important;
-            padding-left: 0px!important;
-        }
-        .sous-title-sec-one
-        {
-            width: 90%!important;
-        }
-     }
 
 
-
-
-
-     .bloc-two
-     {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-      ul {
-
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-around;
-
-  }   
- }
-
- #restaurant
- {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-
-    article 
-    {
-            width: 80%;
-
-
-    }
-    img 
-    {
-        width: 100%;
-    }
- }
-  
-   footer
-   {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    ul 
-    {
-        display: flex;
-        flex-wrap: wrap;
-    }
-   } 
-
-
-
-
-}
    

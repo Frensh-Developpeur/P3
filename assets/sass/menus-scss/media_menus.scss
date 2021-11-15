@@ -1,0 +1,46 @@
+  @media all and (min-width: 768px)
+ {
+      
+
+     footer
+   {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+}
+
+    .ul-foot
+    {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       align-items: flex-start;
+    }
+    .foot-li
+    {
+        width: auto!important;
+        padding-top: 30px;
+    }
+
+
+ @media all and (min-width: 1200px) {
+       section 
+       {
+            display: flex;
+            flex-direction: column;
+       }
+     ul {
+        display: flex;
+        flex-direction: row!important;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+     }
+     li 
+     {
+         width: 25%!important;
+     }
+ }

@@ -1,4 +1,4 @@
-@import '../libs/import.scss';
+@import '../libs/import/import_menus.scss';
 
 
 main
@@ -109,6 +109,9 @@ p
 .button-valid
     {
      @include button;
+     padding: 15px 40px;
 
     }
 }
+
+ 
