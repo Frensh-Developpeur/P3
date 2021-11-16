@@ -215,7 +215,7 @@ div .far.fa-heart:hover {
   transform: rotate(360deg);
 }
 
-section h3 {
+article h3 {
   font-family: "Roboto";
   font-size: 1rem;
   margin-left: 20px;
@@ -224,12 +224,12 @@ section h3 {
   border-bottom: 3px solid #99E2D0;
   width: 40px;
 }
-section ul {
+article ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-section li {
+article li {
   position: relative;
   padding: 15px;
   margin-bottom: 20px;
@@ -242,18 +242,18 @@ section li {
   font-family: "Roboto";
   font-size: 0.9rem;
 }
-section li:hover {
+article li:hover {
   color: white;
   cursor: pointer;
   background: #03a9f4;
 }
-section h4 {
+article h4 {
   font-family: "Roboto";
   font-weight: bold;
   margin-bottom: 10px;
   font-size: 1.1rem;
 }
-section span {
+article span {
   position: absolute;
   right: 15px;
   font-weight: bold;
@@ -273,9 +273,10 @@ p .button-valid {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   padding: 15px 40px;
 }
-p .button-valid:active {
+p .button-valid:hover {
   transform: scale(1.15);
   transition-duration: 400ms;
+  color: red;
 }
 
 /*# sourceMappingURL=menus.css.map */
