@@ -10,7 +10,10 @@
     height: 100%;
     position: fixed;
     z-index: 100;
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
     .load_spin
         {
             margin: auto;
@@ -76,6 +79,7 @@
             
         }
    
+         
     @keyframes loader {
 
         1%{ 
@@ -85,12 +89,7 @@
         15% {
             opacity: 1;
         }
-        30% {
-           opacity: 1;
-        }
-        45%{
-            opacity: 1;
-        }
+       
         60%{
            opacity: 0.6;
         }
@@ -115,6 +114,7 @@
 }
  .load_h2
         {
+           
             font-size: 40px;
             z-index: 100;
             position: fixed;
@@ -122,6 +122,8 @@
             font-family: 'Comforter';
             font-weight: bold;
             top: 150px;
+            text-align: center;
+            
             margin: auto;
             animation: h2_load 3s cubic-bezier(0.075, 0.82, 0.165, 1) ;
             
@@ -135,14 +137,14 @@
                 }
                 10%{
                     color: yellow;
-                    transform: translateX(100px) ;
+                    transform: translateX(50px) ;
                 }
                 20%{
                     color: pink;
                 }
                 30%{
                     color: white;
-                    transform: translateX(-100px);
+                    transform: translateX(-50px);
                 }
                 40%{
                     color: #000000;
@@ -151,12 +153,12 @@
                 }
                 50%{
                     color: rgb(110, 110, 108);
-                    transform: scale(2)  ;
+                    transform: scale(1.5)  ;
                     
                 }
                 60%{
                     color: peachpuff;
-                    transform: scale(2.3) translateX(0);
+                    transform: scale(1.6) translateX(0);
                     
                     
                 }
