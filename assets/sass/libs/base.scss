@@ -77,7 +77,7 @@ footer
     height: 200px;
     
     
-    h2
+    .h2-foot
     { 
         font-family: 'Shrikhand';
         color: white;
@@ -85,7 +85,7 @@ footer
         padding: 20px;
 
     }
-    li
+   .foot-li
     {
      padding-left: 20px;
      padding-bottom: 5px;
@@ -95,6 +95,10 @@ footer
      .marg-text-foot-one
      {
       margin-left: 12px;
+     }
+     .marg-text-foot-two
+     {
+         margin-left: 5px;
      }
     }
 
