@@ -35,7 +35,15 @@ header{
     h1 
    {
        padding-top: 20px;
+       transition: ease-in-out;
+       
+       
+       &:before
+       {
+           transform: 2s translateX(200) ;
+       }
    }
+   
     .fas.fa-arrow-left
     {
         font-size: 30px;
