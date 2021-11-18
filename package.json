@@ -1,0 +1,22 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/sass/style.scss:./assets/css/style.css ./assets/sass/menus-scss/menus.scss:assets/css/menus-css/menus.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frensh-Developpeur/P3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Frensh-Developpeur/P3/issues"
+  },
+  "homepage": "https://github.com/Frensh-Developpeur/P3#readme",
+  "dependencies": {
+    "sass": "dart-sass"
+  }
+}
