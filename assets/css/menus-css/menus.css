@@ -55,6 +55,8 @@ table {
   border-spacing: 0;
 }
 
+/* Mixin utilisé pour les h3 des article (index) */
+/* Mixin utilisé pour les boutons  */
 /* Bloc-page all version */
 @media all and (min-width: 1200px) {
   body {
@@ -64,29 +66,31 @@ table {
   }
 }
 
-.mobile-first-width {
+.bloc_page {
   width: 425px;
 }
 @media all and (min-width: 426px) {
-  .mobile-first-width {
+  .bloc_page {
     width: auto;
   }
 }
 @media all and (min-width: 1200px) {
-  .mobile-first-width {
+  .bloc_page {
     width: 1200px;
   }
 }
 
 /* Fin du bloc page */
-/*  Header générique pour toutes les pages du sites  */
+/*  Header générique pour toutes les pages du sites + ajout d'une flêche pour les pages "menus"  */
 header {
   text-align: center;
   position: relative;
   height: 75px;
 }
 header h1 {
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  display: inline-block;
 }
 header .fas.fa-arrow-left {
   font-size: 30px;
@@ -98,10 +102,6 @@ header .fas.fa-arrow-left {
 header .fas.fa-arrow-left:hover {
   transform: scale(1.25);
   transition: 200ms;
-}
-header .logo {
-  padding-top: 10px;
-  padding-bottom: 5px;
 }
 
 /* Fin du header générique  */
@@ -118,20 +118,20 @@ footer {
   background-color: #353535;
   height: 200px;
 }
-footer .h2-foot {
+footer h2 {
   font-family: "Shrikhand";
   color: white;
   font-size: 1.3rem;
   padding: 20px;
 }
-footer .foot-li {
+footer li {
   padding-left: 20px;
   padding-bottom: 5px;
 }
-footer .foot-li .marg-text-foot-one {
+footer li__marg-text-foot-one {
   margin-left: 12px;
 }
-footer .foot-li .marg-text-foot-two {
+footer li__marg-text-foot-two {
   margin-left: 5px;
 }
 footer i, footer a, footer h2 {

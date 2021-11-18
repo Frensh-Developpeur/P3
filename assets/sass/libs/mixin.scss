@@ -1,99 +1,17 @@
-@mixin card-restaurant {
-     position: relative;
-     border-radius: 10px / 10px;
-     margin-left: 25px;
-     margin-top: 20px;
-     width: 375px;
-     border: 1px solid #f2f2f2;
-     background: white;
-     height: 250px;
+/* Mixin utilisé pour les h3 des article (index) */
+@mixin h3__article($value)
+    {
 
-    img
-    {
-        width: 375px;
-        border-radius: 10px / 10px;
-        height: 180px;
-        object-fit: cover;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }
-    .green-new
-    {
-        position: absolute;
-        top: 10px;
-        right: 5px;
-        color: #278870;
-        padding: 5px 10px;
-        background: #99E2D0;
-        border-radius: 5px / 5px;
+        font-family: 'Roboto';
+        font-weight: bold;
+        margin-left: 10px;
+        font-size: 1rem;
+        margin-top: $value;
         
     }
-    .h3-sec-one
-    {
 
-        font-family: 'Roboto';
-        font-weight: bold;
-        margin-left: 10px;
-        font-size: 1rem;
-        margin-top: 10px;
-    }
-    .h3-sec-two
-    {
-        font-family: 'Roboto';
-        font-weight: bold;
-        margin-left: 10px;
-        margin-top: 15px;
-        font-size: 1rem;
-    }
-    h4 
-    {
-    
-        font-family: 'Roboto';
-        margin-left: 10px;
-        margin-top: 5px;
-        font-size: 1rem;
-    }
-      .far.fa-heart
-    {
-        font-size: 30px;
-        color: red;
-    
+/* Mixin utilisé pour les boutons  */
 
-        &:hover
-        {
-                content: "\f004"; 
-                font-weight: bold;
-                background-image: linear-gradient(45deg, red);   
-                transition-duration: 800ms;
-                transform: rotate(360deg);
-                
-        }
-    
-    }
-   .full-card-tp
-   {
-    position: absolute;
-    font-size: 0px;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    z-index: 1;
-   }
-   
-   .heart-active
-
-   {
-       z-index: 2;
-       position: absolute;
-       bottom: 20px;
-       right: 10px;
-       
-       &:hover
-       {
-           color: rosybrown;
-       }
-   }
-}
 @mixin button {
 
             display: inline-block;
@@ -107,16 +25,10 @@
             box-shadow: 0px 0px 8px #00000069;
             
              &:hover
-     {
+      {
          transform:scale(1.15);
          transition-duration: 800ms;
          filter: brightness(1.2);
          box-shadow: 0px 0px 8px #00000069;
-         
-           
-         
-         
-
-     }
-
-            }
+      }
+  }

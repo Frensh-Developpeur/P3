@@ -36,8 +36,7 @@
          display: flex;
          flex-wrap: wrap;
          justify-content: space-around;
-
-  }   
+   }   
  }
 
  #restaurant
@@ -47,24 +46,23 @@
     flex-wrap: wrap;
     align-items: center;
 
-    article 
-    {
-            width: 80%;
+      article 
+      {
+        width: 80%;
+
             &:hover
             {
                 transform: scale(1.05);
                 transition: 300ms;
             }
+      }
 
-
-    }
-    img 
+    & img 
     {
         width: 100%;
     }
- }
-  
-   } 
+  }  
+} 
 
    @media all and (min-width: 768px)
  {
@@ -77,42 +75,43 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-}
 
-    .ul-foot
+
+    & ul
     {
        display: flex;
        flex-wrap: wrap;
        flex-direction: row;
        align-items: flex-start;
     }
-
-
- }
+  }
+}
 
    @media all and (min-width: 1200px)
    {
-       main 
+      main 
        {
            height: 800px!important;
            position: relative;
        }
- #restaurant
- {
+
+       #restaurant
+       {
    
-   flex-direction: row;
+           flex-direction: row;
 
-   .title-sec-tree
-   {
-       position: absolute;
-       top: 0px;
-       left: 500px;
-   }
-   article 
-   {
-    width: 45%;
-    margin-top: 100px;
+         & h2
+         {
+            position: absolute;
+            top: 0px;
+            left: 500px;
+         }
+
+         & article 
+         {
+            width: 45%;
+            margin-top: 100px;
+         }
 
    }
- }
-   }
+}

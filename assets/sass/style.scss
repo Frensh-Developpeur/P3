@@ -1,200 +1,8 @@
+/* IMPORT DE TOUTES LES FICHIERS SCSS DU PROJET */
 @import 'libs/import/import_style.scss';
 
+
 /* Gestion de la page 1 */
-
-/* LOADER */
-.loader
-{
-    animation: loader 3s cubic-bezier(0, 0, 0.13, -0.83);
-    position: fixed;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    z-index: 0;
-    
-    .load_spin
-        {
-            margin: auto;
-            border-top: 4px solid #0F9DE8;
-            border-right: 4px solid #F0C300;
-            border-bottom: 4px solid #FF0000;
-            border-left: 4px solid #800080;
-            border-radius: 50%;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            opacity: 0;
-            z-index: 0;
-            animation: spin 3s ;
-        }
-        .load_spin_two
-        {
-            margin: auto;
-            border-top: 4px solid #0F9DE8;
-            border-right: 4px solid #F0C300;
-            border-bottom: 4px solid #FF0000;
-            border-left: 4px solid #800080;
-            border-radius: 50%;
-            z-index: 0;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            opacity: 0;
-            
-            animation: spin_two 3.5s ;
-        }
-       
-         @keyframes spin_two {
-            1%{
-                opacity: 1;
-                transform: rotate(0deg) scale(1.30);
-                z-index: 101;
-                
-            }
-            100%{
-                transform: rotate(720deg) scale(1);
-                opacity: 0;
-            }
-            
-        }
-        @keyframes spin {
-            1%{
-                opacity: 1;
-                transform: rotate(0deg) scale(1);
-                z-index: 101;
-                
-            }
-            
-            100%{
-                transform: rotate(360deg) scale(1.50);
-                opacity: 0;
-            }
-            
-        }
-   
-         
-    @keyframes loader {
-
-        1%{ 
-            background: linear-gradient(to top, #9256dc, #ff79d9);
-            z-index: 101;
-             width: 100%;
-    height: 100%;
-           
-        }
-        15% {
-            opacity: 1;
-        }
-       
-        60%{
-           opacity: 0.6;
-        }
-        75% {
-            opacity: 0.4;
-        }
-        
-        85%{
-            opacity: 0.3;
-        }
-        95%{
-            opacity: 0.2;
-          
-        }
-       100% {
-            opacity: 0;
-             
-        }
-
-    }
-
-}
- .load_h2
-        {
-           
-            font-size: 40px;
-            z-index: 100;
-            position: fixed;
-            color: transparent;
-            font-family: 'Comforter';
-            font-weight: bold;
-            top: 50px;
-            text-align: center;
-            z-index: 0;
-            margin: auto;
-            animation: h2_load 3.5s cubic-bezier(0.075, 0.82, 0.165, 1) ;
-            
-
-            @keyframes h2_load {
-                1%{
-
-                    color: red;
-                    z-index: 101;
-
-                    
-                }
-                10%{
-                    color: yellow;
-                    transform: translateX(50px) ;
-                }
-                20%{
-                    color: pink;
-                }
-                30%{
-                    color: white;
-                    transform: translateX(-50px);
-                }
-                40%{
-                    color: #000000;
-                    
-                    
-                }
-                50%{
-                    color: rgb(110, 110, 108);
-                    transform: scale(1.5)  ;
-                    opacity: 0.7;
-                    
-                }
-                60%{
-                    color: peachpuff;
-                    transform: scale(1.6) translateX(0);
-                    
-                    
-                    
-                }
-                70%{
-                    color: rgb(108, 80, 139);
-                    
-                    
-
-                }
-                80%{
-                    color: royalblue;
-                    
-                
-                
-                }
-                90%{
-                    color: black;
-                    
-                }
-                100%{
-                    opacity: 0;
-                    
-                }
-            }
-        }
-
-
-
 
 /* Formulaire de recherche */
 form
@@ -207,14 +15,14 @@ form
    align-items: center;
    justify-content: center;
    
-      .text-localisation
+      & .text-localisation
     {
          border: hidden;
          background: #e1dddd;
          font-size: 1rem;
          font-weight:bold;
      }
-      .fas.fa-map-marker-alt
+      & .fas.fa-map-marker-alt
      {
          padding-right: 10px;
          padding-bottom: 5px;
@@ -233,11 +41,11 @@ form
     display:flex;
     justify-content: center;
 
-      div
+    & div
      {
         text-align: center;
         margin-top: 20px;
-         .title-sec-one
+         & h2
         {
            font-family:'Roboto';
            margin-top: 30px;
@@ -248,27 +56,21 @@ form
            width: 70%;
 
         }
-         .sous-title-sec-one
+         & h3
         {
            font-family: 'Roboto';
            font-size: 1.2rem;
            padding-left: 40px;
            width: 80%;   
 
-     }
-
-        a 
+        }
+         & a 
          {
-            text-align: center;
-            
-          span
+            text-align: center;     
+         & span
          {
             @include button;
-            padding: 15px 15px;
-
-            
-            
-            
+            padding: 15px 15px;  
         }
     }
   }
@@ -292,7 +94,6 @@ form
         background: #e4d5f6;
         cursor: pointer;
     }
-    
 
 }
 
@@ -301,21 +102,19 @@ form
 /* Début de la 2ème section */
 .bloc-two
   {
-   .title-sec-two
+   & h2
    {
        font-family: 'Roboto';
        font-size: 1.3rem;
        margin: 40px 0px 20px 20px;
        font-weight: bold;
    }
-   .li-sec
+   & li
    {
        position: relative;
        @extend .card-fonctionnement
-
-    
    }
-    .title-sec-fonc
+    & h2
     { 
            font-family:'Roboto';
            margin-top: 30px;
@@ -325,7 +124,7 @@ form
            font-size: 1.3rem;
            font-weight: bold;
     }
-
+    
     .fas.fa-mobile-alt,.fas.fa-list-ul,.fas.fa-store
        {
         padding: 0px 35px;
@@ -338,7 +137,7 @@ form
            padding-left: 40px;
        }
 
-    .number-one-sec-two
+   & .number-one-sec-two
     {
      position: absolute;
      left: -10px;
@@ -348,7 +147,7 @@ form
      background-color: #9356DC;
     }
 
-    .text-li-sec-two
+   & .text-li-sec-two
     {
         font-family: 'Roboto';
         font-weight: bold;
@@ -364,26 +163,115 @@ main
     height: 1220px;
     background: #f2f2f2;
 }
+
 /* Début section 3 */
 
-.title-sec-tree
+/* Gestion du H2 de l'id RESTAURANT */
+#restaurant
 {
+
+    & h2
+  {
     font-weight: bold;
     font-size: 1.3rem;
     font-family: 'Roboto';
     padding-top: 40px;
     padding-left: 20px;
+  }
 }
+    /* Gestion de tout les articles de la page(index)  */
+    article  {
+     position: relative;
+     border-radius: 10px / 10px;
+     margin-left: 25px;
+     margin-top: 20px;
+     width: 375px;
+     border: 1px solid #f2f2f2;
+     background: white;
+     height: 250px;
 
- 
-  article 
-{
-    @include card-restaurant;
+    & img
+    {
+        width: 375px;
+        border-radius: 10px / 10px;
+        height: 180px;
+        object-fit: cover;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    & span
+    {
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        color: #278870;
+        padding: 5px 10px;
+        background: #99E2D0;
+        border-radius: 5px / 5px;
+        
+    }
+
+    /* Ajout de la mixin pour le h3 (valeur ajoutée dans les parenthèses (margin-top) */
+    & .__text-h3-one
+    {
+        @include h3__article(10px)
+    }
+
+    & .__text-h3-two
+    {
+        @include h3__article(15px)
+    }
+    /* Fin de la mixin */
     
+    & h4 
+    {
+    
+        font-family: 'Roboto';
+        margin-left: 10px;
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+      & .far.fa-heart
+    {
+        font-size: 30px;
+        color: red;
+    
+
+        &:hover
+        {
+            content: "\f004"; 
+            font-weight: bold;
+            background-image: linear-gradient(45deg, red);   
+            transition-duration: 800ms;
+            transform: rotate(360deg);
+                
+        }
+    
+    }
+   & .__card-tp
+   {
+    position: absolute;
+    font-size: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 1;
+   }
+   
+   & .__heart-active
+
+   {
+       z-index: 2;
+       position: absolute;
+       bottom: 20px;
+       right: 10px;
+       
+       &:hover
+       {
+           color: rosybrown;
+       }
+   }
 }
-
-
-
 
 /* Fin de la première page  */
 

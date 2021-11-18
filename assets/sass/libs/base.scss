@@ -8,7 +8,7 @@ body {
     }
 }
 
-.mobile-first-width
+.bloc_page
 {
 width: 425px;
 
@@ -25,27 +25,22 @@ width: 425px;
 }
 /* Fin du bloc page */
 
-/*  Header générique pour toutes les pages du sites  */
+/*  Header générique pour toutes les pages du sites + ajout d'une flêche pour les pages "menus"  */
 header{
 
      text-align:center;
      position: relative;
      height: 75px;
 
-    h1 
-   {
-       padding-top: 20px;
-       transition: ease-in-out;
-       
-       
-       &:before
-       {
-           transform: 2s translateX(200) ;
-       }
-   }
+    & h1
+      {
+          padding-top: 10px;
+          padding-bottom: 5px;
+          display: inline-block;
+      }
    
-    .fas.fa-arrow-left
-    {
+    & .fas.fa-arrow-left
+      {
         font-size: 30px;
         color: black;
         position: absolute;
@@ -58,12 +53,7 @@ header{
            transition: 200ms;
         }
 
-    }
-        .logo
-      {
-          padding-top: 10px;
-          padding-bottom: 5px;
-    }
+      }     
 }
 /* Fin du header générique  */
 
@@ -85,7 +75,7 @@ footer
     height: 200px;
     
     
-    .h2-foot
+    h2
     { 
         font-family: 'Shrikhand';
         color: white;
@@ -93,18 +83,18 @@ footer
         padding: 20px;
 
     }
-   .foot-li
+   li
     {
      padding-left: 20px;
      padding-bottom: 5px;
      
      
 
-     .marg-text-foot-one
+     &__marg-text-foot-one
      {
       margin-left: 12px;
      }
-     .marg-text-foot-two
+     &__marg-text-foot-two
      {
          margin-left: 5px;
      }

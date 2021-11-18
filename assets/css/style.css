@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* IMPORT DE TOUTES LES FICHIERS SCSS DU PROJET */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
@@ -56,6 +57,8 @@ table {
   border-spacing: 0;
 }
 
+/* Mixin utilisé pour les h3 des article (index) */
+/* Mixin utilisé pour les boutons  */
 /* Bloc-page all version */
 @media all and (min-width: 1200px) {
   body {
@@ -65,33 +68,31 @@ table {
   }
 }
 
-.mobile-first-width {
+.bloc_page {
   width: 425px;
 }
 @media all and (min-width: 426px) {
-  .mobile-first-width {
+  .bloc_page {
     width: auto;
   }
 }
 @media all and (min-width: 1200px) {
-  .mobile-first-width {
+  .bloc_page {
     width: 1200px;
   }
 }
 
 /* Fin du bloc page */
-/*  Header générique pour toutes les pages du sites  */
+/*  Header générique pour toutes les pages du sites + ajout d'une flêche pour les pages "menus"  */
 header {
   text-align: center;
   position: relative;
   height: 75px;
 }
 header h1 {
-  padding-top: 20px;
-  transition: ease-in-out;
-}
-header h1:before {
-  transform: 2s translateX(200);
+  padding-top: 10px;
+  padding-bottom: 5px;
+  display: inline-block;
 }
 header .fas.fa-arrow-left {
   font-size: 30px;
@@ -103,10 +104,6 @@ header .fas.fa-arrow-left {
 header .fas.fa-arrow-left:hover {
   transform: scale(1.25);
   transition: 200ms;
-}
-header .logo {
-  padding-top: 10px;
-  padding-bottom: 5px;
 }
 
 /* Fin du header générique  */
@@ -123,20 +120,20 @@ footer {
   background-color: #353535;
   height: 200px;
 }
-footer .h2-foot {
+footer h2 {
   font-family: "Shrikhand";
   color: white;
   font-size: 1.3rem;
   padding: 20px;
 }
-footer .foot-li {
+footer li {
   padding-left: 20px;
   padding-bottom: 5px;
 }
-footer .foot-li .marg-text-foot-one {
+footer li__marg-text-foot-one {
   margin-left: 12px;
 }
-footer .foot-li .marg-text-foot-two {
+footer li__marg-text-foot-two {
   margin-left: 5px;
 }
 footer i, footer a, footer h2 {
@@ -198,8 +195,7 @@ footer i:hover, footer a:hover, footer h2:hover {
     justify-content: center;
     flex-wrap: wrap;
   }
-
-  .ul-foot {
+  footer ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -215,7 +211,7 @@ footer i:hover, footer a:hover, footer h2:hover {
   #restaurant {
     flex-direction: row;
   }
-  #restaurant .title-sec-tree {
+  #restaurant h2 {
     position: absolute;
     top: 0px;
     left: 500px;
@@ -225,9 +221,9 @@ footer i:hover, footer a:hover, footer h2:hover {
     margin-top: 100px;
   }
 }
-/* Gestion de la page 1 */
-/* LOADER */
+/* LOADER  */
 .loader {
+  /* Configuration de la page temporaire pour le loader */
   animation: loader 3s cubic-bezier(0, 0, 0.13, -0.83);
   position: fixed;
   z-index: 100;
@@ -235,8 +231,69 @@ footer i:hover, footer a:hover, footer h2:hover {
   justify-content: center;
   flex-wrap: wrap;
   z-index: 0;
+  /* Gestion du titre OHMYFOOD dans le LOADER */
+  /* Gestion des propriétés affichant un cercle tournant */
+  /* Gestion d'un second cercle tournant à l'intérieur du premier */
+  /* Gestion du second cercle tournant */
+  /* Gestion du premier cercle tournant */
+  /* Gestion de la page temporaire */
 }
-.loader .load_spin {
+.loader h2 {
+  font-size: 40px;
+  z-index: 100;
+  position: fixed;
+  color: transparent;
+  font-family: "Comforter";
+  font-weight: bold;
+  top: 50px;
+  text-align: center;
+  z-index: 0;
+  margin: auto;
+  animation: h2_load 3.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  /* Keyframes mettant en fonction le H2 */
+}
+@keyframes h2_load {
+  1% {
+    color: red;
+    z-index: 101;
+  }
+  10% {
+    color: yellow;
+    transform: translateX(50px);
+  }
+  20% {
+    color: pink;
+  }
+  30% {
+    color: white;
+    transform: translateX(-50px);
+  }
+  40% {
+    color: #000000;
+  }
+  50% {
+    color: #6e6e6c;
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+  60% {
+    color: peachpuff;
+    transform: scale(1.6) translateX(0);
+  }
+  70% {
+    color: #6c508b;
+  }
+  80% {
+    color: royalblue;
+  }
+  90% {
+    color: black;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.loader__spin {
   margin: auto;
   border-top: 4px solid #0F9DE8;
   border-right: 4px solid #F0C300;
@@ -254,7 +311,7 @@ footer i:hover, footer a:hover, footer h2:hover {
   z-index: 0;
   animation: spin 3s;
 }
-.loader .load_spin_two {
+.loader__spin_two {
   margin: auto;
   border-top: 4px solid #0F9DE8;
   border-right: 4px solid #F0C300;
@@ -321,61 +378,7 @@ footer i:hover, footer a:hover, footer h2:hover {
   }
 }
 
-.load_h2 {
-  font-size: 40px;
-  z-index: 100;
-  position: fixed;
-  color: transparent;
-  font-family: "Comforter";
-  font-weight: bold;
-  top: 50px;
-  text-align: center;
-  z-index: 0;
-  margin: auto;
-  animation: h2_load 3.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-@keyframes h2_load {
-  1% {
-    color: red;
-    z-index: 101;
-  }
-  10% {
-    color: yellow;
-    transform: translateX(50px);
-  }
-  20% {
-    color: pink;
-  }
-  30% {
-    color: white;
-    transform: translateX(-50px);
-  }
-  40% {
-    color: #000000;
-  }
-  50% {
-    color: #6e6e6c;
-    transform: scale(1.5);
-    opacity: 0.7;
-  }
-  60% {
-    color: peachpuff;
-    transform: scale(1.6) translateX(0);
-  }
-  70% {
-    color: #6c508b;
-  }
-  80% {
-    color: royalblue;
-  }
-  90% {
-    color: black;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
+/* Gestion de la page 1 */
 /* Formulaire de recherche */
 form {
   height: 50px;
@@ -411,7 +414,7 @@ form .fas.fa-map-marker-alt {
   text-align: center;
   margin-top: 20px;
 }
-.bloc-one div .title-sec-one {
+.bloc-one div h2 {
   font-family: "Roboto";
   margin-top: 30px;
   padding-bottom: 10px;
@@ -420,7 +423,7 @@ form .fas.fa-map-marker-alt {
   font-weight: bold;
   width: 70%;
 }
-.bloc-one div .sous-title-sec-one {
+.bloc-one div h3 {
   font-family: "Roboto";
   font-size: 1.2rem;
   padding-left: 40px;
@@ -450,7 +453,7 @@ form .fas.fa-map-marker-alt {
 
 /* Fin de la 1ère section */
 /* Création d'une extension pour la section 2  */
-.card-fonctionnement, .bloc-two .li-sec {
+.card-fonctionnement, .bloc-two li {
   padding: 20px 40px;
   padding-left: 0px;
   margin-bottom: 20px;
@@ -460,22 +463,22 @@ form .fas.fa-map-marker-alt {
   width: 330px;
   border-radius: 15px/15px;
 }
-.card-fonctionnement:hover, .bloc-two .li-sec:hover {
+.card-fonctionnement:hover, .bloc-two li:hover {
   background: #e4d5f6;
   cursor: pointer;
 }
 
 /* Début de la 2ème section */
-.bloc-two .title-sec-two {
+.bloc-two h2 {
   font-family: "Roboto";
   font-size: 1.3rem;
   margin: 40px 0px 20px 20px;
   font-weight: bold;
 }
-.bloc-two .li-sec {
+.bloc-two li {
   position: relative;
 }
-.bloc-two .title-sec-fonc {
+.bloc-two h2 {
   font-family: "Roboto";
   margin-top: 30px;
   margin-bottom: 15px;
@@ -516,7 +519,8 @@ main {
 }
 
 /* Début section 3 */
-.title-sec-tree {
+/* Gestion du H2 de l'id RESTAURANT */
+#restaurant h2 {
   font-weight: bold;
   font-size: 1.3rem;
   font-family: "Roboto";
@@ -524,6 +528,7 @@ main {
   padding-left: 20px;
 }
 
+/* Gestion de tout les articles de la page(index)  */
 article {
   position: relative;
   border-radius: 10px/10px;
@@ -533,6 +538,8 @@ article {
   border: 1px solid #f2f2f2;
   background: white;
   height: 250px;
+  /* Ajout de la mixin pour le h3 (valeur ajoutée dans les parenthèses (margin-top) */
+  /* Fin de la mixin */
 }
 article img {
   width: 375px;
@@ -542,7 +549,7 @@ article img {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-article .green-new {
+article span {
   position: absolute;
   top: 10px;
   right: 5px;
@@ -551,19 +558,19 @@ article .green-new {
   background: #99E2D0;
   border-radius: 5px/5px;
 }
-article .h3-sec-one {
+article .__text-h3-one {
   font-family: "Roboto";
   font-weight: bold;
   margin-left: 10px;
   font-size: 1rem;
   margin-top: 10px;
 }
-article .h3-sec-two {
+article .__text-h3-two {
   font-family: "Roboto";
   font-weight: bold;
   margin-left: 10px;
-  margin-top: 15px;
   font-size: 1rem;
+  margin-top: 15px;
 }
 article h4 {
   font-family: "Roboto";
@@ -582,7 +589,7 @@ article .far.fa-heart:hover {
   transition-duration: 800ms;
   transform: rotate(360deg);
 }
-article .full-card-tp {
+article .__card-tp {
   position: absolute;
   font-size: 0px;
   width: 100%;
@@ -590,13 +597,13 @@ article .full-card-tp {
   top: 0px;
   z-index: 1;
 }
-article .heart-active {
+article .__heart-active {
   z-index: 2;
   position: absolute;
   bottom: 20px;
   right: 10px;
 }
-article .heart-active:hover {
+article .__heart-active:hover {
   color: rosybrown;
 }
 

@@ -1,0 +1,194 @@
+/* LOADER  */
+
+.loader
+{
+    /* Configuration de la page temporaire pour le loader */
+    animation: loader 3s cubic-bezier(0, 0, 0.13, -0.83);
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 0;
+     
+    /* Gestion du titre OHMYFOOD dans le LOADER */
+    h2
+        {
+           
+            font-size: 40px;
+            z-index: 100;
+            position: fixed;
+            color: transparent;
+            font-family: 'Comforter';
+            font-weight: bold;
+            top: 50px;
+            text-align: center;
+            z-index: 0;
+            margin: auto;
+            animation: h2_load 3.5s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+            
+         /* Keyframes mettant en fonction le H2 */
+            @keyframes h2_load {
+                1% {
+
+                    color: red;
+                    z-index: 101;   
+                }
+
+                10% {
+                    color: yellow;
+                    transform: translateX(50px) ;
+                }
+
+                20% {
+                    color: pink;
+                }
+
+                30% {
+                    color: white;
+                    transform: translateX(-50px);
+                }
+
+                40% {
+                    color: #000000; 
+                }
+
+                50% {
+                    color: rgb(110, 110, 108);
+                    transform: scale(1.5)  ;
+                    opacity: 0.7;  
+                }
+
+                60% {
+                    color: peachpuff;
+                    transform: scale(1.6) translateX(0);             
+                }
+
+                70% {
+                    color: rgb(108, 80, 139);
+                }
+
+                80% {
+                    color: royalblue;
+                }
+
+                90% {
+                    color: black;
+                }
+
+                100% {
+                    opacity: 0;  
+                }
+            }
+        }
+
+    /* Gestion des propriétés affichant un cercle tournant */
+    &__spin
+        {
+            margin: auto;
+            border-top: 4px solid #0F9DE8;
+            border-right: 4px solid #F0C300;
+            border-bottom: 4px solid #FF0000;
+            border-left: 4px solid #800080;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            opacity: 0;
+            z-index: 0;
+            animation: spin 3s ;
+        }
+
+        /* Gestion d'un second cercle tournant à l'intérieur du premier */
+        &__spin_two
+        {
+            margin: auto;
+            border-top: 4px solid #0F9DE8;
+            border-right: 4px solid #F0C300;
+            border-bottom: 4px solid #FF0000;
+            border-left: 4px solid #800080;
+            border-radius: 50%;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            opacity: 0;
+            animation: spin_two 3.5s ;
+        }
+       
+        /* Gestion du second cercle tournant */
+         @keyframes spin_two {
+
+            1% {
+                opacity: 1;
+                transform: rotate(0deg) scale(1.30);
+                z-index: 101;
+                
+            }
+
+            100% {
+                transform: rotate(720deg) scale(1);
+                opacity: 0;
+            }   
+        }
+        
+        /* Gestion du premier cercle tournant */
+        @keyframes spin {
+
+            1% {
+                opacity: 1;
+                transform: rotate(0deg) scale(1);
+                z-index: 101;    
+            }
+            
+            100% {
+                transform: rotate(360deg) scale(1.50);
+                opacity: 0;
+            }   
+        }  
+     
+    /* Gestion de la page temporaire */
+    @keyframes loader {
+
+        1% { 
+            background: linear-gradient(to top, #9256dc, #ff79d9);
+            z-index: 101;
+            width: 100%;
+            height: 100%;  
+        }
+
+        15% {
+            opacity: 1;
+        }
+       
+        60% {
+            opacity: 0.6;
+        }
+
+        75% {
+            opacity: 0.4;
+        }
+        
+        85% {
+            opacity: 0.3;
+        }
+
+        95% {
+            opacity: 0.2; 
+        }
+        
+       100% {
+            opacity: 0;        
+        }
+    }
+}
+     
+        
