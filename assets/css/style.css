@@ -164,6 +164,9 @@ footer i:hover, footer a:hover, footer h2:hover {
     flex-direction: column;
     align-items: center;
   }
+  .bloc-two h2 {
+    padding-left: 0px !important;
+  }
   .bloc-two ul {
     display: flex;
     flex-wrap: wrap;
@@ -378,12 +381,28 @@ footer i:hover, footer a:hover, footer h2:hover {
   }
 }
 
+/* Création d'une extension pour la section 2  */
+.card-fonctionnement, .bloc-two li {
+  padding: 20px 40px;
+  padding-left: 0px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  background-color: #f4f4f4;
+  box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
+  width: 330px;
+  border-radius: 15px/15px;
+}
+.card-fonctionnement:hover, .bloc-two li:hover {
+  background: #e4d5f6;
+  cursor: pointer;
+}
+
 /* Gestion de la page 1 */
 /* Formulaire de recherche */
 form {
   height: 50px;
   background: #e1dddd;
-  border-top: 2px solid #00000017 !important;
+  border-top: solid 2px #00000017 !important;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -452,29 +471,7 @@ form .fas.fa-map-marker-alt {
 }
 
 /* Fin de la 1ère section */
-/* Création d'une extension pour la section 2  */
-.card-fonctionnement, .bloc-two li {
-  padding: 20px 40px;
-  padding-left: 0px;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  background-color: #f4f4f4;
-  box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
-  width: 330px;
-  border-radius: 15px/15px;
-}
-.card-fonctionnement:hover, .bloc-two li:hover {
-  background: #e4d5f6;
-  cursor: pointer;
-}
-
 /* Début de la 2ème section */
-.bloc-two h2 {
-  font-family: "Roboto";
-  font-size: 1.3rem;
-  margin: 40px 0px 20px 20px;
-  font-weight: bold;
-}
 .bloc-two li {
   position: relative;
 }
@@ -496,7 +493,7 @@ form .fas.fa-map-marker-alt {
 .bloc-two .fas.fa-mobile-alt {
   padding-left: 40px;
 }
-.bloc-two .number-one-sec-two {
+.bloc-two__number-one-sec-two {
   position: absolute;
   left: -10px;
   color: white;
@@ -504,7 +501,7 @@ form .fas.fa-map-marker-alt {
   border-radius: 50%;
   background-color: #9356DC;
 }
-.bloc-two .text-li-sec-two {
+.bloc-two span {
   font-family: "Roboto";
   font-weight: bold;
   font-size: 1rem;
@@ -515,7 +512,7 @@ form .fas.fa-map-marker-alt {
 main {
   margin-top: 40px;
   height: 1220px;
-  background: #f2f2f2;
+  background: #f4f4f4;
 }
 
 /* Début section 3 */
@@ -529,19 +526,19 @@ main {
 }
 
 /* Gestion de tout les articles de la page(index)  */
-article {
+.article-one, .article-two {
   position: relative;
   border-radius: 10px/10px;
   margin-left: 25px;
   margin-top: 20px;
   width: 375px;
-  border: 1px solid #f2f2f2;
+  border: 1px solid #f4f4f4;
   background: white;
   height: 250px;
   /* Ajout de la mixin pour le h3 (valeur ajoutée dans les parenthèses (margin-top) */
   /* Fin de la mixin */
 }
-article img {
+.article-one img, .article-two img {
   width: 375px;
   border-radius: 10px/10px;
   height: 180px;
@@ -549,7 +546,7 @@ article img {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-article span {
+.article-one span, .article-two span {
   position: absolute;
   top: 10px;
   right: 5px;
@@ -558,38 +555,38 @@ article span {
   background: #99E2D0;
   border-radius: 5px/5px;
 }
-article .__text-h3-one {
+.article-one__text-h3-one, .article-two__text-h3-one {
   font-family: "Roboto";
   font-weight: bold;
   margin-left: 10px;
   font-size: 1rem;
   margin-top: 10px;
 }
-article .__text-h3-two {
+.article-one__text-h3-two, .article-two__text-h3-two {
   font-family: "Roboto";
   font-weight: bold;
   margin-left: 10px;
   font-size: 1rem;
   margin-top: 15px;
 }
-article h4 {
+.article-one h4, .article-two h4 {
   font-family: "Roboto";
   margin-left: 10px;
   margin-top: 5px;
   font-size: 1rem;
 }
-article .far.fa-heart {
+.article-one .far.fa-heart, .article-two .far.fa-heart {
   font-size: 30px;
   color: red;
 }
-article .far.fa-heart:hover {
+.article-one .far.fa-heart:hover, .article-two .far.fa-heart:hover {
   content: "\f004";
   font-weight: bold;
   background-image: linear-gradient(45deg, red);
   transition-duration: 800ms;
   transform: rotate(360deg);
 }
-article .__card-tp {
+.article-one__card-tp, .article-two__card-tp {
   position: absolute;
   font-size: 0px;
   width: 100%;
@@ -597,13 +594,13 @@ article .__card-tp {
   top: 0px;
   z-index: 1;
 }
-article .__heart-active {
+.article-one__heart-active, .article-two__heart-active {
   z-index: 2;
   position: absolute;
   bottom: 20px;
   right: 10px;
 }
-article .__heart-active:hover {
+.article-one__heart-active:hover, .article-two__heart-active:hover {
   color: rosybrown;
 }
 

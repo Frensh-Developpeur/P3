@@ -1,0 +1,19 @@
+/* Création d'une extension pour la section 2  */
+.card-fonctionnement
+{
+    padding: 20px 40px;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    background-color: $back-grey;
+    box-shadow: 0px 5px 10px 0px rgb(194 194 194 / 78%);
+    width: 330px;
+    border-radius: 15px / 15px;
+
+    &:hover
+    {
+        background: #e4d5f6;
+        cursor: pointer;
+    }
+
+}

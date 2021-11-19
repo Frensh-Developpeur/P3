@@ -8,8 +8,8 @@
 form
 {
    height: 50px;
-   background: #e1dddd;
-   border-top: 2px solid #00000017!important;
+   background: $back-form;
+   border-top: solid $border-form!important;
    display: flex;
    flex-direction: row;
    align-items: center;
@@ -18,7 +18,7 @@ form
       & .text-localisation
     {
          border: hidden;
-         background: #e1dddd;
+         background: $back-form;
          font-size: 1rem;
          font-weight:bold;
      }
@@ -77,38 +77,9 @@ form
 }
 /* Fin de la 1ère section */
 
-/* Création d'une extension pour la section 2  */
-.card-fonctionnement
-{
-    padding: 20px 40px;
-    padding-left: 0px;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    background-color: #f4f4f4;
-    box-shadow: 0px 5px 10px 0px rgb(194 194 194 / 78%);
-    width: 330px;
-    border-radius: 15px / 15px;
-
-    &:hover
-    {
-        background: #e4d5f6;
-        cursor: pointer;
-    }
-
-}
-
-
-
 /* Début de la 2ème section */
 .bloc-two
   {
-   & h2
-   {
-       font-family: 'Roboto';
-       font-size: 1.3rem;
-       margin: 40px 0px 20px 20px;
-       font-weight: bold;
-   }
    & li
    {
        position: relative;
@@ -125,11 +96,11 @@ form
            font-weight: bold;
     }
     
-    .fas.fa-mobile-alt,.fas.fa-list-ul,.fas.fa-store
+   & .fas.fa-mobile-alt,.fas.fa-list-ul,.fas.fa-store
        {
         padding: 0px 35px;
         padding-right: 20px;
-        color: #939393;;
+        color: $color-icone_fonc;
         font-size: 20px;
        }
        .fas.fa-mobile-alt
@@ -137,17 +108,17 @@ form
            padding-left: 40px;
        }
 
-   & .number-one-sec-two
+   &__number-one-sec-two
     {
      position: absolute;
      left: -10px;
      color: white;
      padding: 5px 8px;
      border-radius: 50%;
-     background-color: #9356DC;
+     background-color: $back-number-fonc;
     }
 
-   & .text-li-sec-two
+   & span
     {
         font-family: 'Roboto';
         font-weight: bold;
@@ -161,7 +132,7 @@ main
 {
     margin-top: 40px;
     height: 1220px;
-    background: #f2f2f2;
+    background: $back-grey;
 }
 
 /* Début section 3 */
@@ -180,13 +151,13 @@ main
   }
 }
     /* Gestion de tout les articles de la page(index)  */
-    article  {
+    .article-one, .article-two  {
      position: relative;
      border-radius: 10px / 10px;
      margin-left: 25px;
      margin-top: 20px;
      width: 375px;
-     border: 1px solid #f2f2f2;
+     border: 1px solid $back-grey;
      background: white;
      height: 250px;
 
@@ -204,20 +175,20 @@ main
         position: absolute;
         top: 10px;
         right: 5px;
-        color: #278870;
+        color: $news-button-color;
         padding: 5px 10px;
-        background: #99E2D0;
+        background: $news-button-back;
         border-radius: 5px / 5px;
         
     }
 
     /* Ajout de la mixin pour le h3 (valeur ajoutée dans les parenthèses (margin-top) */
-    & .__text-h3-one
+    &__text-h3-one
     {
         @include h3__article(10px)
     }
 
-    & .__text-h3-two
+    &__text-h3-two
     {
         @include h3__article(15px)
     }
@@ -248,7 +219,7 @@ main
         }
     
     }
-   & .__card-tp
+   &__card-tp
    {
     position: absolute;
     font-size: 0px;
@@ -258,7 +229,7 @@ main
     z-index: 1;
    }
    
-   & .__heart-active
+   &__heart-active
 
    {
        z-index: 2;
@@ -268,7 +239,7 @@ main
        
        &:hover
        {
-           color: rosybrown;
+           color: $heart-color_hover;
        }
    }
 }
