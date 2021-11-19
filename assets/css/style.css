@@ -234,7 +234,7 @@ footer i:hover, footer a:hover, footer h2:hover {
     top: 0px;
     left: 500px;
   }
-  #restaurant article {
+  #restaurant .article-one, #restaurant .article-two {
     width: 45%;
     margin-top: 100px;
   }
