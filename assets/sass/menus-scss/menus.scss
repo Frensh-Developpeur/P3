@@ -3,8 +3,9 @@
 /* Début du main */
 main
 {
+  opacity: 1;
     /* Gestion de la section principal */
-  &__bloc
+  & .main__bloc
   {
     background-color: $back-grey;
     border-radius: 40px 40px 0 0;

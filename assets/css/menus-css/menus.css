@@ -8,6 +8,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import '../../../prefixed/menus.css';
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -205,14 +206,14 @@ footer i:hover, footer a:hover, footer h2:hover {
   /* Fin de la section principal */
 }
 /* Fin de la MQ de 1200px  */
-/* IMPORT DES FICHIERS SASS */
 /* Début du main */
 main {
+  opacity: 1;
   /* Gestion de la section principal */
   /* Gestion de la div de la section principal */
   /* Fin du main */
 }
-main__bloc {
+main .main__bloc {
   background-color: #f4f4f4;
   border-radius: 40px 40px 0 0;
   margin-top: -40px;
