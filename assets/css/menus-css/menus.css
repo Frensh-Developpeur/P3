@@ -1,6 +1,9 @@
 @charset "UTF-8";
+/* IMPORT DES DIFFÉRENTES POLICES */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap");
+/* IMPORT DES DIFFÉRENTES POLICES */
+/* IMPORT DES FICHIERS SASS  */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -180,6 +183,7 @@ footer i:hover, footer a:hover, footer h2:hover {
   /* Fin de la section principal */
 }
 /* Fin de la MQ de 1200px  */
+/* IMPORT DES FICHIERS SASS */
 /* Début du main */
 main {
   /* Gestion de la section principal */
