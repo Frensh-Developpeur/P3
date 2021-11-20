@@ -243,7 +243,7 @@ main div .far.fa-heart {
 main div .far.fa-heart:hover {
   content: "\f004";
   font-weight: bold;
-  background-image: linear-gradient(45deg, red);
+  background-color: red;
   cursor: pointer;
   transition-duration: 800ms;
   transform: rotate(360deg);
@@ -256,7 +256,7 @@ article h3 {
   margin-left: 20px;
   margin-top: 20px;
   padding-bottom: 5px;
-  border-bottom: solid 3px solid #99E2D0;
+  border-bottom: 3px solid #99E2D0;
   width: 40px;
 }
 article ul {

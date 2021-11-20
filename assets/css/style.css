@@ -446,7 +446,7 @@ footer i:hover, footer a:hover, footer h2:hover {
 form {
   height: 50px;
   background: #e1dddd;
-  border-top: solid solid 2px #00000017 !important;
+  border-top: solid 2px #00000017 !important;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -626,7 +626,7 @@ main {
 .article-one .far.fa-heart:hover, .article-two .far.fa-heart:hover {
   content: "\f004";
   font-weight: bold;
-  background-image: linear-gradient(45deg, red);
+  background-color: red;
   transition-duration: 800ms;
   transform: rotate(360deg);
 }

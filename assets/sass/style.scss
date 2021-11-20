@@ -9,7 +9,7 @@ form
 {
    height: 50px;
    background: $back-form;
-   border-top: solid $border-form!important;
+   border-top: $border-form!important;
    display: flex;
    flex-direction: row;
    align-items: center;
@@ -212,7 +212,7 @@ main
         {
             content: "\f004"; 
             font-weight: bold;
-            background-image: linear-gradient(45deg, red);   
+            background-color: red; 
             transition-duration: 800ms;
             transform: rotate(360deg);
                 
