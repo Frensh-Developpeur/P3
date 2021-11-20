@@ -1,8 +1,9 @@
 @import '../libs/import/import_menus.scss';
 
-
+/* Début du main */
 main
 {
+    /* Gestion de la section principal */
   &__bloc
   {
     background-color: $back-grey;
@@ -20,22 +21,20 @@ main
     object-fit: cover;
    } 
   }
-}
-
-div 
-{
-    position: relative;
-
-   & h2 
+  /* Gestion de la div de la section principal */
+   div 
     {
+      position: relative;
+
+      & h2 
+      {
         font-family: 'Shrikhand';
-        
         font-size: 1.7rem;
         padding-top: 40px;
         padding-left: 20px;
-    }
-   & .far.fa-heart
-    {
+      }
+      & .far.fa-heart
+      {
         position: absolute;
         right: 30px;
         top: 40px;
@@ -50,10 +49,14 @@ div
                 cursor: pointer;  
                 transition-duration: 800ms;
                 transform: rotate(360deg);
-        }
+      }
     }
+    /* Fin de la div de la section principal */
+  }
+  /* Fin du main */
 }
 
+/* Gestion des articles de la pages  */
 article
 {
   & h3 
@@ -108,17 +111,24 @@ article
         font-weight: bold;
     }    
 }
+/* Fin de la gestion des articles */
 
+
+/* Gestion du Bouton commander */
 p 
 {
     text-align: center;
 
-& .button-valid
-    {
-     @include button;
-     padding: 15px 40px;
+     & .button-valid
+       {
+         @include button;
+         padding: 15px 40px;
 
-    }
+       }
 }
+/* Fin du Bouton commander */
 
+/* Fin du Main */
+
+/* Fin de la page Menus */
  

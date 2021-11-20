@@ -180,6 +180,12 @@ footer i:hover, footer a:hover, footer h2:hover {
   /* Fin de la section principal */
 }
 /* Fin de la MQ de 1200px  */
+/* Début du main */
+main {
+  /* Gestion de la section principal */
+  /* Gestion de la div de la section principal */
+  /* Fin du main */
+}
 main__bloc {
   background-color: #f4f4f4;
   border-radius: 40px 40px 0 0;
@@ -191,24 +197,24 @@ main p img {
   height: 250px;
   object-fit: cover;
 }
-
-div {
+main div {
   position: relative;
+  /* Fin de la div de la section principal */
 }
-div h2 {
+main div h2 {
   font-family: "Shrikhand";
   font-size: 1.7rem;
   padding-top: 40px;
   padding-left: 20px;
 }
-div .far.fa-heart {
+main div .far.fa-heart {
   position: absolute;
   right: 30px;
   top: 40px;
   font-size: 30px;
   color: red;
 }
-div .far.fa-heart:hover {
+main div .far.fa-heart:hover {
   content: "\f004";
   font-weight: bold;
   background-image: linear-gradient(45deg, red);
@@ -217,6 +223,7 @@ div .far.fa-heart:hover {
   transform: rotate(360deg);
 }
 
+/* Gestion des articles de la pages  */
 article h3 {
   font-family: "Roboto";
   font-size: 1rem;
@@ -261,6 +268,8 @@ article span {
   font-weight: bold;
 }
 
+/* Fin de la gestion des articles */
+/* Gestion du Bouton commander */
 p {
   text-align: center;
 }
@@ -282,5 +291,9 @@ p .button-valid:hover {
   filter: brightness(1.2);
   box-shadow: 0px 0px 8px #00000069;
 }
+
+/* Fin du Bouton commander */
+/* Fin du Main */
+/* Fin de la page Menus */
 
 /*# sourceMappingURL=menus.css.map */
