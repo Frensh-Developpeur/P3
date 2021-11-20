@@ -142,7 +142,10 @@ footer i:hover, footer a:hover, footer h2:hover {
   cursor: pointer;
 }
 
+/* MQ PAGES MENUS */
+/* MQ de 768px */
 @media all and (min-width: 768px) {
+  /* Gestion du footer */
   footer {
     display: flex;
     flex-direction: row;
@@ -158,8 +161,13 @@ footer i:hover, footer a:hover, footer h2:hover {
     align-items: center;
     justify-content: center;
   }
+
+  /* Fin du footer */
 }
+/* Fin de la MQ de 768px */
+/* Début de la MQ de 1200px  */
 @media all and (min-width: 1200px) {
+  /* Gestion de la section principal */
   section {
     display: flex;
     flex-direction: column;
@@ -168,8 +176,11 @@ footer i:hover, footer a:hover, footer h2:hover {
   .li-article {
     width: 25% !important;
   }
+
+  /* Fin de la section principal */
 }
-main .bloc-main {
+/* Fin de la MQ de 1200px  */
+main__bloc {
   background-color: #f4f4f4;
   border-radius: 40px 40px 0 0;
   margin-top: -40px;
@@ -212,7 +223,7 @@ article h3 {
   margin-left: 20px;
   margin-top: 20px;
   padding-bottom: 5px;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: solid 3px #99E2D0;
   width: 40px;
 }
 article ul {
@@ -220,7 +231,7 @@ article ul {
   flex-direction: column;
   flex-wrap: wrap;
 }
-article .li-article {
+article li {
   position: relative;
   padding: 15px;
   margin-bottom: 20px;
@@ -233,7 +244,7 @@ article .li-article {
   font-family: "Roboto";
   font-size: 0.9rem;
 }
-article .li-article:hover {
+article li:hover {
   color: white;
   cursor: pointer;
   background: #03a9f4;

@@ -1,7 +1,10 @@
-  @media all and (min-width: 768px)
+ /* MQ PAGES MENUS */
+
+ /* MQ de 768px */
+@media all and (min-width: 768px)
  {
       
-
+/* Gestion du footer */
      footer
    {
     display: flex;
@@ -10,27 +13,34 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-ul {
+    ul 
+   {
     display: flex;
     flex-direction: row!important;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
  }
+ /* Fin du footer */
+
 }
+/* Fin de la MQ de 768px */
 
-    
-  
-
+/* Début de la MQ de 1200px  */
  @media all and (min-width: 1200px) {
+
+   /* Gestion de la section principal */
        section 
        {
             display: flex;
             flex-direction: column;
        }
    
-     .li-article
+    .li-article
      {
          width: 25%!important;
      }
+
+     /* Fin de la section principal */
  }
+/* Fin de la MQ de 1200px  */
