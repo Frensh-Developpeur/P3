@@ -62,7 +62,24 @@ table {
 
 /* Mixin utilisé pour les h3 des article (index) */
 /* Mixin utilisé pour les boutons  */
+/* Gestion des Border ( Se référer à leurs fonctions) */
+/* FIN Gestion des Border ( Se référer à leurs fonctions) */
+/* Gestion des background : color ( Se référer à leur fonction ) */
+/* Fin des background : color ( Se référer à leur fonction ) */
+/* Gestion des couleurs des différentes icones page index ainsi que les chiffres  */
+/* FIN Gestion des couleurs des différentes icones page index ainsi que les chiffres  */
+/* Color et bakcground des bouton News */
+/* FIN Color et bakcground des bouton News */
+/* Gestion de la couleur des coeurs */
+/* Gestion de la couleur des coeurs */
+/* Gestion des box shadow ( Se réfèrer à sa fonction) */
+/* Fin des box shadow ( Se réfèrer à sa fonction) */
+/* LOADER  */
+/* COLOR H2 LOADER */
+/* SPIN ONE */
+/* SPIN TWO */
 /* Bloc-page all version */
+/* Gestion du BODY en width 1200px ALL PAGE */
 @media all and (min-width: 1200px) {
   body {
     display: flex;
@@ -71,6 +88,8 @@ table {
   }
 }
 
+/* Fin du BODY en width 1200px ALL PAGE */
+/* Gestion du Bloc_page ALL PAGE 425 > 426px and 1200  */
 .bloc_page {
   width: 425px;
 }
@@ -110,18 +129,21 @@ header .fas.fa-arrow-left:hover {
 }
 
 /* Fin du header générique  */
+/* Gestion des lien et images du sites complet */
 a {
   text-decoration: none;
-  color: black;
 }
 
 img {
   width: 200px;
 }
 
+/* FIN Gestion des lien et images du sites complet */
+/* Footer générique */
 footer {
   background-color: #353535;
   height: 200px;
+  /*FIN du footer générique */
 }
 footer h2 {
   font-family: "Shrikhand";
@@ -293,7 +315,7 @@ footer i:hover, footer a:hover, footer h2:hover {
     transform: translateX(-50px);
   }
   40% {
-    color: #000000;
+    color: black;
   }
   50% {
     color: #6e6e6c;
@@ -337,10 +359,10 @@ footer i:hover, footer a:hover, footer h2:hover {
 }
 .loader__spin_two {
   margin: auto;
-  border-top: 4px solid #0F9DE8;
-  border-right: 4px solid #F0C300;
-  border-bottom: 4px solid #FF0000;
-  border-left: 4px solid #800080;
+  border-top: 4px solid #0f9ce8a2;
+  border-right: 4px solid #00f0dc;
+  border-bottom: 4px solid #ff00dd;
+  border-left: 4px solid #6e6e6e;
   border-radius: 50%;
   z-index: 0;
   top: 0;
@@ -424,7 +446,7 @@ footer i:hover, footer a:hover, footer h2:hover {
 form {
   height: 50px;
   background: #e1dddd;
-  border-top: solid 2px #00000017 !important;
+  border-top: solid solid 2px #00000017 !important;
   display: flex;
   flex-direction: row;
   align-items: center;

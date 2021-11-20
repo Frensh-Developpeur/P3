@@ -60,7 +60,24 @@ table {
 
 /* Mixin utilisé pour les h3 des article (index) */
 /* Mixin utilisé pour les boutons  */
+/* Gestion des Border ( Se référer à leurs fonctions) */
+/* FIN Gestion des Border ( Se référer à leurs fonctions) */
+/* Gestion des background : color ( Se référer à leur fonction ) */
+/* Fin des background : color ( Se référer à leur fonction ) */
+/* Gestion des couleurs des différentes icones page index ainsi que les chiffres  */
+/* FIN Gestion des couleurs des différentes icones page index ainsi que les chiffres  */
+/* Color et bakcground des bouton News */
+/* FIN Color et bakcground des bouton News */
+/* Gestion de la couleur des coeurs */
+/* Gestion de la couleur des coeurs */
+/* Gestion des box shadow ( Se réfèrer à sa fonction) */
+/* Fin des box shadow ( Se réfèrer à sa fonction) */
+/* LOADER  */
+/* COLOR H2 LOADER */
+/* SPIN ONE */
+/* SPIN TWO */
 /* Bloc-page all version */
+/* Gestion du BODY en width 1200px ALL PAGE */
 @media all and (min-width: 1200px) {
   body {
     display: flex;
@@ -69,6 +86,8 @@ table {
   }
 }
 
+/* Fin du BODY en width 1200px ALL PAGE */
+/* Gestion du Bloc_page ALL PAGE 425 > 426px and 1200  */
 .bloc_page {
   width: 425px;
 }
@@ -108,18 +127,21 @@ header .fas.fa-arrow-left:hover {
 }
 
 /* Fin du header générique  */
+/* Gestion des lien et images du sites complet */
 a {
   text-decoration: none;
-  color: black;
 }
 
 img {
   width: 200px;
 }
 
+/* FIN Gestion des lien et images du sites complet */
+/* Footer générique */
 footer {
   background-color: #353535;
   height: 200px;
+  /*FIN du footer générique */
 }
 footer h2 {
   font-family: "Shrikhand";
@@ -234,7 +256,7 @@ article h3 {
   margin-left: 20px;
   margin-top: 20px;
   padding-bottom: 5px;
-  border-bottom: solid 3px #99E2D0;
+  border-bottom: solid 3px solid #99E2D0;
   width: 40px;
 }
 article ul {

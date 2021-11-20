@@ -1,26 +1,94 @@
-$border-form: 2px #00000017;
+/* Gestion des Border ( Se référer à leurs fonctions) */
 
-$border-bottom: 3px #99E2D0 ;
+$border-form: solid 2px #00000017;
+
+$border-bottom: 3px solid #99E2D0 ;
+
+/* FIN Gestion des Border ( Se référer à leurs fonctions) */
+
+/* Gestion des background : color ( Se référer à leur fonction ) */
 
 $back-form: #e1dddd;
 
 $back-grey: #f4f4f4;
 
+$back-li-menus-hover: #03a9f4;
+
 $back-card-fonc_hover: #e4d5f6;
+
+/* Fin des background : color ( Se référer à leur fonction ) */
+
+/* Gestion des couleurs des différentes icones page index ainsi que les chiffres  */
 
 $color-icone_fonc: #939393;
 
 $back-number-fonc: #9356DC;
 
+/* FIN Gestion des couleurs des différentes icones page index ainsi que les chiffres  */
+
+/* Color et bakcground des bouton News */
+
 $news-button-color: #278870;
 
 $news-button-back: #99E2D0;
 
+/* FIN Color et bakcground des bouton News */
+
+/* Gestion de la couleur des coeurs */
+
 $heart-color_hover: rosybrown;
+
+/* Gestion de la couleur des coeurs */
+
+/* Gestion des box shadow ( Se réfèrer à sa fonction) */
 
 $box-shadow-menus-li: 2px 2px 9px #0000003b;
 
 $box-shadow-card-fonc: 0px 5px 10px 0px rgb(194 194 194 / 78%);
 
-$back-li-menus-hover: #03a9f4;
+/* Fin des box shadow ( Se réfèrer à sa fonction) */
 
+/* LOADER  */
+
+$back-load: linear-gradient(to top, #9256dc, #ff79d9);
+
+/* COLOR H2 LOADER */
+
+ $one: red;
+
+ $ten: yellow;
+
+ $twenty: pink;
+
+ $thirty: white;
+
+ $forty: black;
+
+ $fifty: rgb(110, 110, 108);
+
+ $sixty: peachpuff;
+
+ $seventy: rgb(108, 80, 139);
+
+ $eighty: royalblue;
+
+ $ninety: black;
+
+/* SPIN ONE */
+
+$top: 4px solid #0F9DE8;
+
+$right: 4px solid #F0C300;
+
+$bottom: 4px solid #FF0000;
+
+$left: 4px solid #800080;
+
+
+
+
+/* SPIN TWO */
+$top_two: 4px solid #0f9ce8a2;
+$right_two: 4px solid #00f0dc;
+$bottom_two:4px solid #ff00dd;
+$left_two: 4px solid #6e6e6e;

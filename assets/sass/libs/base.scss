@@ -1,4 +1,6 @@
 /* Bloc-page all version */
+
+/* Gestion du BODY en width 1200px ALL PAGE */
 body {
     @media all and (min-width:1200px)
     {
@@ -7,7 +9,9 @@ body {
          align-items: center;
     }
 }
+/* Fin du BODY en width 1200px ALL PAGE */
 
+/* Gestion du Bloc_page ALL PAGE 425 > 426px and 1200  */
 .bloc_page
 {
 width: 425px;
@@ -57,25 +61,28 @@ header{
 }
 /* Fin du header générique  */
 
+/* Gestion des lien et images du sites complet */
 a
+
 {
     text-decoration: none;
-    color: black;
+  
 }
+
 img
 {
     width: 200px;
 }
+/* FIN Gestion des lien et images du sites complet */
 
-
-
+/* Footer générique */
 footer
 {
     background-color: #353535;
     height: 200px;
     
     
-    h2
+   & h2
     { 
         font-family: 'Shrikhand';
         color: white;
@@ -83,7 +90,7 @@ footer
         padding: 20px;
 
     }
-   li
+  & li
     {
      padding-left: 20px;
      padding-bottom: 5px;
@@ -99,8 +106,7 @@ footer
          margin-left: 5px;
      }
     }
-
- i,a,h2
+ i , a , h2
  {
      color: white;
 
@@ -108,10 +114,9 @@ footer
      {
          color: red;
          cursor: pointer;
-     }
-     
-     
-    }
+     }    
+   }
+   /*FIN du footer générique */
 }
 
 
