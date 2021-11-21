@@ -206,6 +206,7 @@ footer i:hover, footer a:hover, footer h2:hover {
   /* Fin de la section principal */
 }
 /* Fin de la MQ de 1200px  */
+/* Animation des menus de cartes  */
 main {
   animation: 0.8s ease-in-out apparing-contenu-menus;
 }
@@ -272,6 +273,22 @@ main {
   }
 }
 
+.item-four {
+  animation: 2s ease-in-out apparing-contenu-plat_tree 0.8s;
+}
+@keyframes apparing-contenu-plat_tree {
+  1% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fin de l'animation des menus de cartes  */
 /* Début du main */
 main {
   opacity: 1;
