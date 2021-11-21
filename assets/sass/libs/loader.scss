@@ -5,14 +5,13 @@
     /* Configuration de la page temporaire pour le loader */
     animation: loader 3s cubic-bezier(0, 0, 0.13, -0.83);
     position: fixed;
-    z-index: 100;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     z-index: 0;
      
     /* Gestion du titre OHMYFOOD dans le LOADER */
-    h2
+    p
         {
            
             font-size: 40px;

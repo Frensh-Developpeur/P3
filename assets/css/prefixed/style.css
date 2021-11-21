@@ -206,7 +206,7 @@ footer i:hover, footer a:hover, footer h2:hover {
 
   /* Fin de la section one */
   /* Gestion de la section two  */
-  .bloc-two {
+  .bloc-fonctionnement {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -218,10 +218,10 @@ footer i:hover, footer a:hover, footer h2:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  .bloc-two h2 {
+  .bloc-fonctionnement h2 {
     padding-left: 0px !important;
   }
-  .bloc-two ul {
+  .bloc-fonctionnement ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -604,7 +604,7 @@ footer i:hover, footer a:hover, footer h2:hover {
 }
 
 /* Création d'une extension pour la section 2  */
-.card-fonctionnement, .bloc-two li {
+.card-fonctionnement, .bloc-fonctionnement li {
   padding: 20px 40px;
   padding-left: 0px;
   margin-bottom: 20px;
@@ -615,7 +615,7 @@ footer i:hover, footer a:hover, footer h2:hover {
   width: 330px;
   border-radius: 15px/15px;
 }
-.card-fonctionnement:hover, .bloc-two li:hover {
+.card-fonctionnement:hover, .bloc-fonctionnement li:hover {
   background: #e4d5f6;
   cursor: pointer;
 }
@@ -718,10 +718,10 @@ form .fas.fa-map-marker-alt {
 
 /* Fin de la 1ère section */
 /* Début de la 2ème section */
-.bloc-two li {
+.bloc-fonctionnement li {
   position: relative;
 }
-.bloc-two h2 {
+.bloc-fonctionnement h2 {
   font-family: "Roboto";
   margin-top: 30px;
   margin-bottom: 15px;
@@ -730,16 +730,16 @@ form .fas.fa-map-marker-alt {
   font-size: 1.3rem;
   font-weight: bold;
 }
-.bloc-two .fas.fa-mobile-alt, .bloc-two .fas.fa-list-ul, .bloc-two .fas.fa-store {
+.bloc-fonctionnement .fas.fa-mobile-alt, .bloc-fonctionnement .fas.fa-list-ul, .bloc-fonctionnement .fas.fa-store {
   padding: 0px 35px;
   padding-right: 20px;
   color: #939393;
   font-size: 20px;
 }
-.bloc-two .fas.fa-mobile-alt {
+.bloc-fonctionnement .fas.fa-mobile-alt {
   padding-left: 40px;
 }
-.bloc-two__number-one-sec-two {
+.bloc-fonctionnement__number-one-sec-two {
   position: absolute;
   left: -10px;
   color: white;
@@ -747,7 +747,7 @@ form .fas.fa-map-marker-alt {
   border-radius: 50%;
   background-color: #9356DC;
 }
-.bloc-two span {
+.bloc-fonctionnement span {
   font-family: "Roboto";
   font-weight: bold;
   font-size: 1rem;

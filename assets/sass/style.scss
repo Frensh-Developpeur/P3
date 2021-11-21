@@ -33,7 +33,7 @@ form
 /* Fin du formulaire de recherche */
 
 /* Gestion de la première section  */
-.bloc-one
+.bloc-info
 {
     background: #f2f2f2;
     width: 100%;
@@ -78,7 +78,7 @@ form
 /* Fin de la 1ère section */
 
 /* Début de la 2ème section */
-.bloc-two
+.bloc-fonctionnement
   {
    & li
    {
@@ -250,7 +250,7 @@ main
  @media all and (min-width: 426px )   {
 
   /* Gestion de la section one  */
-     .bloc-one
+     .bloc-info
 
      {
         display: flex;
@@ -270,7 +270,7 @@ main
       /* Fin de la section one */
 
       /* Gestion de la section two  */
-     .bloc-two
+     .bloc-fonctionnement
      {
          display: flex;
          flex-direction: column;

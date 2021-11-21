@@ -1,4 +1,6 @@
 /* Animation des menus de cartes  */
+.menus
+{
 main {
   
     animation: 0.8s ease-in-out apparing-contenu-menus;
@@ -25,7 +27,7 @@ main {
 
   .item-one
      {
-         animation: 2s ease-in-out apparing-contenu-plat_one 0.2s ;
+         animation: 2s ease-in-out apparing-contenu-plat_one 0.1s ;
          @keyframes apparing-contenu-plat_one {
              1% {
                 opacity: 0;
@@ -40,7 +42,7 @@ main {
      }
      .item-two
      {
-         animation: 2s ease-in-out apparing-contenu-plat_two  0.4s;
+         animation: 2s ease-in-out apparing-contenu-plat_two  0.2s;
          @keyframes apparing-contenu-plat_two {
              1% {
                 opacity: 0;
@@ -55,7 +57,7 @@ main {
          }
          .item-tree
         {
-         animation: 2s ease-in-out apparing-contenu-plat_tree 0.6s ;
+         animation: 2s ease-in-out apparing-contenu-plat_tree 0.3s ;
          @keyframes apparing-contenu-plat_tree {
              1% {
                 opacity: 0;
@@ -70,7 +72,7 @@ main {
     }
      .item-four
         {
-         animation: 2s ease-in-out apparing-contenu-plat_tree 0.8s ;
+         animation: 2s ease-in-out apparing-contenu-plat_tree 0.4s ;
          @keyframes apparing-contenu-plat_tree {
              1% {
                 opacity: 0;
@@ -85,3 +87,4 @@ main {
     }
      /* Fin de l'animation des menus de cartes  */
    
+}

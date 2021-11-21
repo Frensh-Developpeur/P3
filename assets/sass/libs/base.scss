@@ -97,11 +97,11 @@ footer
      
      
 
-     &__marg-text-foot-one
+     & .margin-one
      {
       margin-left: 12px;
      }
-     &__marg-text-foot-two
+     & .margin-two
      {
          margin-left: 5px;
      }
@@ -109,10 +109,11 @@ footer
  i , a , h2
  {
      color: white;
+     display: inline-block;
 
      &:hover
      {
-         color: red;
+         color: greenyellow;
          cursor: pointer;
      }    
    }

@@ -156,17 +156,18 @@ footer li {
   padding-left: 20px;
   padding-bottom: 5px;
 }
-footer li__marg-text-foot-one {
+footer li .margin-one {
   margin-left: 12px;
 }
-footer li__marg-text-foot-two {
+footer li .margin-two {
   margin-left: 5px;
 }
 footer i, footer a, footer h2 {
   color: white;
+  display: inline-block;
 }
 footer i:hover, footer a:hover, footer h2:hover {
-  color: red;
+  color: greenyellow;
   cursor: pointer;
 }
 
@@ -175,7 +176,6 @@ footer i:hover, footer a:hover, footer h2:hover {
   /* Configuration de la page temporaire pour le loader */
   animation: loader 3s cubic-bezier(0, 0, 0.13, -0.83);
   position: fixed;
-  z-index: 100;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -187,7 +187,7 @@ footer i:hover, footer a:hover, footer h2:hover {
   /* Gestion du premier cercle tournant */
   /* Gestion de la page temporaire */
 }
-.loader h2 {
+.loader p {
   font-size: 40px;
   z-index: 100;
   position: fixed;
@@ -328,7 +328,7 @@ footer i:hover, footer a:hover, footer h2:hover {
 }
 
 /* Création d'une extension pour la section 2  */
-.card-fonctionnement, .home .bloc-two li {
+.card-fonctionnement, .home .bloc-fonctionnement li {
   padding: 20px 40px;
   padding-left: 0px;
   margin-bottom: 20px;
@@ -338,13 +338,16 @@ footer i:hover, footer a:hover, footer h2:hover {
   width: 330px;
   border-radius: 15px/15px;
 }
-.card-fonctionnement:hover, .home .bloc-two li:hover {
+.card-fonctionnement:hover, .home .bloc-fonctionnement li:hover {
   background: #e4d5f6;
   cursor: pointer;
 }
 
 /* Animation des menus de cartes  */
-main {
+.menus {
+  /* Fin de l'animation des menus de cartes  */
+}
+.menus main {
   animation: 0.8s ease-in-out apparing-contenu-menus;
 }
 @keyframes apparing-contenu-menus {
@@ -364,9 +367,8 @@ main {
     transform: scale(1);
   }
 }
-
-.item-one {
-  animation: 2s ease-in-out apparing-contenu-plat_one 0.2s;
+.menus .item-one {
+  animation: 2s ease-in-out apparing-contenu-plat_one 0.1s;
 }
 @keyframes apparing-contenu-plat_one {
   1% {
@@ -379,9 +381,8 @@ main {
     opacity: 1;
   }
 }
-
-.item-two {
-  animation: 2s ease-in-out apparing-contenu-plat_two 0.4s;
+.menus .item-two {
+  animation: 2s ease-in-out apparing-contenu-plat_two 0.2s;
 }
 @keyframes apparing-contenu-plat_two {
   1% {
@@ -394,9 +395,22 @@ main {
     opacity: 1;
   }
 }
-
-.item-tree {
-  animation: 2s ease-in-out apparing-contenu-plat_tree 0.6s;
+.menus .item-tree {
+  animation: 2s ease-in-out apparing-contenu-plat_tree 0.3s;
+}
+@keyframes apparing-contenu-plat_tree {
+  1% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menus .item-four {
+  animation: 2s ease-in-out apparing-contenu-plat_tree 0.4s;
 }
 @keyframes apparing-contenu-plat_tree {
   1% {
@@ -410,22 +424,6 @@ main {
   }
 }
 
-.item-four {
-  animation: 2s ease-in-out apparing-contenu-plat_tree 0.8s;
-}
-@keyframes apparing-contenu-plat_tree {
-  1% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* Fin de l'animation des menus de cartes  */
 /* IMPORT DES FICHIERS SASS  */
 /* Gestion de la page 1 */
 .home {
@@ -469,18 +467,18 @@ main {
   padding-bottom: 5px;
   padding-left: 40px;
 }
-.home .bloc-one {
+.home .bloc-info {
   background: #f2f2f2;
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-.home .bloc-one div {
+.home .bloc-info div {
   text-align: center;
   margin-top: 20px;
 }
-.home .bloc-one div h2 {
+.home .bloc-info div h2 {
   font-family: "Roboto";
   margin-top: 30px;
   padding-bottom: 10px;
@@ -489,16 +487,16 @@ main {
   font-weight: bold;
   width: 70%;
 }
-.home .bloc-one div h3 {
+.home .bloc-info div h3 {
   font-family: "Roboto";
   font-size: 1.2rem;
   padding-left: 40px;
   width: 80%;
 }
-.home .bloc-one div a {
+.home .bloc-info div a {
   text-align: center;
 }
-.home .bloc-one div a span {
+.home .bloc-info div a span {
   display: inline-block;
   font-family: "Roboto";
   font-weight: bold;
@@ -510,16 +508,16 @@ main {
   box-shadow: 0px 0px 8px #00000069;
   padding: 15px 15px;
 }
-.home .bloc-one div a span:hover {
+.home .bloc-info div a span:hover {
   transform: scale(1.15);
   transition-duration: 800ms;
   filter: brightness(1.2);
   box-shadow: 0px 0px 8px #00000069;
 }
-.home .bloc-two li {
+.home .bloc-fonctionnement li {
   position: relative;
 }
-.home .bloc-two h2 {
+.home .bloc-fonctionnement h2 {
   font-family: "Roboto";
   margin-top: 30px;
   margin-bottom: 15px;
@@ -528,16 +526,16 @@ main {
   font-size: 1.3rem;
   font-weight: bold;
 }
-.home .bloc-two .fas.fa-mobile-alt, .home .bloc-two .fas.fa-list-ul, .home .bloc-two .fas.fa-store {
+.home .bloc-fonctionnement .fas.fa-mobile-alt, .home .bloc-fonctionnement .fas.fa-list-ul, .home .bloc-fonctionnement .fas.fa-store {
   padding: 0px 35px;
   padding-right: 20px;
   color: #939393;
   font-size: 20px;
 }
-.home .bloc-two .fas.fa-mobile-alt {
+.home .bloc-fonctionnement .fas.fa-mobile-alt {
   padding-left: 40px;
 }
-.home .bloc-two__number-one-sec-two {
+.home .bloc-fonctionnement__number-one-sec-two {
   position: absolute;
   left: -10px;
   color: white;
@@ -545,7 +543,7 @@ main {
   border-radius: 50%;
   background-color: #9356DC;
 }
-.home .bloc-two span {
+.home .bloc-fonctionnement span {
   font-family: "Roboto";
   font-weight: bold;
   font-size: 1rem;
@@ -647,27 +645,27 @@ main {
     /* Fin de la section two  */
     /* Début de la section principal */
   }
-  .home .bloc-one {
+  .home .bloc-info {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .home .bloc-one h2 {
+  .home .bloc-info h2 {
     width: initial !important;
     padding-left: 0px !important;
   }
-  .home .bloc-one h3 {
+  .home .bloc-info h3 {
     width: 90% !important;
   }
-  .home .bloc-two {
+  .home .bloc-fonctionnement {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .home .bloc-two h2 {
+  .home .bloc-fonctionnement h2 {
     padding-left: 0px !important;
   }
-  .home .bloc-two ul {
+  .home .bloc-fonctionnement ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
