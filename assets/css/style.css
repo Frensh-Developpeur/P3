@@ -99,30 +99,27 @@ table {
     width: auto;
   }
 }
-@media all and (min-width: 1200px) {
-  .bloc_page {
-    width: 1200px;
-  }
-}
 
 /* Fin du bloc page */
 /*  Header générique pour toutes les pages du sites + ajout d'une flêche pour les pages "menus"  */
 header {
   text-align: center;
   position: relative;
-  height: 75px;
+  height: auto;
 }
 header h1 {
   padding-top: 10px;
   padding-bottom: 5px;
   display: inline-block;
 }
+header .arrow-position {
+  position: absolute;
+  top: 13px;
+  left: 20px;
+}
 header .fas.fa-arrow-left {
   font-size: 30px;
   color: black;
-  position: absolute;
-  top: 20px;
-  left: 20px;
 }
 header .fas.fa-arrow-left:hover {
   transform: scale(1.25);
@@ -427,6 +424,7 @@ footer i:hover, footer a:hover, footer h2:hover {
 /* IMPORT DES FICHIERS SASS  */
 /* Gestion de la page 1 */
 .home {
+  transform: scale(1);
   /* Formulaire de recherche */
   /* Fin du formulaire de recherche */
   /* Gestion de la première section  */
