@@ -5,13 +5,12 @@
 /* IMPORT DES DIFFÉRENTES POLICES */
 
 /* IMPORT DES FICHIERS SASS  */
-@import '../reset.scss';
-@import '../mixin.scss';
-@import '../variable.scss';
-@import '../base.scss';
-@import '../../media_style.scss';
-@import '../loader.scss';
-@import '../extension.scss';
-@import '../../../prefixed/style.css'
-
+@import './reset.scss';
+@import './mixin.scss';
+@import './variable.scss';
+@import './base.scss';
+@import './loader.scss';
+@import './extension.scss';
+@import '../../prefixed/style.css';
+@import './animations.scss';
 /* IMPORT DES FICHIERS SASS  */
