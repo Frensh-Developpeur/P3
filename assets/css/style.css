@@ -94,7 +94,12 @@ table {
 .bloc_page {
   width: auto;
 }
-@media all and (min-width: 370px) {
+@media all and (min-width: 320px) {
+  .bloc_page {
+    width: 320px;
+  }
+}
+@media all and (min-width: 321px) {
   .bloc_page {
     width: auto;
   }
@@ -327,7 +332,7 @@ footer i:hover, footer a:hover, footer h2:hover {
 /* Création d'une extension pour la section 2  */
 .card-fonctionnement, .home .bloc-fonctionnement li {
   display: flex;
-  padding: 20px 40px;
+  padding: 20px 20px;
   padding-left: 0px;
   margin-bottom: 20px;
   margin-left: 20px;

@@ -13,13 +13,15 @@ body {
 
 /* Gestion du Bloc_page ALL PAGE 425 > 426px and 1200  */
 .bloc_page
-{
-width: auto;
+{  
+        width: auto;
 
-@media all and (min-width:370px) {
-    
+@media all and (min-width: 320px) {
+        width: 320px;
+    }
+
+@media all and (min-width: 321px) {
     width: auto;
-    
 }
 
 }
