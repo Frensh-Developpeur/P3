@@ -256,7 +256,7 @@ footer i:hover, footer a:hover, footer h2:hover {
   border-bottom: 4px solid #FF0000;
   border-left: 4px solid #800080;
   border-radius: 50%;
-  top: -900px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -336,7 +336,6 @@ footer i:hover, footer a:hover, footer h2:hover {
 
 /* Création d'une extension pour la section 2  */
 .card-fonctionnement, .bloc-fonctionnement li {
-  display: flex;
   padding: 20px 20px;
   padding-left: 0px;
   margin-bottom: 20px;
@@ -347,10 +346,8 @@ footer i:hover, footer a:hover, footer h2:hover {
   border-radius: 15px/15px;
   font-family: "Roboto";
   font-weight: bold;
+  list-style-type: none;
   font-size: 1rem;
-  display: flex;
-  align-items: center;
-  list-style-type: disc;
 }
 .card-fonctionnement:hover, .bloc-fonctionnement li:hover {
   background: #e4d5f6;
@@ -536,11 +533,16 @@ form .fas.fa-map-marker-alt {
 }
 .bloc-fonctionnement li {
   position: relative;
-  font-family: "Roboto";
-  font-weight: bold;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
+  counter-increment: step;
+}
+.bloc-fonctionnement li::before {
+  content: counter(step);
+  position: relative;
+  right: 10px;
+  padding: 4px 9px;
+  border-radius: 50%;
+  color: #fafafa;
+  background-color: #9356DC;
 }
 .bloc-fonctionnement h2 {
   font-family: "Roboto";

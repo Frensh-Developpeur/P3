@@ -89,12 +89,19 @@ form
    {
        position: relative;
        @extend .card-fonctionnement;
-       font-family: 'Roboto';
-       font-weight: bold;
-       font-size: 1rem;
-       display: flex;
-       align-items: center;
+       counter-increment: step;
+      &::before
+      {
+       content: counter(step);
+       position: relative;
+       right: 10px;
+       padding: 4px 9px;
+       border-radius: 50%;
+       color: #fafafa;
+       background-color: #9356DC;
+      }
    }
+
     & h2
     { 
            font-family:'Roboto';

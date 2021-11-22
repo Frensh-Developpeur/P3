@@ -1,7 +1,7 @@
 /* Création d'une extension pour la section 2  */
 .card-fonctionnement
 {
-    display: flex;
+
     padding: 20px 20px;
     padding-left: 0px;
     margin-bottom: 20px;
@@ -12,10 +12,9 @@
     border-radius: 15px / 15px;
     font-family: 'Roboto';
     font-weight: bold;
+    list-style-type: none;
     font-size: 1rem;
-    display: flex;
-    align-items: center;
-    list-style-type: disc;
+ 
 
     &:hover
     {
