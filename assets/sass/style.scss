@@ -3,8 +3,6 @@
 
 
 /* Gestion de la page 1 */
-.home {
-  transform: scale(1);
 /* Formulaire de recherche */
 form
 {
@@ -81,6 +79,12 @@ form
 /* Début de la 2ème section */
 .bloc-fonctionnement
   {
+   &  ol
+   {
+    
+        padding-left: 0px; 
+    
+   }
    & li
    {
        position: relative;
@@ -88,6 +92,8 @@ form
        font-family: 'Roboto';
        font-weight: bold;
        font-size: 1rem;
+       display: flex;
+       align-items: center;
    }
     & h2
     { 
@@ -147,7 +153,6 @@ main
     font-size: 1.3rem;
     font-family: 'Roboto';
     padding-top: 40px;
-    margin-left: -20px;
   }
 }
     /* Gestion de tout les articles de la page(index)  */
@@ -260,8 +265,9 @@ main
  @media all and (min-width: 426px )   {
 
   /* Gestion de la section one  */
+     
+  
      .bloc-info
-
      {
         display: flex;
         flex-direction: column;
@@ -333,7 +339,8 @@ main
    .bloc-fonctionnement
    {
     & ol {
-          display: flex;
+    
+     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
@@ -394,7 +401,7 @@ main
    /* Fin du main */
  } 
 /* Fin de la mediaqueries de 1200px */
-}
+
 /* Fin de la première page  */
 
 /* Début de la seconde page */
@@ -586,6 +593,7 @@ p
  }
 /* Fin de la MQ de 1200px  */
 }
+
 /* Fin de la page Menus */
 
 
