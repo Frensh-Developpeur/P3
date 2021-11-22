@@ -84,7 +84,10 @@ form
    & li
    {
        position: relative;
-       @extend .card-fonctionnement
+       @extend .card-fonctionnement;
+       font-family: 'Roboto';
+       font-weight: bold;
+       font-size: 1rem;
    }
     & h2
     { 
@@ -118,13 +121,6 @@ form
      border-radius: 50%;
      background-color: $back-number-fonc;
     }
-
-   & span
-    {
-        font-family: 'Roboto';
-        font-weight: bold;
-        font-size: 1rem;
-    }
   }
 /* Fin de la section 2 */
 
@@ -151,7 +147,7 @@ main
     font-size: 1.3rem;
     font-family: 'Roboto';
     padding-top: 40px;
-    padding-left: 20px;
+    margin-left: -20px;
   }
 }
     /* Gestion de tout les articles de la page(index)  */
@@ -197,7 +193,7 @@ main
     }
     /* Fin de la mixin */
     
-    & h4 
+    & p
     {
     
         font-family: 'Roboto';
@@ -208,6 +204,8 @@ main
       & .fas.fa-heart
       {
         position: absolute;
+        font-size: 30px;
+        z-index: 2;
         right: 0px;
         top: 0px;
         left: 0px;
@@ -216,7 +214,7 @@ main
         
         &:hover {
           
-          animation: 2s heart-progress forwards ;
+          animation: 1.2s heart-progress forwards ease-in-out ;
           -webkit-background-clip: text;
         }
       }
@@ -224,8 +222,9 @@ main
       & .far.fa-heart
     {
         font-size: 30px;
-        color: red;  
+        color: red; 
         
+    
     }
 
    &__card-tp
@@ -330,7 +329,16 @@ main
 /* Début de la mediaqueries de 768px */
    @media all and (min-width: 768px)
  {
-   
+  
+   .bloc-fonctionnement
+   {
+    & ol {
+          display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+     }
+   }
   /* Gestion du footer */
      footer
    {
@@ -373,6 +381,7 @@ main
             position: absolute;
             top: 0px;
             left: 500px;
+            padding-left: 50px;
          }
 
          & .article-one , .article-two
@@ -429,6 +438,8 @@ main
        & .fas.fa-heart
       {
         position: absolute;
+        font-size: 30px;
+        z-index: 2;
         right: 0px;
         top: 0px;
         left: 0px;
@@ -437,7 +448,7 @@ main
         
         &:hover {
           
-          animation: 2s heart-progress forwards ;
+          animation: 1.2s heart-progress forwards ease-in-out ;
           -webkit-background-clip: text;
         }
       }

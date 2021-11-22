@@ -90,7 +90,7 @@ table {
 }
 
 /* Fin du BODY en width 1200px ALL PAGE */
-/* Gestion du Bloc_page ALL PAGE 425 > 426px and 1200  */
+/* Gestion du Bloc_page ALL PAGE AUTO > 320px, AUTO AND 1200  */
 .bloc_page {
   width: auto;
 }
@@ -102,6 +102,11 @@ table {
 @media all and (min-width: 321px) {
   .bloc_page {
     width: auto;
+  }
+}
+@media all and (min-width: 1200px) {
+  .bloc_page {
+    width: 1200px;
   }
 }
 
@@ -434,23 +439,14 @@ footer i:hover, footer a:hover, footer h2:hover {
 
 @keyframes heart-progress {
   1% {
-    opacity: 0.2;
-    transform: scale(0.3);
-  }
-  20% {
-    opacity: 0.3;
-    transform: scale(0.5);
-  }
-  40% {
     opacity: 0.5;
-    transform: scale(0.7);
-  }
-  60% {
-    transform: scale(0.9);
+    transform: scale(0.1);
+    transform-origin: bottom;
   }
   100% {
     opacity: 1;
     transform: scale(1);
+    transform-origin: bottom;
   }
 }
 /* IMPORT DES FICHIERS SASS  */
@@ -546,6 +542,9 @@ footer i:hover, footer a:hover, footer h2:hover {
 }
 .home .bloc-fonctionnement li {
   position: relative;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 1rem;
 }
 .home .bloc-fonctionnement h2 {
   font-family: "Roboto";
@@ -573,11 +572,6 @@ footer i:hover, footer a:hover, footer h2:hover {
   border-radius: 50%;
   background-color: #9356DC;
 }
-.home .bloc-fonctionnement span {
-  font-family: "Roboto";
-  font-weight: bold;
-  font-size: 1rem;
-}
 .home main {
   margin-top: 40px;
   height: 1220px;
@@ -593,7 +587,7 @@ footer i:hover, footer a:hover, footer h2:hover {
   font-size: 1.3rem;
   font-family: "Roboto";
   padding-top: 40px;
-  padding-left: 20px;
+  margin-left: -20px;
 }
 .home .article-one, .home .article-two {
   position: relative;
@@ -637,7 +631,7 @@ footer i:hover, footer a:hover, footer h2:hover {
   font-size: 1rem;
   margin-top: 15px;
 }
-.home .article-one h4, .home .article-two h4 {
+.home .article-one p, .home .article-two p {
   font-family: "Roboto";
   margin-left: 10px;
   margin-top: 5px;
@@ -645,6 +639,8 @@ footer i:hover, footer a:hover, footer h2:hover {
 }
 .home .article-one .fas.fa-heart, .home .article-two .fas.fa-heart {
   position: absolute;
+  font-size: 30px;
+  z-index: 2;
   right: 0px;
   top: 0px;
   left: 0px;
@@ -652,7 +648,7 @@ footer i:hover, footer a:hover, footer h2:hover {
   opacity: 0;
 }
 .home .article-one .fas.fa-heart:hover, .home .article-two .fas.fa-heart:hover {
-  animation: 2s heart-progress forwards;
+  animation: 1.2s heart-progress forwards ease-in-out;
   -webkit-background-clip: text;
 }
 .home .article-one .far.fa-heart, .home .article-two .far.fa-heart {
@@ -730,6 +726,12 @@ footer i:hover, footer a:hover, footer h2:hover {
   .home {
     /* Gestion du footer */
   }
+  .home .bloc-fonctionnement ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
   .home footer {
     display: flex;
     flex-direction: row;
@@ -761,6 +763,7 @@ footer i:hover, footer a:hover, footer h2:hover {
     position: absolute;
     top: 0px;
     left: 500px;
+    padding-left: 50px;
   }
   .home #restaurant .article-one, .home #restaurant .article-two {
     width: 45%;
@@ -813,6 +816,8 @@ footer i:hover, footer a:hover, footer h2:hover {
 }
 .menus main div .fas.fa-heart {
   position: absolute;
+  font-size: 30px;
+  z-index: 2;
   right: 0px;
   top: 0px;
   left: 0px;
@@ -820,7 +825,7 @@ footer i:hover, footer a:hover, footer h2:hover {
   opacity: 0;
 }
 .menus main div .fas.fa-heart:hover {
-  animation: 2s heart-progress forwards;
+  animation: 1.2s heart-progress forwards ease-in-out;
   -webkit-background-clip: text;
 }
 .menus main div .far.fa-heart {

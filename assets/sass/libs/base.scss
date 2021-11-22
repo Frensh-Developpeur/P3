@@ -11,7 +11,7 @@ body {
 }
 /* Fin du BODY en width 1200px ALL PAGE */
 
-/* Gestion du Bloc_page ALL PAGE 425 > 426px and 1200  */
+/* Gestion du Bloc_page ALL PAGE AUTO > 320px, AUTO AND 1200  */
 .bloc_page
 {  
         width: auto;
@@ -23,7 +23,9 @@ body {
 @media all and (min-width: 321px) {
     width: auto;
 }
-
+@media all and (min-width:1200px) {
+    width: 1200px;
+}
 }
 /* Fin du bloc page */
 
