@@ -92,9 +92,9 @@ table {
 /* Fin du BODY en width 1200px ALL PAGE */
 /* Gestion du Bloc_page ALL PAGE 425 > 426px and 1200  */
 .bloc_page {
-  width: 425px;
+  width: auto;
 }
-@media all and (min-width: 426px) {
+@media all and (min-width: 370px) {
   .bloc_page {
     width: auto;
   }
@@ -326,18 +326,24 @@ footer i:hover, footer a:hover, footer h2:hover {
 
 /* Création d'une extension pour la section 2  */
 .card-fonctionnement, .home .bloc-fonctionnement li {
+  display: flex;
   padding: 20px 40px;
   padding-left: 0px;
   margin-bottom: 20px;
-  margin-left: 30px;
+  margin-left: 20px;
   background-color: #f4f4f4;
   box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
-  width: 330px;
+  width: 80%;
   border-radius: 15px/15px;
 }
 .card-fonctionnement:hover, .home .bloc-fonctionnement li:hover {
   background: #e4d5f6;
   cursor: pointer;
+}
+@media all and (min-width: 500px) {
+  .card-fonctionnement, .home .bloc-fonctionnement li {
+    width: 330px;
+  }
 }
 
 /* Animation des menus de cartes  */
@@ -421,6 +427,27 @@ footer i:hover, footer a:hover, footer h2:hover {
   }
 }
 
+@keyframes heart-progress {
+  1% {
+    opacity: 0.2;
+    transform: scale(0.3);
+  }
+  20% {
+    opacity: 0.3;
+    transform: scale(0.5);
+  }
+  40% {
+    opacity: 0.5;
+    transform: scale(0.7);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 /* IMPORT DES FICHIERS SASS  */
 /* Gestion de la page 1 */
 .home {
@@ -551,6 +578,11 @@ footer i:hover, footer a:hover, footer h2:hover {
   height: 1220px;
   background: #f4f4f4;
 }
+.home #restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .home #restaurant h2 {
   font-weight: bold;
   font-size: 1.3rem;
@@ -561,9 +593,8 @@ footer i:hover, footer a:hover, footer h2:hover {
 .home .article-one, .home .article-two {
   position: relative;
   border-radius: 10px/10px;
-  margin-left: 25px;
   margin-top: 20px;
-  width: 375px;
+  width: 90%;
   border: 1px solid #f4f4f4;
   background: white;
   height: 250px;
@@ -571,7 +602,7 @@ footer i:hover, footer a:hover, footer h2:hover {
   /* Fin de la mixin */
 }
 .home .article-one img, .home .article-two img {
-  width: 375px;
+  width: 100%;
   border-radius: 10px/10px;
   height: 180px;
   object-fit: cover;
@@ -607,16 +638,21 @@ footer i:hover, footer a:hover, footer h2:hover {
   margin-top: 5px;
   font-size: 1rem;
 }
+.home .article-one .fas.fa-heart, .home .article-two .fas.fa-heart {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  opacity: 0;
+}
+.home .article-one .fas.fa-heart:hover, .home .article-two .fas.fa-heart:hover {
+  animation: 2s heart-progress forwards;
+  -webkit-background-clip: text;
+}
 .home .article-one .far.fa-heart, .home .article-two .far.fa-heart {
   font-size: 30px;
   color: red;
-}
-.home .article-one .far.fa-heart:hover, .home .article-two .far.fa-heart:hover {
-  content: "\f004";
-  font-weight: bold;
-  background-color: red;
-  transition-duration: 800ms;
-  transform: rotate(360deg);
 }
 .home .article-one__card-tp, .home .article-two__card-tp {
   position: absolute;
@@ -724,6 +760,7 @@ footer i:hover, footer a:hover, footer h2:hover {
   .home #restaurant .article-one, .home #restaurant .article-two {
     width: 45%;
     margin-top: 100px;
+    margin-left: 40px;
   }
 }
 
@@ -765,9 +802,21 @@ footer i:hover, footer a:hover, footer h2:hover {
 }
 .menus main div h2 {
   font-family: "Shrikhand";
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding-top: 40px;
   padding-left: 20px;
+}
+.menus main div .fas.fa-heart {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  opacity: 0;
+}
+.menus main div .fas.fa-heart:hover {
+  animation: 2s heart-progress forwards;
+  -webkit-background-clip: text;
 }
 .menus main div .far.fa-heart {
   position: absolute;
@@ -775,14 +824,6 @@ footer i:hover, footer a:hover, footer h2:hover {
   top: 40px;
   font-size: 30px;
   color: red;
-}
-.menus main div .far.fa-heart:hover {
-  content: "\f004";
-  font-weight: bold;
-  background-color: red;
-  cursor: pointer;
-  transition-duration: 800ms;
-  transform: rotate(360deg);
 }
 .menus article h3 {
   font-family: "Roboto";
@@ -809,7 +850,7 @@ footer i:hover, footer a:hover, footer h2:hover {
   background: white;
   box-shadow: 2px 2px 9px #0000003b;
   font-family: "Roboto";
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .menus article li:hover {
   color: white;

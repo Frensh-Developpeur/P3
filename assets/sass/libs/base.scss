@@ -14,9 +14,9 @@ body {
 /* Gestion du Bloc_page ALL PAGE 425 > 426px and 1200  */
 .bloc_page
 {
-width: 425px;
+width: auto;
 
-@media all and (min-width:426px) {
+@media all and (min-width:370px) {
     
     width: auto;
     

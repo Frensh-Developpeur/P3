@@ -1,19 +1,25 @@
 /* Création d'une extension pour la section 2  */
 .card-fonctionnement
 {
+    display: flex;
+
     padding: 20px 40px;
     padding-left: 0px;
     margin-bottom: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
     background-color: $back-grey;
     box-shadow: $box-shadow-card-fonc;
-    width: 330px;
+    width: 80%;
     border-radius: 15px / 15px;
 
     &:hover
     {
         background: $back-card-fonc_hover;
         cursor: pointer;
+    }
+    @media all and (min-width:500px)  {
+        
+        width: 330px;
     }
 
 }
