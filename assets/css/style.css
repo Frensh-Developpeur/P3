@@ -80,6 +80,10 @@ table {
 /* SPIN ONE */
 /* SPIN TWO */
 /* Bloc-page all version */
+* {
+  padding-inline-start: 0px;
+}
+
 /* Gestion du BODY en width 1200px ALL PAGE */
 @media all and (min-width: 1200px) {
   body {
@@ -106,7 +110,7 @@ table {
 }
 @media all and (min-width: 1200px) {
   .bloc_page {
-    width: 1200px;
+    width: 100%;
   }
 }
 
@@ -121,6 +125,10 @@ header h1 {
   padding-top: 10px;
   padding-bottom: 5px;
   display: inline-block;
+}
+header h1:hover {
+  transform: scale(1.15);
+  transition: 400ms;
 }
 header .arrow-position {
   position: absolute;
@@ -157,7 +165,8 @@ footer h2 {
   font-family: "Shrikhand";
   color: white;
   font-size: 1.3rem;
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 footer li {
   padding-left: 20px;
@@ -178,6 +187,24 @@ footer i:hover, footer a:hover, footer h2:hover {
   cursor: pointer;
 }
 
+@media all and (min-width: 768px) {
+  /* Gestion du footer */
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer h2 {
+    padding-top: 0px;
+  }
+  footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
 /* LOADER  */
 .loader {
   /* Configuration de la page temporaire pour le loader */
@@ -335,7 +362,7 @@ footer i:hover, footer a:hover, footer h2:hover {
 }
 
 /* Création d'une extension pour la section 2  */
-.card-fonctionnement, .bloc-fonctionnement li {
+.card-fonctionnement, .home .bloc-fonctionnement li {
   padding: 20px 20px;
   padding-left: 0px;
   margin-bottom: 20px;
@@ -349,12 +376,12 @@ footer i:hover, footer a:hover, footer h2:hover {
   list-style-type: none;
   font-size: 1rem;
 }
-.card-fonctionnement:hover, .bloc-fonctionnement li:hover {
+.card-fonctionnement:hover, .home .bloc-fonctionnement li:hover {
   background: #e4d5f6;
   cursor: pointer;
 }
 @media all and (min-width: 425px) {
-  .card-fonctionnement, .bloc-fonctionnement li {
+  .card-fonctionnement, .home .bloc-fonctionnement li {
     width: 330px;
   }
 }
@@ -454,8 +481,28 @@ footer i:hover, footer a:hover, footer h2:hover {
 }
 /* IMPORT DES FICHIERS SASS  */
 /* Gestion de la page 1 */
-/* Formulaire de recherche */
-form {
+.home {
+  /* Formulaire de recherche */
+  /* Fin du formulaire de recherche */
+  /* Gestion de la première section  */
+  /* Fin de la 1ère section */
+  /* Début de la 2ème section */
+  /* Fin de la section 2 */
+  /* Main == BACKGROUND COLOR AND MARGING */
+  /* Début section 3 */
+  /* Gestion du H2 de l'id RESTAURANT */
+  /* Gestion de tout les articles de la page(index)  */
+  /* Version tablette et desktop de l'index */
+  /* Début du mediaqueries 426px */
+  /* Fin de la section principal */
+  /* Fin de la mediaqueries de 426px */
+  /* Début de la mediaqueries de 768px */
+  /* Fin de la mediaqueries 768px */
+  /* Début de la mediaqueries de 1200px */
+  /* Fin de la mediaqueries de 1200px */
+  /* Fin de la première page  */
+}
+.home form {
   height: 50px;
   background: #e1dddd;
   border-top: solid 2px #00000017 !important;
@@ -464,32 +511,29 @@ form {
   align-items: center;
   justify-content: center;
 }
-form .text-localisation {
+.home form .text-localisation {
   border: hidden;
   background: #e1dddd;
   font-size: 1rem;
   font-weight: bold;
 }
-form .fas.fa-map-marker-alt {
+.home form .fas.fa-map-marker-alt {
   padding-right: 10px;
   padding-bottom: 5px;
   padding-left: 40px;
 }
-
-/* Fin du formulaire de recherche */
-/* Gestion de la première section  */
-.bloc-info {
+.home .bloc-info {
   background: #f2f2f2;
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
 }
-.bloc-info div {
+.home .bloc-info div {
   text-align: center;
   margin-top: 20px;
 }
-.bloc-info div h2 {
+.home .bloc-info div h2 {
   font-family: "Roboto";
   margin-top: 30px;
   padding-bottom: 10px;
@@ -498,16 +542,16 @@ form .fas.fa-map-marker-alt {
   font-weight: bold;
   width: 70%;
 }
-.bloc-info div h3 {
+.home .bloc-info div h3 {
   font-family: "Roboto";
   font-size: 1.2rem;
   padding-left: 40px;
   width: 80%;
 }
-.bloc-info div a {
+.home .bloc-info div a {
   text-align: center;
 }
-.bloc-info div a span {
+.home .bloc-info div a span {
   display: inline-block;
   font-family: "Roboto";
   font-weight: bold;
@@ -519,23 +563,22 @@ form .fas.fa-map-marker-alt {
   box-shadow: 0px 0px 8px #00000069;
   padding: 15px 15px;
 }
-.bloc-info div a span:hover {
+.home .bloc-info div a span:hover {
   transform: scale(1.15);
   transition-duration: 800ms;
   filter: brightness(1.2);
   box-shadow: 0px 0px 8px #00000069;
 }
-
-/* Fin de la 1ère section */
-/* Début de la 2ème section */
-.bloc-fonctionnement ol {
+.home .bloc-fonctionnement ol {
   padding-left: 0px;
 }
-.bloc-fonctionnement li {
+.home .bloc-fonctionnement li {
   position: relative;
   counter-increment: step;
+  display: flex;
+  align-items: flex-end;
 }
-.bloc-fonctionnement li::before {
+.home .bloc-fonctionnement li::before {
   content: counter(step);
   position: relative;
   right: 10px;
@@ -544,7 +587,7 @@ form .fas.fa-map-marker-alt {
   color: #fafafa;
   background-color: #9356DC;
 }
-.bloc-fonctionnement h2 {
+.home .bloc-fonctionnement h2 {
   font-family: "Roboto";
   margin-top: 30px;
   margin-bottom: 15px;
@@ -553,16 +596,16 @@ form .fas.fa-map-marker-alt {
   font-size: 1.3rem;
   font-weight: bold;
 }
-.bloc-fonctionnement .fas.fa-mobile-alt, .bloc-fonctionnement .fas.fa-list-ul, .bloc-fonctionnement .fas.fa-store {
+.home .bloc-fonctionnement .fas.fa-mobile-alt, .home .bloc-fonctionnement .fas.fa-list-ul, .home .bloc-fonctionnement .fas.fa-store {
   padding: 0px 10px;
   padding-right: 20px;
   color: #939393;
   font-size: 20px;
 }
-.bloc-fonctionnement .fas.fa-mobile-alt {
+.home .bloc-fonctionnement .fas.fa-mobile-alt {
   padding-left: 10px;
 }
-.bloc-fonctionnement__number-one-sec-two {
+.home .bloc-fonctionnement__number-one-sec-two {
   position: absolute;
   left: -10px;
   color: white;
@@ -570,31 +613,23 @@ form .fas.fa-map-marker-alt {
   border-radius: 50%;
   background-color: #9356DC;
 }
-
-/* Fin de la section 2 */
-/* Main == BACKGROUND COLOR AND MARGING */
-main {
+.home main {
   margin-top: 10px;
   padding-bottom: 40px;
   background: #f4f4f4;
 }
-
-/* Début section 3 */
-/* Gestion du H2 de l'id RESTAURANT */
-#restaurant {
+.home #restaurant {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#restaurant h2 {
+.home #restaurant h2 {
   font-weight: bold;
   font-size: 1.3rem;
   font-family: "Roboto";
   padding-top: 40px;
 }
-
-/* Gestion de tout les articles de la page(index)  */
-.article-one, .article-two {
+.home .article-one, .home .article-two {
   position: relative;
   border-radius: 10px/10px;
   margin-top: 20px;
@@ -605,7 +640,7 @@ main {
   /* Ajout de la mixin pour le h3 (valeur ajoutée dans les parenthèses (margin-top) */
   /* Fin de la mixin */
 }
-.article-one img, .article-two img {
+.home .article-one img, .home .article-two img {
   width: 100%;
   border-radius: 10px/10px;
   height: 180px;
@@ -613,7 +648,7 @@ main {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-.article-one span, .article-two span {
+.home .article-one span, .home .article-two span {
   position: absolute;
   top: 10px;
   right: 5px;
@@ -622,27 +657,27 @@ main {
   background: #99E2D0;
   border-radius: 5px/5px;
 }
-.article-one__text-h3-one, .article-two__text-h3-one {
+.home .article-one__text-h3-one, .home .article-two__text-h3-one {
   font-family: "Roboto";
   font-weight: bold;
   margin-left: 10px;
   font-size: 1rem;
   margin-top: 10px;
 }
-.article-one__text-h3-two, .article-two__text-h3-two {
+.home .article-one__text-h3-two, .home .article-two__text-h3-two {
   font-family: "Roboto";
   font-weight: bold;
   margin-left: 10px;
   font-size: 1rem;
   margin-top: 15px;
 }
-.article-one p, .article-two p {
+.home .article-one p, .home .article-two p {
   font-family: "Roboto";
   margin-left: 10px;
   margin-top: 5px;
   font-size: 1rem;
 }
-.article-one .fas.fa-heart, .article-two .fas.fa-heart {
+.home .article-one .fas.fa-heart, .home .article-two .fas.fa-heart {
   position: absolute;
   font-size: 30px;
   z-index: 2;
@@ -652,139 +687,121 @@ main {
   bottom: 0px;
   opacity: 0;
 }
-.article-one .fas.fa-heart:hover, .article-two .fas.fa-heart:hover {
+.home .article-one .fas.fa-heart:hover, .home .article-two .fas.fa-heart:hover {
   animation: 1.2s heart-progress forwards ease-in-out;
   -webkit-background-clip: text;
 }
-.article-one .far.fa-heart, .article-two .far.fa-heart {
+.home .article-one .far.fa-heart, .home .article-two .far.fa-heart {
   font-size: 30px;
   color: red;
 }
-.article-one__card-tp, .article-two__card-tp {
+.home .article-one__card-tp, .home .article-two__card-tp {
   position: absolute;
   font-size: 0px;
-  width: 100%;
-  height: 100%;
   top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 1;
 }
-.article-one__heart-active, .article-two__heart-active {
+.home .article-one__heart-active, .home .article-two__heart-active {
   z-index: 2;
   position: absolute;
   bottom: 20px;
   right: 10px;
 }
-.article-one__heart-active:hover, .article-two__heart-active:hover {
+.home .article-one__heart-active:hover, .home .article-two__heart-active:hover {
   color: rosybrown;
 }
-
-/* Version tablette et desktop de l'index */
-/* Début du mediaqueries 426px */
 @media all and (min-width: 426px) {
-  /* Gestion de la section one  */
-  .bloc-info {
+  .home {
+    /* Gestion de la section one  */
+    /* Fin de la section one */
+    /* Gestion de la section two  */
+    /* Fin de la section two  */
+    /* Début de la section principal */
+  }
+  .home .bloc-info {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .bloc-info h2 {
+  .home .bloc-info h2 {
     width: initial !important;
     padding-left: 0px !important;
   }
-  .bloc-info h3 {
+  .home .bloc-info h3 {
     width: 90% !important;
   }
-
-  /* Fin de la section one */
-  /* Gestion de la section two  */
-  .bloc-fonctionnement {
+  .home .bloc-fonctionnement {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .bloc-fonctionnement h2 {
+  .home .bloc-fonctionnement h2 {
     padding-left: 0px !important;
   }
-  .bloc-fonctionnement ul {
+  .home .bloc-fonctionnement ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-
-  /* Fin de la section two  */
-  /* Début de la section principal */
-  #restaurant {
+  .home #restaurant {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
   }
-  #restaurant .article-one, #restaurant .article-two {
+  .home #restaurant .article-one, .home #restaurant .article-two {
     width: 80%;
   }
-  #restaurant .article-one:hover, #restaurant .article-two:hover {
+  .home #restaurant .article-one:hover, .home #restaurant .article-two:hover {
     transform: scale(1.05);
     transition: 300ms;
   }
-  #restaurant img {
+  .home #restaurant img {
     width: 100%;
   }
 }
-/* Fin de la section principal */
-/* Fin de la mediaqueries de 426px */
-/* Début de la mediaqueries de 768px */
 @media all and (min-width: 768px) {
-  .bloc-fonctionnement ol {
+  .home .bloc-fonctionnement ol {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
   }
-
-  /* Gestion du footer */
-  footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  footer ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
-  }
 }
-/* Fin du footer */
-/* Fin de la mediaqueries 768px */
-/* Début de la mediaqueries de 1200px */
 @media all and (min-width: 1200px) {
-  /* Début du main de la page */
-  main {
+  .home {
+    /* Début du main de la page */
+    /* Début de la section restaurant */
+    /* Fin du main */
+  }
+  .home main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .home #restaurant {
+    flex-direction: row;
     position: relative;
   }
-
-  /* Début de la section restaurant */
-  #restaurant {
-    flex-direction: row;
-  }
-  #restaurant h2 {
+  .home #restaurant h2 {
     position: absolute;
-    top: 0px;
-    left: 500px;
-    padding-left: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
   }
-  #restaurant .article-one, #restaurant .article-two {
-    width: 45%;
+  .home #restaurant .article-one, .home #restaurant .article-two {
+    width: 46%;
     margin-top: 100px;
     margin-left: 40px;
   }
-
-  /* Fin du main */
 }
-/* Fin de la mediaqueries de 1200px */
-/* Fin de la première page  */
+
 /* Début de la seconde page */
 .menus {
   /* Début du main */
@@ -794,8 +811,6 @@ main {
   /* Fin du Bouton commander */
   /* Fin du Main */
   /* MQ PAGES MENUS */
-  /* MQ de 768px */
-  /* Fin de la MQ de 768px */
   /* Début de la MQ de 1200px  */
   /* Fin de la MQ de 1200px  */
 }
@@ -858,14 +873,14 @@ main {
 }
 .menus article ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .menus article li {
   position: relative;
   padding: 15px;
   margin-bottom: 20px;
-  margin-left: 20px;
   margin-top: 10px;
   width: 80%;
   border-radius: 10px 10px;
@@ -911,34 +926,24 @@ main {
   filter: brightness(1.2);
   box-shadow: 0px 0px 8px #00000069;
 }
-@media all and (min-width: 768px) {
-  .menus {
-    /* Gestion du footer */
-    /* Fin du footer */
-  }
-  .menus footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .menus ul {
-    display: flex;
-    flex-direction: row !important;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-}
 @media all and (min-width: 1200px) {
   .menus {
     /* Gestion de la section principal */
     /* Fin de la section principal */
   }
-  .menus section {
+  .menus .main__bloc {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .menus .main__bloc div {
+    width: 1200px;
+  }
+  .menus .main__bloc article {
+    width: 1200px;
+  }
+  .menus .main__bloc article li {
+    margin-left: 20px;
   }
   .menus .li-article {
     width: 25% !important;

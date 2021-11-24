@@ -1,5 +1,8 @@
 /* Bloc-page all version */
-
+* 
+{
+        padding-inline-start: 0px;
+}
 /* Gestion du BODY en width 1200px ALL PAGE */
 body {
     @media all and (min-width:1200px)
@@ -24,7 +27,7 @@ body {
     width: auto;
 }
 @media all and (min-width:1200px) {
-    width: 1200px;
+    width: 100%;
 }
 }
 /* Fin du bloc page */
@@ -41,6 +44,12 @@ header{
           padding-top: 10px;
           padding-bottom: 5px;
           display: inline-block;
+
+          &:hover
+        {
+           transform: scale(1.15);
+           transition: 400ms ;
+        }
       }
 
     & .arrow-position 
@@ -88,7 +97,8 @@ footer
         font-family: 'Shrikhand';
         color: white;
         font-size: 1.3rem;  
-        padding: 20px;
+        padding-top: 20px;
+        padding-left: 20px; 
     }
 
   & li
@@ -119,8 +129,32 @@ footer
      }    
    }
    /*FIN du footer générique */
+ 
 }
+@media all and (min-width: 768px) {
+    /* Gestion du footer */
+     footer
+   {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
+    & h2 
+    {
+        padding-top: 0px;
+    }
+
+    & ul
+    {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+    }
+  }
+    
+}
 
 
 
