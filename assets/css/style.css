@@ -554,13 +554,13 @@ form .fas.fa-map-marker-alt {
   font-weight: bold;
 }
 .bloc-fonctionnement .fas.fa-mobile-alt, .bloc-fonctionnement .fas.fa-list-ul, .bloc-fonctionnement .fas.fa-store {
-  padding: 0px 35px;
+  padding: 0px 10px;
   padding-right: 20px;
   color: #939393;
   font-size: 20px;
 }
 .bloc-fonctionnement .fas.fa-mobile-alt {
-  padding-left: 40px;
+  padding-left: 10px;
 }
 .bloc-fonctionnement__number-one-sec-two {
   position: absolute;
@@ -574,8 +574,8 @@ form .fas.fa-map-marker-alt {
 /* Fin de la section 2 */
 /* Main == BACKGROUND COLOR AND MARGING */
 main {
-  margin-top: 40px;
-  height: 1220px;
+  margin-top: 10px;
+  padding-bottom: 40px;
   background: #f4f4f4;
 }
 
@@ -762,7 +762,6 @@ main {
 @media all and (min-width: 1200px) {
   /* Début du main de la page */
   main {
-    height: 800px !important;
     position: relative;
   }
 
