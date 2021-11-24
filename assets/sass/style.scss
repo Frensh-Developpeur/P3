@@ -36,7 +36,7 @@ form
 /* Gestion de la première section  */
 .bloc-info
 {
-    background: #f2f2f2;
+    background: $back-info_main;
     width: 100%;
     height: auto;
     display:flex;
@@ -65,17 +65,14 @@ form
            width: 80%;   
 
         }
-         & a 
-         {
-            text-align: center;     
-         & span
+             
+         & a
          {
             @include button;
             padding: 15px 15px;  
          }
     }
   }
-}
 /* Fin de la 1ère section */
 
 /* Début de la 2ème section */
@@ -147,7 +144,7 @@ main
 {
     margin-top: 10px;
     padding-bottom: 40px;
-    background: $back-grey;
+    background: $back-info_main;
 }
 
 /* Début section 3 */
