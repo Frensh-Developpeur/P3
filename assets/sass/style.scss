@@ -5,7 +5,6 @@
 /* Gestion de la page 1 */
 .home {
 
-
 /* Formulaire de recherche */
 form
 {
@@ -169,7 +168,8 @@ main
   }
 }
     /* Gestion de tout les articles de la page(index)  */
-    .article-one, .article-two  {
+    .article-one, .article-two  
+    {
      position: relative;
      border-radius: 10px / 10px;
      margin-top: 20px;
@@ -196,7 +196,6 @@ main
         padding: 5px 10px;
         background: $news-button-back;
         border-radius: 5px / 5px;
-        
     }
 
     /* Ajout de la mixin pour le h3 (valeur ajoutée dans les parenthèses (margin-top) */
@@ -213,14 +212,29 @@ main
     
     & p
     {
-    
         font-family: 'Roboto';
         margin-left: 10px;
         margin-top: 5px;
         font-size: 1rem;
     }
-      & .fas.fa-heart
-      {
+
+    & .far.fa-heart
+    {
+      font-size: 30px;
+      color: red; 
+        
+      /* !!!!!! Permet de garder le hover même si le scale de l'enfant est trop petit !!!!! */
+      &:hover > .fas.fa-heart {
+          
+        animation: 1.2s heart-progress forwards ease-in-out ;
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+    
+    }
+
+    & .fas.fa-heart
+    {
         position: absolute;
         font-size: 30px;
         z-index: 2;
@@ -229,20 +243,6 @@ main
         left: 0px;
         bottom: 0px;
         opacity: 0;
-        
-        &:hover {
-          
-          animation: 1.2s heart-progress forwards ease-in-out ;
-          -webkit-background-clip: text;
-        }
-      }
-
-      & .far.fa-heart
-    {
-        font-size: 30px;
-        color: red; 
-        
-    
     }
 
    &__card-tp
@@ -459,6 +459,7 @@ main
           
           animation: 1.2s heart-progress forwards ease-in-out ;
           -webkit-background-clip: text;
+          background-clip: text;
         }
       }
       & .far.fa-heart

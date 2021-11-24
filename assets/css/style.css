@@ -677,6 +677,16 @@ footer i:hover, footer a:hover, footer h2:hover {
   margin-top: 5px;
   font-size: 1rem;
 }
+.home .article-one .far.fa-heart, .home .article-two .far.fa-heart {
+  font-size: 30px;
+  color: red;
+  /* !!!!!! Permet de garder le hover même si le scale de l'enfant est trop petit !!!!! */
+}
+.home .article-one .far.fa-heart:hover > .fas.fa-heart, .home .article-two .far.fa-heart:hover > .fas.fa-heart {
+  animation: 1.2s heart-progress forwards ease-in-out;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 .home .article-one .fas.fa-heart, .home .article-two .fas.fa-heart {
   position: absolute;
   font-size: 30px;
@@ -686,14 +696,6 @@ footer i:hover, footer a:hover, footer h2:hover {
   left: 0px;
   bottom: 0px;
   opacity: 0;
-}
-.home .article-one .fas.fa-heart:hover, .home .article-two .fas.fa-heart:hover {
-  animation: 1.2s heart-progress forwards ease-in-out;
-  -webkit-background-clip: text;
-}
-.home .article-one .far.fa-heart, .home .article-two .far.fa-heart {
-  font-size: 30px;
-  color: red;
 }
 .home .article-one__card-tp, .home .article-two__card-tp {
   position: absolute;
@@ -854,6 +856,7 @@ footer i:hover, footer a:hover, footer h2:hover {
 .menus main div .fas.fa-heart:hover {
   animation: 1.2s heart-progress forwards ease-in-out;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 .menus main div .far.fa-heart {
   position: absolute;
