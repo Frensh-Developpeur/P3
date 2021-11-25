@@ -1,0 +1,144 @@
+
+/* Début de la seconde page */
+.menus {
+
+/* Début du main */
+main
+{
+  opacity: 1;
+
+  /* Gestion de la section principal */
+  & .main__bloc
+  {
+    background-color: $back-grey;
+    border-radius: 40px 40px 0 0;
+    margin-top: -40px;
+    position: relative;
+  }
+
+  & p
+  {
+  & img
+   {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+   } 
+  }
+  /* Gestion de la div de la section principal */
+   div 
+    {
+      position: relative;
+
+      & h2 
+      {
+        font-family: 'Shrikhand';
+        font-size: 1.5rem;
+        padding-top: 40px;
+        padding-left: 20px;
+      }
+       & .fas.fa-heart
+      {
+        position: absolute;
+        font-size: 30px;
+        z-index: 2;
+        right: 0px;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        opacity: 0;
+        
+        &:hover {
+          
+          animation: 1.2s heart-progress forwards ease-in-out ;
+          -webkit-background-clip: text;
+          background-clip: text;
+        }
+      }
+      & .far.fa-heart
+      {
+        position: absolute;
+        right: 30px;
+        top: 40px;
+        font-size: 30px;
+        color: red;
+    }
+    /* Fin de la div de la section principal */
+  }
+  /* Fin du main */
+}
+
+/* Gestion des articles de la pages  */
+article
+{
+  & h3 
+    {
+        font-family: 'Roboto';
+        font-size: 1rem;
+        margin-left: 20px;
+        margin-top: 20px;
+        padding-bottom: 5px;
+        border-bottom: $border-bottom ;
+        width: 40px;
+    }
+   & ul
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    & li
+    {
+        position: relative;
+        padding: 15px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        width: 80%;
+        border-radius: 10px 10px;
+        background: white;
+        box-shadow: $box-shadow-menus-li;
+        font-family: 'Roboto';
+        font-size: 0.8rem;
+        
+        &:hover
+        {
+           color: white;
+           cursor: pointer;
+           background: $back-li-menus-hover;
+        }
+    }
+    & h4 
+    {
+        font-family: 'Roboto';
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+    & span 
+    {
+        position: absolute;
+        right: 15px;
+        font-weight: bold;
+    }    
+}
+/* Fin de la gestion des articles */
+
+
+/* Gestion du Bouton commander */
+p 
+{
+    text-align: center;
+
+     & .button-valid
+       {
+         @include button;
+         padding: 15px 40px;
+
+       }
+}
+/* Fin du Bouton commander */
+
+/* Fin du Main */
+}

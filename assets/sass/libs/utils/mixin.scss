@@ -1,15 +1,12 @@
 /* Mixin utilisé pour les h3 des article (index) */
 @mixin h3__article($value)
-    {
-
-        font-family: 'Roboto';
-        font-weight: bold;
-        margin-left: 10px;
-        font-size: 1rem;
-        margin-top: $value;
-        
-    }
-
+{
+    font-family: 'Roboto';
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 1rem;
+    margin-top: $value;  
+}
 /* Mixin utilisé pour les boutons  */
 
 @mixin button {

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* IMPORT DE TOUTES LES FICHIERS SCSS DU PROJET */
 /* IMPORT DES DIFFÉRENTES POLICES */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap");
@@ -10,7 +9,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import '../../prefixed/style.css';
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -79,132 +77,36 @@ table {
 /* COLOR H2 LOADER */
 /* SPIN ONE */
 /* SPIN TWO */
-/* Bloc-page all version */
-* {
-  padding-inline-start: 0px;
+/* Création d'une extension pour la section 2  */
+.card-fonctionnement, .home .bloc-fonctionnement li {
+  padding: 20px 20px;
+  padding-left: 0px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  background-color: #f4f4f4;
+  box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
+  width: 80%;
+  border-radius: 15px/15px;
+  font-family: "Roboto";
+  font-weight: bold;
+  list-style-type: none;
+  font-size: 1rem;
 }
-
-/* Gestion du BODY en width 1200px ALL PAGE */
-@media all and (min-width: 1200px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-/* Fin du BODY en width 1200px ALL PAGE */
-/* Gestion du Bloc_page ALL PAGE AUTO > 320px, AUTO AND 1200  */
-.bloc_page {
-  width: auto;
-}
-@media all and (min-width: 320px) {
-  .bloc_page {
-    width: 320px;
-  }
-}
-@media all and (min-width: 321px) {
-  .bloc_page {
-    width: auto;
-  }
-}
-@media all and (min-width: 1200px) {
-  .bloc_page {
-    width: 100%;
-  }
-}
-
-/* Fin du bloc page */
-/*  Header générique pour toutes les pages du sites + ajout d'une flêche pour les pages "menus"  */
-header {
-  text-align: center;
-  position: relative;
-  height: auto;
-}
-header h1 {
-  padding-top: 10px;
-  padding-bottom: 5px;
-  display: inline-block;
-}
-header h1:hover {
-  transform: scale(1.15);
-  transition: 400ms;
-}
-header .arrow-position {
-  position: absolute;
-  top: 13px;
-  left: 20px;
-}
-header .fas.fa-arrow-left {
-  font-size: 30px;
-  color: black;
-}
-header .fas.fa-arrow-left:hover {
-  transform: scale(1.25);
-  transition: 200ms;
-}
-
-/* Fin du header générique  */
-/* Gestion des lien et images du sites complet */
-a {
-  text-decoration: none;
-}
-
-img {
-  width: 200px;
-}
-
-/* FIN Gestion des lien et images du sites complet */
-/* Footer générique */
-footer {
-  background-color: #353535;
-  height: 200px;
-  /*FIN du footer générique */
-}
-footer h2 {
-  font-family: "Shrikhand";
-  color: white;
-  font-size: 1.3rem;
-  padding-top: 20px;
-  padding-left: 20px;
-}
-footer li {
-  padding-left: 20px;
-  padding-bottom: 5px;
-}
-footer li .margin-one {
-  margin-left: 12px;
-}
-footer li .margin-two {
-  margin-left: 5px;
-}
-footer i, footer a, footer h2 {
-  color: white;
-  display: inline-block;
-}
-footer i:hover, footer a:hover, footer h2:hover {
-  color: greenyellow;
+.card-fonctionnement:hover, .home .bloc-fonctionnement li:hover {
+  background: #e4d5f6;
   cursor: pointer;
 }
-
-@media all and (min-width: 768px) {
-  /* Gestion du footer */
-  footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  footer h2 {
-    padding-top: 0px;
-  }
-  footer ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+@media all and (min-width: 425px) {
+  .card-fonctionnement, .home .bloc-fonctionnement li {
+    width: 330px;
   }
 }
+@media all and (min-width: 768px) {
+  .card-fonctionnement, .home .bloc-fonctionnement li {
+    margin-left: 40px;
+  }
+}
+
 /* LOADER  */
 .loader {
   /* Configuration de la page temporaire pour le loader */
@@ -361,36 +263,6 @@ footer i:hover, footer a:hover, footer h2:hover {
   }
 }
 
-/* Création d'une extension pour la section 2  */
-.card-fonctionnement, .home .bloc-fonctionnement li {
-  padding: 20px 20px;
-  padding-left: 0px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  background-color: #f4f4f4;
-  box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
-  width: 80%;
-  border-radius: 15px/15px;
-  font-family: "Roboto";
-  font-weight: bold;
-  list-style-type: none;
-  font-size: 1rem;
-}
-.card-fonctionnement:hover, .home .bloc-fonctionnement li:hover {
-  background: #e4d5f6;
-  cursor: pointer;
-}
-@media all and (min-width: 425px) {
-  .card-fonctionnement, .home .bloc-fonctionnement li {
-    width: 330px;
-  }
-}
-@media all and (min-width: 768px) {
-  .card-fonctionnement, .home .bloc-fonctionnement li {
-    margin-left: 40px;
-  }
-}
-
 /* Animation des menus de cartes  */
 .menus {
   /* Fin de l'animation des menus de cartes  */
@@ -484,8 +356,98 @@ footer i:hover, footer a:hover, footer h2:hover {
     transform-origin: bottom;
   }
 }
-/* IMPORT DES FICHIERS SASS  */
-/* Gestion de la page 1 */
+/* Bloc-page all version */
+* {
+  padding-inline-start: 0px;
+}
+
+/* Gestion du BODY en width 1200px ALL PAGE */
+@media all and (min-width: 1200px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Fin du BODY en width 1200px ALL PAGE */
+/* Gestion du Bloc_page ALL PAGE 100% */
+.bloc_page {
+  width: 100%;
+}
+
+/* Fin du bloc page */
+/* Gestion des lien et images du sites complet */
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 200px;
+}
+
+/* FIN Gestion des lien et images du sites complet */
+footer {
+  font-family: "Shrinkhand";
+  background-color: #353535;
+  height: 200px;
+}
+footer h2 {
+  font-family: "Shrikhand";
+  color: white;
+  font-size: 1.3rem;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+footer li {
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+footer li .margin-one {
+  margin-left: 12px;
+}
+footer li .margin-two {
+  margin-left: 5px;
+}
+footer i, footer a, footer h2 {
+  color: white;
+  display: inline-block;
+}
+footer i:hover, footer a:hover, footer h2:hover {
+  color: greenyellow;
+  cursor: pointer;
+}
+
+/*  Header générique pour toutes les pages du sites + ajout d'une flêche pour les pages "menus"  */
+header {
+  text-align: center;
+  position: relative;
+  height: auto;
+}
+header h1 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+header h1:hover {
+  transform: scale(1.15);
+  transition: 400ms;
+}
+header .arrow-position {
+  position: absolute;
+  top: 13px;
+  left: 20px;
+}
+header .fas.fa-arrow-left {
+  font-size: 30px;
+  color: black;
+}
+header .fas.fa-arrow-left:hover {
+  transform: scale(1.25);
+  transition: 200ms;
+}
+
+/* Fin du header générique  */
 .home {
   /* Formulaire de recherche */
   /* Fin du formulaire de recherche */
@@ -497,15 +459,6 @@ footer i:hover, footer a:hover, footer h2:hover {
   /* Début section 3 */
   /* Gestion du H2 de l'id RESTAURANT */
   /* Gestion de tout les articles de la page(index)  */
-  /* Version tablette et desktop de l'index */
-  /* Début du mediaqueries 426px */
-  /* Fin de la section principal */
-  /* Fin de la mediaqueries de 426px */
-  /* Début de la mediaqueries de 768px */
-  /* Fin de la mediaqueries 768px */
-  /* Début de la mediaqueries de 1200px */
-  /* Fin de la mediaqueries de 1200px */
-  /* Fin de la première page  */
 }
 .home form {
   height: 50px;
@@ -717,94 +670,6 @@ footer i:hover, footer a:hover, footer h2:hover {
 .home .article-one__heart-active:hover, .home .article-two__heart-active:hover {
   color: rosybrown;
 }
-@media all and (min-width: 426px) {
-  .home {
-    /* Gestion de la section one  */
-    /* Fin de la section one */
-    /* Gestion de la section two  */
-    /* Fin de la section two  */
-    /* Début de la section principal */
-  }
-  .home .bloc-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .home .bloc-info h2 {
-    width: initial !important;
-    padding-left: 0px !important;
-  }
-  .home .bloc-info h3 {
-    width: 90% !important;
-  }
-  .home .bloc-fonctionnement {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .home .bloc-fonctionnement h2 {
-    padding-left: 0px !important;
-  }
-  .home .bloc-fonctionnement ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .home #restaurant {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .home #restaurant .article-one, .home #restaurant .article-two {
-    width: 80%;
-  }
-  .home #restaurant .article-one:hover, .home #restaurant .article-two:hover {
-    transform: scale(1.05);
-    transition: 300ms;
-  }
-  .home #restaurant img {
-    width: 100%;
-  }
-}
-@media all and (min-width: 768px) {
-  .home .bloc-fonctionnement ol {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-  }
-}
-@media all and (min-width: 1200px) {
-  .home {
-    /* Début du main de la page */
-    /* Début de la section restaurant */
-    /* Fin du main */
-  }
-  .home main {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .home #restaurant {
-    flex-direction: row;
-    position: relative;
-  }
-  .home #restaurant h2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-  }
-  .home #restaurant .article-one, .home #restaurant .article-two {
-    width: 46%;
-    margin-top: 100px;
-    margin-left: 40px;
-  }
-}
 
 /* Début de la seconde page */
 .menus {
@@ -814,9 +679,6 @@ footer i:hover, footer a:hover, footer h2:hover {
   /* Gestion du Bouton commander */
   /* Fin du Bouton commander */
   /* Fin du Main */
-  /* MQ PAGES MENUS */
-  /* Début de la MQ de 1200px  */
-  /* Fin de la MQ de 1200px  */
 }
 .menus main {
   opacity: 1;
@@ -930,6 +792,143 @@ footer i:hover, footer a:hover, footer h2:hover {
   transition-duration: 800ms;
   filter: brightness(1.2);
   box-shadow: 0px 0px 20px #00000069;
+}
+
+@media all and (min-width: 768px) {
+  /* Gestion du footer */
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer h2 {
+    padding-top: 0px;
+  }
+  footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+@media all and (min-width: 1600px) {
+  .menus footer {
+    height: 450px;
+  }
+}
+
+@media all and (min-width: 2000px) {
+  .home footer {
+    height: 250px;
+  }
+}
+
+/* NONE CONTENT */
+/* Version tablette et desktop de l'index */
+.home {
+  /* Début du mediaqueries 426px */
+  /* Fin de la section principal */
+  /* Fin de la mediaqueries de 426px */
+  /* Début de la mediaqueries de 768px */
+  /* Fin de la mediaqueries 768px */
+  /* Début de la mediaqueries de 1200px */
+  /* Fin de la mediaqueries de 1200px */
+}
+@media all and (min-width: 426px) {
+  .home {
+    /* Gestion de la section one  */
+    /* Fin de la section one */
+    /* Gestion de la section two  */
+    /* Fin de la section two  */
+    /* Début de la section principal */
+  }
+  .home .bloc-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .bloc-info h2 {
+    width: initial !important;
+    padding-left: 0px !important;
+  }
+  .home .bloc-info h3 {
+    width: 90% !important;
+  }
+  .home .bloc-fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .bloc-fonctionnement h2 {
+    padding-left: 0px !important;
+  }
+  .home .bloc-fonctionnement ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .home #restaurant {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .home #restaurant .article-one, .home #restaurant .article-two {
+    width: 80%;
+  }
+  .home #restaurant .article-one:hover, .home #restaurant .article-two:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+  }
+  .home #restaurant img {
+    width: 100%;
+  }
+}
+@media all and (min-width: 768px) {
+  .home .bloc-fonctionnement ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media all and (min-width: 1200px) {
+  .home {
+    /* Début du main de la page */
+    /* Début de la section restaurant */
+    /* Fin du main */
+  }
+  .home main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .home #restaurant {
+    flex-direction: row !important;
+    position: relative;
+  }
+  .home #restaurant h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+  }
+  .home #restaurant .article-one, .home #restaurant .article-two {
+    width: 46%;
+    margin-top: 100px;
+    margin-left: 40px;
+  }
+}
+
+/* Fin de la première page  */
+/* MQ PAGES MENUS */
+.menus {
+  /* Début de la MQ de 1200px  */
+  /* Fin de la MQ de 1200px  */
 }
 @media all and (min-width: 1200px) {
   .menus {

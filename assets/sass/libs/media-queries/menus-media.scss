@@ -1,0 +1,37 @@
+/* MQ PAGES MENUS */
+.menus {
+/* Début de la MQ de 1200px  */
+ @media all and (min-width: 1200px) {
+
+   /* Gestion de la section principal */
+       .main__bloc
+       {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+          & div 
+          {
+            width: 1200px;
+          }
+
+          & article 
+          {
+            width: 1200px;
+
+            & li {
+              margin-left: 20px;
+            }
+          }
+       }
+   
+    .li-article
+     {
+         width: 25%!important;
+     }
+
+     /* Fin de la section principal */
+ }
+/* Fin de la MQ de 1200px  */
+}
+/* Fin de la page Menus */

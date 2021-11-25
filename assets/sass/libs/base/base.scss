@@ -1,0 +1,41 @@
+/* Bloc-page all version */
+* 
+{
+        padding-inline-start: 0px;
+}
+
+/* Gestion du BODY en width 1200px ALL PAGE */
+body {
+    @media all and (min-width:1200px)
+    {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+    }
+}
+/* Fin du BODY en width 1200px ALL PAGE */
+
+/* Gestion du Bloc_page ALL PAGE 100% */
+.bloc_page
+{  
+        width: 100%;
+}
+/* Fin du bloc page */
+
+/* Gestion des lien et images du sites complet */
+a
+{
+    text-decoration: none;
+}
+
+img
+{
+    width: 200px;
+}
+/* FIN Gestion des lien et images du sites complet */
+
+
+    
+
+
+

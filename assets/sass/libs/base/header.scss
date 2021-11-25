@@ -1,0 +1,39 @@
+/*  Header générique pour toutes les pages du sites + ajout d'une flêche pour les pages "menus"  */
+header{
+     text-align:center;
+     position: relative;
+     height: auto;
+
+    & h1
+      {
+          padding-top: 10px;
+          padding-bottom: 5px;
+          display: inline-block;
+
+          &:hover
+        {
+           transform: scale(1.15);
+           transition: 400ms ;
+        }
+      }
+
+    & .arrow-position 
+    {
+        position: absolute;
+        top: 13px;
+        left: 20px; 
+    }
+
+    & .fas.fa-arrow-left
+      {
+        font-size: 30px;
+        color: black;
+        
+        &:hover
+        {
+           transform: scale(1.25);
+           transition: 200ms;
+        }
+    }     
+}
+/* Fin du header générique  */
