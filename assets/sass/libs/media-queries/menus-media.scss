@@ -15,14 +15,11 @@
             width: 1200px;
           }
 
-          & article 
-          {
-            width: 1200px;
-
+         
             & li {
               margin-left: 20px;
             }
-          }
+          
        }
    
     .li-article
@@ -35,3 +32,101 @@
 /* Fin de la MQ de 1200px  */
 }
 /* Fin de la page Menus */
+// queries pour les boutons choix
+@media screen and (max-width: 1020px) {
+  .choice__btn li {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .choice__btn li {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .choice__btn li {
+    width: 90%;
+    font-size: 13px;
+    & i {
+      font-size: 15px;
+    }
+  }
+  .choice li::before {
+    right: 35px;
+    padding: 2px 6px;
+  }
+}
+// queries pour les cartes de restaurant
+@media screen and (max-width: 960px) {
+  .card {
+    width: 80%;
+    & img {
+      height: 200px;
+    }
+  }
+}
+@media screen and (max-width: 620px) {
+  .card {
+    width: 90%;
+    & img {
+      height: 200px;
+    }
+  }
+}
+
+// queries pour les boutons choix menus
+@media screen and (max-width: 1200px) {
+
+  .menu-card__Starter,
+  .menu-card__Dishes,
+  .menu-card__Dessert {
+    justify-content: center;
+    width: 90%;
+  }
+  .menu-card h3{
+  width: 5%;
+  }
+}
+@media screen and (min-width:1600px) {
+  .menu-card__Starter,
+  .menu-card__Dishes,
+  .menu-card__Dessert {
+    justify-content: center;
+    width: 32%;
+  }
+  
+}
+@media screen and (max-width: 992px) {
+  .menu-card h3{
+  width: 8%;
+  }
+}
+@media screen and( max-width:550px) {
+   .menu-card h3{
+  width: 14%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .restaurant-name h2{
+  font-size: 25px;
+  }
+  .menu-card {
+    justify-content: center;
+    & h3{
+    width: 16%;
+    }
+  }
+
+  .menu-card__Starter,
+  .menu-card__Dishes,
+  .menu-card__Dessert {
+    justify-content: center;
+    width: 90%;
+  }
+
+  .menu-card__Price {
+    font-size: 12px;
+    padding: 8px 5px;
+  }
+}

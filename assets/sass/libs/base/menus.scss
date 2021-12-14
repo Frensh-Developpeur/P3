@@ -1,6 +1,8 @@
 
+
 /* Début de la seconde page */
 .menus {
+  font-family: "Roboto";
 
 /* Début du main */
 main
@@ -61,69 +63,12 @@ main
         right: 30px;
         top: 40px;
         font-size: 30px;
-        color: red;
+        color: $heart;
     }
     /* Fin de la div de la section principal */
   }
   /* Fin du main */
 }
-
-/* Gestion des articles de la pages  */
-article
-{
-  & h3 
-    {
-        font-family: 'Roboto';
-        font-size: 1rem;
-        margin-left: 20px;
-        margin-top: 20px;
-        padding-bottom: 5px;
-        border-bottom: $border-bottom ;
-        width: 40px;
-    }
-   & ul
-    {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        
-    }
-    & li
-    {
-        position: relative;
-        padding: 15px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        width: 80%;
-        border-radius: 10px 10px;
-        background: white;
-        box-shadow: $box-shadow-menus-li;
-        font-family: 'Roboto';
-        font-size: 0.8rem;
-        
-        &:hover
-        {
-           color: white;
-           cursor: pointer;
-           background: $back-li-menus-hover;
-        }
-    }
-    & h4 
-    {
-        font-family: 'Roboto';
-        font-weight: bold;
-        margin-bottom: 10px;
-        font-size: 1.1rem;
-    }
-    & span 
-    {
-        position: absolute;
-        right: 15px;
-        font-weight: bold;
-    }    
-}
-/* Fin de la gestion des articles */
 
 
 /* Gestion du Bouton commander */
@@ -135,10 +80,147 @@ p
        {
          @include button;
          padding: 15px 40px;
+         border: 0px;
 
        }
 }
 /* Fin du Bouton commander */
+/* carte de menu */
+.menu-card {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  width: 100%;
 
-/* Fin du Main */
+    & h3 
+    {
+        font-family: 'Roboto';
+        
+        font-size: 1.2rem;
+        margin-left: 7px;
+        margin-top: 20px;
+        padding-bottom: 5px;
+        border-bottom: $border-bottom ;
+        width: 40px;
+        margin-bottom: 5px;
+    }
+
+  /* bloc menu entree */
+  &__Starter,
+  &__Dishes,
+  &__Dessert {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 10px;
+  }
+  &__Title span {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: $font-text;
+    font-size: 14px;
+    margin: 5px;
+  }
+  &__Title :nth-child(1) {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  &__Choice {
+    box-sizing: border-box;
+    display: flex;
+    width: auto;
+    box-shadow: $box-shadow;
+    margin-bottom: 25px;
+  }
+}
+.bloc-menu-Choice{
+  display: flex;
+}
+.menu-bloc__Starter {
+  width: 100%;
+}
+.menu-bloc__Dishes {
+  width: 100%;
+}
+.menu-bloc__Dessert {
+  width: 100%;
+}
+.menu-card__Choice {
+  justify-content: center;
+  align-items: center;
+  padding: 0 7px;
+  border-radius: 15px 15px 15px 15px;
+  cursor: pointer;
+}
+.menu-card__Title {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.menu-card__Title span {
+  font-family: $font-text;
+  width: auto;
+  font-size: 14px;
+}
+.menu-card__Price {
+  font-family: $font-text;
+  font-weight: 600;
+  position: relative;
+  align-self: flex-end;
+  margin-left: auto;
+  padding: 8px 20px;
+}
+input[type="radio"] {
+  display: none;
+}
+label .fas {
+  border-radius: 0px 15px 15px 0px;
+  right: -7px;
+  height: 78px;
+  color: transparent;
+}
+input[type="radio"]:checked + .fas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 10px;
+  border-radius: 0px 12px 12px 0px;
+  background-color: rgb(153, 226, 208);
+  transition-duration: 1s;
+  animation: check 0.8s ease-in reverse both;
+}
+.menu-card__Choice:checked .fas {
+  transition-duration: 1s;
+  animation: check 0.8s ease-in-out reverse both;
+}
+
+// animation des boutons
+.menu-card__Starter {
+  animation: Menu-Card 2s ease-in-out 1.2s normal both;
+}
+.menu-card__Dishes {
+  animation: Menu-Card 2s ease-in-out 2s normal both;
+}
+.menu-card__Dessert {
+  animation: Menu-Card 3s ease-in-out 3s normal both;
+}
+
+.btn-Order {
+  border: none;
+  color: white;
+}
 }

@@ -76,6 +76,8 @@ $back-load: linear-gradient(to top, #9256dc, #ff79d9);
 
  $ninety: black;
 
+ $heart : #9356DC;
+
 /* SPIN ONE */
 
 $top: 4px solid #0F9DE8;
@@ -94,3 +96,29 @@ $top_two: 4px solid #0f9ce8a2;
 $right_two: 4px solid #00f0dc;
 $bottom_two:4px solid #ff00dd;
 $left_two: 4px solid #6e6e6e;
+
+
+
+// variables
+
+// color
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+// color header
+$color-font-location:#eaeaea;
+$color-title: black;
+// color background
+$color-background:#f6f6f6;
+// color footer
+$color-black:#353535;
+$color-text:#ffff;
+// style for button
+$box-shadow:4px 4px 12px #bfbfbf;
+$color-hover:linear-gradient(  #fd8fde, #a777e2);
+$color-button:linear-gradient(to bottom right, $color-secondary, $color-primary);
+$size-cards:15px;
+$size-button:30px;
+//policefont title
+$font-text: "Roboto", sans-serif;
+$font-title: "Shrikhand", cursive;

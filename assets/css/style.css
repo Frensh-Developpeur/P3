@@ -356,6 +356,16 @@ table {
     transform-origin: bottom;
   }
 }
+/* animation for checks */
+@keyframes check {
+  0% {
+    color: white;
+    width: 150px;
+  }
+  100% {
+    width: 30px;
+  }
+}
 /* Bloc-page all version */
 * {
   padding-inline-start: 0px;
@@ -449,6 +459,7 @@ header .fas.fa-arrow-left:hover {
 
 /* Fin du header générique  */
 .home {
+  font-family: "Roboto";
   /* Formulaire de recherche */
   /* Fin du formulaire de recherche */
   /* Gestion de la première section  */
@@ -526,6 +537,9 @@ header .fas.fa-arrow-left:hover {
 }
 .home .bloc-fonctionnement ol {
   padding-left: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .home .bloc-fonctionnement li {
   position: relative;
@@ -583,6 +597,7 @@ header .fas.fa-arrow-left:hover {
   font-size: 1.3rem;
   font-family: "Roboto";
   padding-top: 40px;
+  margin-left: -220px;
 }
 .home .article-one, .home .article-two {
   position: relative;
@@ -634,7 +649,7 @@ header .fas.fa-arrow-left:hover {
 }
 .home .article-one .far.fa-heart, .home .article-two .far.fa-heart {
   font-size: 30px;
-  color: red;
+  color: #9356DC;
   /* !!!!!! Permet de garder le hover même si le scale de l'enfant est trop petit !!!!! */
 }
 .home .article-one .far.fa-heart:hover > .fas.fa-heart, .home .article-two .far.fa-heart:hover > .fas.fa-heart {
@@ -673,12 +688,11 @@ header .fas.fa-arrow-left:hover {
 
 /* Début de la seconde page */
 .menus {
+  font-family: "Roboto";
   /* Début du main */
-  /* Gestion des articles de la pages  */
-  /* Fin de la gestion des articles */
   /* Gestion du Bouton commander */
   /* Fin du Bouton commander */
-  /* Fin du Main */
+  /* carte de menu */
 }
 .menus main {
   opacity: 1;
@@ -727,50 +741,7 @@ header .fas.fa-arrow-left:hover {
   right: 30px;
   top: 40px;
   font-size: 30px;
-  color: red;
-}
-.menus article h3 {
-  font-family: "Roboto";
-  font-size: 1rem;
-  margin-left: 20px;
-  margin-top: 20px;
-  padding-bottom: 5px;
-  border-bottom: 3px solid #99E2D0;
-  width: 40px;
-}
-.menus article ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.menus article li {
-  position: relative;
-  padding: 15px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  width: 80%;
-  border-radius: 10px 10px;
-  background: white;
-  box-shadow: 2px 2px 9px #0000003b;
-  font-family: "Roboto";
-  font-size: 0.8rem;
-}
-.menus article li:hover {
-  color: white;
-  cursor: pointer;
-  background: #03a9f4;
-}
-.menus article h4 {
-  font-family: "Roboto";
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-}
-.menus article span {
-  position: absolute;
-  right: 15px;
-  font-weight: bold;
+  color: #9356DC;
 }
 .menus p {
   text-align: center;
@@ -786,12 +757,141 @@ header .fas.fa-arrow-left:hover {
   background: linear-gradient(to top, #9256dc, #ff79d9);
   box-shadow: 0px 0px 8px #00000069;
   padding: 15px 40px;
+  border: 0px;
 }
 .menus p .button-valid:hover {
   transform: scale(1.15);
   transition-duration: 800ms;
   filter: brightness(1.2);
   box-shadow: 0px 0px 20px #00000069;
+}
+.menus .menu-card {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  width: 100%;
+  /* bloc menu entree */
+}
+.menus .menu-card h3 {
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  margin-left: 7px;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  margin-bottom: 5px;
+}
+.menus .menu-card__Starter, .menus .menu-card__Dishes, .menus .menu-card__Dessert {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 10px;
+}
+.menus .menu-card__Title span {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin: 5px;
+}
+.menus .menu-card__Title :nth-child(1) {
+  font-size: 16px;
+  font-weight: 600;
+}
+.menus .menu-card__Choice {
+  box-sizing: border-box;
+  display: flex;
+  width: auto;
+  box-shadow: 4px 4px 12px #bfbfbf;
+  margin-bottom: 25px;
+}
+.menus .bloc-menu-Choice {
+  display: flex;
+}
+.menus .menu-bloc__Starter {
+  width: 100%;
+}
+.menus .menu-bloc__Dishes {
+  width: 100%;
+}
+.menus .menu-bloc__Dessert {
+  width: 100%;
+}
+.menus .menu-card__Choice {
+  justify-content: center;
+  align-items: center;
+  padding: 0 7px;
+  border-radius: 15px 15px 15px 15px;
+  cursor: pointer;
+}
+.menus .menu-card__Title {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.menus .menu-card__Title span {
+  font-family: "Roboto", sans-serif;
+  width: auto;
+  font-size: 14px;
+}
+.menus .menu-card__Price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  position: relative;
+  align-self: flex-end;
+  margin-left: auto;
+  padding: 8px 20px;
+}
+.menus input[type=radio] {
+  display: none;
+}
+.menus label .fas {
+  border-radius: 0px 15px 15px 0px;
+  right: -7px;
+  height: 78px;
+  color: transparent;
+}
+.menus input[type=radio]:checked + .fas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 10px;
+  border-radius: 0px 12px 12px 0px;
+  background-color: #99e2d0;
+  transition-duration: 1s;
+  animation: check 0.8s ease-in reverse both;
+}
+.menus .menu-card__Choice:checked .fas {
+  transition-duration: 1s;
+  animation: check 0.8s ease-in-out reverse both;
+}
+.menus .menu-card__Starter {
+  animation: Menu-Card 2s ease-in-out 1.2s normal both;
+}
+.menus .menu-card__Dishes {
+  animation: Menu-Card 2s ease-in-out 2s normal both;
+}
+.menus .menu-card__Dessert {
+  animation: Menu-Card 3s ease-in-out 3s normal both;
+}
+.menus .btn-Order {
+  border: none;
+  color: white;
 }
 
 @media all and (min-width: 768px) {
@@ -874,6 +974,9 @@ header .fas.fa-arrow-left:hover {
     flex-wrap: wrap;
     align-items: center;
   }
+  .home #restaurant h2 {
+    margin-left: 0px;
+  }
   .home #restaurant .article-one, .home #restaurant .article-two {
     width: 80%;
   }
@@ -890,6 +993,7 @@ header .fas.fa-arrow-left:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    flex-direction: row;
     justify-content: space-around;
   }
 }
@@ -943,10 +1047,7 @@ header .fas.fa-arrow-left:hover {
   .menus .main__bloc div {
     width: 1200px;
   }
-  .menus .main__bloc article {
-    width: 1200px;
-  }
-  .menus .main__bloc article li {
+  .menus .main__bloc li {
     margin-left: 20px;
   }
   .menus .li-article {
@@ -955,5 +1056,99 @@ header .fas.fa-arrow-left:hover {
 }
 
 /* Fin de la page Menus */
+@media screen and (max-width: 1020px) {
+  .choice__btn li {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .choice__btn li {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .choice__btn li {
+    width: 90%;
+    font-size: 13px;
+  }
+  .choice__btn li i {
+    font-size: 15px;
+  }
+
+  .choice li::before {
+    right: 35px;
+    padding: 2px 6px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .card {
+    width: 80%;
+  }
+  .card img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .card {
+    width: 90%;
+  }
+  .card img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .menu-card__Starter,
+.menu-card__Dishes,
+.menu-card__Dessert {
+    justify-content: center;
+    width: 90%;
+  }
+
+  .menu-card h3 {
+    width: 5%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .menu-card__Starter,
+.menu-card__Dishes,
+.menu-card__Dessert {
+    justify-content: center;
+    width: 32%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .menu-card h3 {
+    width: 8%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .menu-card h3 {
+    width: 14%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .restaurant-name h2 {
+    font-size: 25px;
+  }
+
+  .menu-card {
+    justify-content: center;
+  }
+  .menu-card h3 {
+    width: 16%;
+  }
+
+  .menu-card__Starter,
+.menu-card__Dishes,
+.menu-card__Dessert {
+    justify-content: center;
+    width: 90%;
+  }
+
+  .menu-card__Price {
+    font-size: 12px;
+    padding: 8px 5px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

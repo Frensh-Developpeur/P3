@@ -1,5 +1,5 @@
 .home {
-
+font-family: "Roboto";
 /* Formulaire de recherche */
 form
 {
@@ -77,6 +77,9 @@ form
    {
     
         padding-left: 0px; 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     
    }
    & li
@@ -108,6 +111,7 @@ form
            padding-left: 30px;
            font-size: 1.3rem;
            font-weight: bold;
+           
     }
     
    & .fas.fa-mobile-alt,.fas.fa-list-ul,.fas.fa-store
@@ -157,6 +161,7 @@ main
     font-size: 1.3rem;
     font-family: 'Roboto';
     padding-top: 40px;
+    margin-left: -220px;
   }
 }
     /* Gestion de tout les articles de la page(index)  */
@@ -213,7 +218,7 @@ main
     & .far.fa-heart
     {
       font-size: 30px;
-      color: red; 
+      color: $heart;
         
       /* !!!!!! Permet de garder le hover même si le scale de l'enfant est trop petit !!!!! */
       &:hover > .fas.fa-heart {
