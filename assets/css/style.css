@@ -410,6 +410,7 @@ footer h2 {
   padding-left: 20px;
 }
 footer li {
+  font-family: "Roboto";
   padding-left: 20px;
   padding-bottom: 5px;
 }
@@ -903,6 +904,9 @@ header .fas.fa-arrow-left:hover {
     justify-content: center;
     flex-wrap: wrap;
   }
+  footer .fa, footer .fas {
+    font-size: 1.1rem;
+  }
   footer h2 {
     padding-top: 0px;
   }
@@ -910,6 +914,10 @@ header .fas.fa-arrow-left:hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: flex-end;
+  }
+  footer li {
+    padding-bottom: 0px;
   }
 }
 /* NONE CONTENT */
