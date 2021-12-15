@@ -25,7 +25,7 @@ main {
     }
 }
 
-  .item-one
+  .menu-bloc__Starter_one , .menu-bloc__Dishes_one , .menu-bloc__Dessert_one
      {
          animation: 2s ease-in-out apparing-contenu-plat_one 0.1s ;
          @keyframes apparing-contenu-plat_one {
@@ -40,7 +40,7 @@ main {
              }
          }
      }
-     .item-two
+     .menu-bloc__Starter_two ,.menu-bloc__Dishes_two , .menu-bloc__Dessert_two
      {
          animation: 2s ease-in-out apparing-contenu-plat_two  0.2s;
          @keyframes apparing-contenu-plat_two {
@@ -55,7 +55,7 @@ main {
              }
            }
          }
-         .item-tree
+         .menu-bloc__Starter_tree , .menu-bloc__Dishes_tree , .menu-bloc__Dessert_tree
         {
          animation: 2s ease-in-out apparing-contenu-plat_tree 0.3s ;
          @keyframes apparing-contenu-plat_tree {

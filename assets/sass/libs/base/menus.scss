@@ -28,7 +28,7 @@ main
    } 
   }
   /* Gestion de la div de la section principal */
-   div 
+   .ban-text
     {
       position: relative;
 
@@ -145,13 +145,13 @@ p
 .bloc-menu-Choice{
   display: flex;
 }
-.menu-bloc__Starter {
+.menu-bloc__Starter_one , .menu-bloc__Starter_two , .menu-bloc__Starter_tree {
   width: 100%;
 }
-.menu-bloc__Dishes {
+.menu-bloc__Dishes_one , .menu-bloc__Dishes_two , .menu-bloc__Dishes_tree {
   width: 100%;
 }
-.menu-bloc__Dessert {
+.menu-bloc__Dessert_one , .menu-bloc__Dessert_two , .menu-bloc__Dessert_tree {
   width: 100%;
 }
 .menu-card__Choice {

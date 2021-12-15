@@ -3,24 +3,40 @@
 /* Début de la MQ de 1200px  */
  @media all and (min-width: 1200px) {
 
+
    /* Gestion de la section principal */
        .main__bloc
        {
             display: flex;
             flex-direction: column;
             align-items: center;
-           
-          & div 
-          {
-            width: 1200px;
-          }
-
-         
+   
+            .ban-text 
+     {
+       width: 1200px;
+     }
+       .menu-card__Starter
+    {
+     width: 30%!important;
+    }
+    .menu-card__Dishes
+    {
+      width: 30%;
+    }
+    .menu-card__Dessert
+    {
+      width: 30%;
+    }
             & li {
               margin-left: 20px;
             }
           
        }
+       .menu-card
+     {
+       flex-direction: row!important;
+       width: 1200px;
+     }
    
     .li-article
      {
@@ -75,19 +91,6 @@
   }
 }
 
-// queries pour les boutons choix menus
-@media screen and (max-width: 1200px) {
-
-  .menu-card__Starter,
-  .menu-card__Dishes,
-  .menu-card__Dessert {
-    justify-content: center;
-    width: 90%;
-  }
-  .menu-card h3{
-  width: 5%;
-  }
-}
 @media screen and (min-width:1600px) {
   .menu-card__Starter,
   .menu-card__Dishes,
@@ -129,4 +132,12 @@
     font-size: 12px;
     padding: 8px 5px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .menus 
+  {
+   
+  }
+  
 }
