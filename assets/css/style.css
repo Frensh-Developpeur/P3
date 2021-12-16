@@ -87,7 +87,6 @@ table {
   box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
   width: 80%;
   border-radius: 15px/15px;
-  font-family: "Roboto";
   font-weight: bold;
   list-style-type: none;
   font-size: 1rem;
@@ -366,6 +365,11 @@ table {
     width: 30px;
   }
 }
+html {
+  font-size: 16px;
+  font-family: "Roboto";
+}
+
 /* Bloc-page all version */
 * {
   padding-inline-start: 0px;
@@ -398,7 +402,6 @@ img {
 
 /* FIN Gestion des lien et images du sites complet */
 footer {
-  font-family: "Shrinkhand";
   background-color: #353535;
   height: 200px;
 }
@@ -410,15 +413,16 @@ footer h2 {
   padding-left: 20px;
 }
 footer li {
-  font-family: "Roboto";
   padding-left: 20px;
   padding-bottom: 5px;
 }
 footer li .margin-one {
   margin-left: 12px;
+  font-weight: bold;
 }
 footer li .margin-two {
   margin-left: 5px;
+  font-weight: bold;
 }
 footer i, footer a, footer h2 {
   color: white;
@@ -460,7 +464,6 @@ header .fas.fa-arrow-left:hover {
 
 /* Fin du header générique  */
 .home {
-  font-family: "Roboto";
   /* Formulaire de recherche */
   /* Fin du formulaire de recherche */
   /* Gestion de la première section  */
@@ -504,7 +507,6 @@ header .fas.fa-arrow-left:hover {
   margin-top: 20px;
 }
 .home .bloc-info div h2 {
-  font-family: "Roboto";
   margin-top: 30px;
   padding-bottom: 10px;
   padding-left: 55px;
@@ -513,14 +515,12 @@ header .fas.fa-arrow-left:hover {
   width: 70%;
 }
 .home .bloc-info div h3 {
-  font-family: "Roboto";
   font-size: 1.2rem;
   padding-left: 40px;
   width: 80%;
 }
 .home .bloc-info div a {
   display: inline-block;
-  font-family: "Roboto";
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -558,7 +558,6 @@ header .fas.fa-arrow-left:hover {
   background-color: #9356DC;
 }
 .home .bloc-fonctionnement h2 {
-  font-family: "Roboto";
   margin-top: 30px;
   margin-bottom: 15px;
   padding-bottom: 10px;
@@ -596,9 +595,9 @@ header .fas.fa-arrow-left:hover {
 .home #restaurant h2 {
   font-weight: bold;
   font-size: 1.3rem;
-  font-family: "Roboto";
   padding-top: 40px;
-  margin-left: -220px;
+  position: relative;
+  left: -70px;
 }
 .home .article-one, .home .article-two {
   position: relative;
@@ -626,7 +625,9 @@ header .fas.fa-arrow-left:hover {
   color: #278870;
   padding: 5px 10px;
   background: #99E2D0;
-  border-radius: 5px/5px;
+  border-radius: 2px/2px;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 .home .article-one__text-h3-one, .home .article-two__text-h3-one {
   font-family: "Roboto";
@@ -643,7 +644,6 @@ header .fas.fa-arrow-left:hover {
   margin-top: 15px;
 }
 .home .article-one p, .home .article-two p {
-  font-family: "Roboto";
   margin-left: 10px;
   margin-top: 5px;
   font-size: 1rem;
@@ -689,7 +689,6 @@ header .fas.fa-arrow-left:hover {
 
 /* Début de la seconde page */
 .menus {
-  font-family: "Roboto";
   /* Début du main */
   /* Gestion du Bouton commander */
   /* Fin du Bouton commander */
@@ -749,7 +748,6 @@ header .fas.fa-arrow-left:hover {
 }
 .menus p .button-valid {
   display: inline-block;
-  font-family: "Roboto";
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -759,6 +757,7 @@ header .fas.fa-arrow-left:hover {
   box-shadow: 0px 0px 8px #00000069;
   padding: 15px 40px;
   border: 0px;
+  cursor: pointer;
 }
 .menus p .button-valid:hover {
   transform: scale(1.15);
@@ -778,12 +777,12 @@ header .fas.fa-arrow-left:hover {
   /* bloc menu entree */
 }
 .menus .menu-card h3 {
-  font-family: "Roboto";
   font-size: 1.2rem;
   margin-left: 7px;
   margin-top: 20px;
   padding-bottom: 5px;
   border-bottom: 3px solid #99E2D0;
+  text-transform: uppercase;
   width: 40px;
   margin-bottom: 5px;
 }
@@ -801,12 +800,11 @@ header .fas.fa-arrow-left:hover {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
   margin: 5px;
 }
 .menus .menu-card__Title :nth-child(1) {
-  font-size: 16px;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 .menus .menu-card__Choice {
@@ -845,12 +843,10 @@ header .fas.fa-arrow-left:hover {
   width: 100%;
 }
 .menus .menu-card__Title span {
-  font-family: "Roboto", sans-serif;
   width: auto;
-  font-size: 14px;
+  font-size: 1rem;
 }
 .menus .menu-card__Price {
-  font-family: "Roboto", sans-serif;
   font-weight: 600;
   position: relative;
   align-self: flex-end;
@@ -972,6 +968,7 @@ header .fas.fa-arrow-left:hover {
   }
   .home #restaurant h2 {
     margin-left: 0px;
+    left: 0px;
   }
   .home #restaurant .article-one, .home #restaurant .article-two {
     width: 80%;

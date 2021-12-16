@@ -1,5 +1,6 @@
+
+
 .home {
-font-family: "Roboto";
 /* Formulaire de recherche */
 form
 {
@@ -44,7 +45,6 @@ form
 
         & h2
         {
-           font-family:'Roboto';
            margin-top: 30px;
            padding-bottom: 10px;
            padding-left: 55px;
@@ -54,7 +54,6 @@ form
         }
          & h3
         {
-           font-family: 'Roboto';
            font-size: 1.2rem;
            padding-left: 40px;
            width: 80%;   
@@ -104,7 +103,6 @@ form
 
     & h2
     { 
-           font-family:'Roboto';
            margin-top: 30px;
            margin-bottom: 15px;
            padding-bottom: 10px;
@@ -159,9 +157,9 @@ main
   {
     font-weight: bold;
     font-size: 1.3rem;
-    font-family: 'Roboto';
     padding-top: 40px;
-    margin-left: -220px;
+    position: relative;
+    left: -70px;
   }
 }
     /* Gestion de tout les articles de la page(index)  */
@@ -192,7 +190,9 @@ main
         color: $news-button-color;
         padding: 5px 10px;
         background: $news-button-back;
-        border-radius: 5px / 5px;
+        border-radius: 2px / 2px;
+        font-weight: bold;
+        font-size: 0.8rem;
     }
 
     /* Ajout de la mixin pour le h3 (valeur ajoutée dans les parenthèses (margin-top) */
@@ -209,7 +209,6 @@ main
     
     & p
     {
-        font-family: 'Roboto';
         margin-left: 10px;
         margin-top: 5px;
         font-size: 1rem;

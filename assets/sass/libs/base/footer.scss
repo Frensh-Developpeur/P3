@@ -1,6 +1,5 @@
 footer
 {
-    font-family: 'Shrinkhand';
     background-color: #353535;
     height: 200px;
       
@@ -15,18 +14,19 @@ footer
 
   & li
     {
-     font-family: 'Roboto';
      padding-left: 20px;
      padding-bottom: 5px;
 
      & .margin-one
      {
       margin-left: 12px;
+      font-weight: bold;
      }
 
      & .margin-two
      {
          margin-left: 5px;
+         font-weight: bold;
      }
     }
 
