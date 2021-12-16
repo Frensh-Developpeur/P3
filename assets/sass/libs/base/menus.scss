@@ -203,6 +203,10 @@ input[type="radio"]:checked + .fas {
   transition-duration: 1s;
   animation: check 0.8s ease-in-out reverse both;
 }
+.fa-check-circle:before
+{
+      font-size: 1.4rem;
+}
 
 // animation des boutons
 .menu-card__Starter {

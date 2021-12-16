@@ -877,6 +877,9 @@ header .fas.fa-arrow-left:hover {
   transition-duration: 1s;
   animation: check 0.8s ease-in-out reverse both;
 }
+.menus .fa-check-circle:before {
+  font-size: 1.4rem;
+}
 .menus .menu-card__Starter {
   animation: Menu-Card 2s ease-in-out 1.2s normal both;
 }
