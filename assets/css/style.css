@@ -26,7 +26,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -287,7 +286,7 @@ table {
   }
 }
 .menus .menu-bloc__Starter_one, .menus .menu-bloc__Dishes_one, .menus .menu-bloc__Dessert_one {
-  animation: 2s ease-in-out apparing-contenu-plat_one 0.1s;
+  animation: 2.5s ease-in-out apparing-contenu-plat_one;
 }
 @keyframes apparing-contenu-plat_one {
   1% {
@@ -301,7 +300,7 @@ table {
   }
 }
 .menus .menu-bloc__Starter_two, .menus .menu-bloc__Dishes_two, .menus .menu-bloc__Dessert_two {
-  animation: 2s ease-in-out apparing-contenu-plat_two 0.2s;
+  animation: 3s ease-in-out apparing-contenu-plat_two;
 }
 @keyframes apparing-contenu-plat_two {
   1% {
@@ -315,7 +314,7 @@ table {
   }
 }
 .menus .menu-bloc__Starter_tree, .menus .menu-bloc__Dishes_tree, .menus .menu-bloc__Dessert_tree {
-  animation: 2s ease-in-out apparing-contenu-plat_tree 0.3s;
+  animation: 3.5s ease-in-out apparing-contenu-plat_tree;
 }
 @keyframes apparing-contenu-plat_tree {
   1% {
@@ -329,7 +328,7 @@ table {
   }
 }
 .menus .menu-bloc__Starter_four {
-  animation: 2s ease-in-out apparing-contenu-plat_tree 0.4s;
+  animation: 4s ease-in-out apparing-contenu-plat_tree;
 }
 @keyframes apparing-contenu-plat_tree {
   1% {
@@ -419,16 +418,18 @@ footer li {
 footer li .margin-one {
   margin-left: 12px;
   font-weight: bold;
+  font-family: "Roboto";
 }
 footer li .margin-two {
   margin-left: 5px;
   font-weight: bold;
+  font-family: "Roboto";
 }
-footer i, footer a, footer h2 {
+footer a, footer h2 {
   color: white;
   display: inline-block;
 }
-footer i:hover, footer a:hover, footer h2:hover {
+footer a:hover, footer h2:hover {
   color: greenyellow;
   cursor: pointer;
 }
@@ -607,6 +608,7 @@ header .fas.fa-arrow-left:hover {
   border: 1px solid #f4f4f4;
   background: white;
   height: 250px;
+  box-shadow: 0px 0px 20px 0px #00000063;
   /* Ajout de la mixin pour le h3 (valeur ajoutée dans les parenthèses (margin-top) */
   /* Fin de la mixin */
 }
@@ -777,10 +779,12 @@ header .fas.fa-arrow-left:hover {
   /* bloc menu entree */
 }
 .menus .menu-card h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-left: 7px;
   margin-top: 20px;
   padding-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: initial;
   border-bottom: 3px solid #99E2D0;
   text-transform: uppercase;
   width: 40px;
@@ -793,6 +797,7 @@ header .fas.fa-arrow-left:hover {
   flex-direction: column;
   flex-wrap: wrap;
   width: 90%;
+  margin-left: 20px !important;
   margin: 10px;
 }
 .menus .menu-card__Title span {
@@ -1020,7 +1025,7 @@ header .fas.fa-arrow-left:hover {
   .home #restaurant .article-one, .home #restaurant .article-two {
     width: 46%;
     margin-top: 100px;
-    margin-left: 40px;
+    margin-left: 30px;
   }
 }
 

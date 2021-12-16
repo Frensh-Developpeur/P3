@@ -98,10 +98,12 @@ p
 
     h3 
     {        
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin-left: 7px;
         margin-top: 20px;
         padding-bottom: 5px;
+        font-family: $font-text;
+        font-weight:initial;
         border-bottom: $border-bottom ;
         text-transform: uppercase;
         width: 40px;
@@ -118,6 +120,7 @@ p
     flex-direction: column;
     flex-wrap: wrap;
     width: 90%;
+    margin-left: 20px!important;
     margin: 10px;
   }
   &__Title span {

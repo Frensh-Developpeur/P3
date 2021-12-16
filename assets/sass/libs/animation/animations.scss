@@ -27,7 +27,7 @@ main {
 
   .menu-bloc__Starter_one , .menu-bloc__Dishes_one , .menu-bloc__Dessert_one
      {
-         animation: 2s ease-in-out apparing-contenu-plat_one 0.1s ;
+         animation: 2.5s ease-in-out apparing-contenu-plat_one;
          @keyframes apparing-contenu-plat_one {
              1% {
                 opacity: 0;
@@ -42,7 +42,7 @@ main {
      }
      .menu-bloc__Starter_two ,.menu-bloc__Dishes_two , .menu-bloc__Dessert_two
      {
-         animation: 2s ease-in-out apparing-contenu-plat_two  0.2s;
+         animation: 3s ease-in-out apparing-contenu-plat_two;
          @keyframes apparing-contenu-plat_two {
              1% {
                 opacity: 0;
@@ -57,7 +57,7 @@ main {
          }
          .menu-bloc__Starter_tree , .menu-bloc__Dishes_tree , .menu-bloc__Dessert_tree
         {
-         animation: 2s ease-in-out apparing-contenu-plat_tree 0.3s ;
+         animation: 3.5s ease-in-out apparing-contenu-plat_tree ;
          @keyframes apparing-contenu-plat_tree {
              1% {
                 opacity: 0;
@@ -72,7 +72,7 @@ main {
     }
      .menu-bloc__Starter_four 
         {
-         animation: 2s ease-in-out apparing-contenu-plat_tree 0.4s ;
+         animation: 4s ease-in-out apparing-contenu-plat_tree ;
          @keyframes apparing-contenu-plat_tree {
              1% {
                 opacity: 0;
@@ -118,4 +118,3 @@ main {
   width: 30px;
   }
 }
-
