@@ -38,12 +38,12 @@ form
     display:flex;
     justify-content: center;
 
-    & div
+     div
      {
         text-align: center;
         margin-top: 20px;
 
-        & h2
+        h2
         {
            margin-top: 30px;
            padding-bottom: 10px;
@@ -52,19 +52,20 @@ form
            font-weight: bold;
            width: 70%;
         }
-         & h3
+
+        h3
         {
            font-size: 1.2rem;
            padding-left: 40px;
            width: 80%;   
 
+        }   
+
+        a
+        {
+          @include button;
+          padding: 15px 15px;  
         }
-             
-         & a
-         {
-            @include button;
-            padding: 15px 15px;  
-         }
     }
   }
 /* Fin de la 1ère section */
@@ -72,7 +73,7 @@ form
 /* Début de la 2ème section */
 .bloc-fonctionnement
   {
-   &  ol
+   ol
    {
     
         padding-left: 0px; 
@@ -81,7 +82,8 @@ form
         flex-direction: column;
     
    }
-   & li
+
+   li
    {
        position: relative;
        @extend .card-fonctionnement;
@@ -101,7 +103,7 @@ form
       }
    }
 
-    & h2
+    h2
     { 
            margin-top: 30px;
            margin-bottom: 15px;
@@ -153,7 +155,7 @@ main
  flex-direction: column;
  align-items: center;
 
-    & h2
+  h2
   {
     font-weight: bold;
     font-size: 1.3rem;
@@ -173,7 +175,7 @@ main
      background: white;
      height: 250px;
 
-    & img
+    img
     {
         width: 100%;
         border-radius: 10px / 10px;
@@ -182,7 +184,7 @@ main
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
     }
-    & span
+    span
     {
         position: absolute;
         top: 10px;
@@ -207,7 +209,7 @@ main
     }
     /* Fin de la mixin */
     
-    & p
+    p
     {
         margin-left: 10px;
         margin-top: 5px;

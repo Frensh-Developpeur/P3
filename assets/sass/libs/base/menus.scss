@@ -17,9 +17,9 @@ main
     position: relative;
   }
 
-  & p
+  p
   {
-  & img
+   img
    {
     width: 100%;
     height: 250px;
@@ -31,7 +31,7 @@ main
     {
       position: relative;
 
-      & h2 
+      h2 
       {
         font-family: 'Shrikhand';
         font-size: 1.5rem;
@@ -96,7 +96,7 @@ p
   padding-bottom: 50px;
   width: 100%;
 
-    & h3 
+    h3 
     {        
         font-size: 1.2rem;
         margin-left: 7px;

@@ -3,7 +3,7 @@ footer
     background-color: #353535;
     height: 200px;
       
-   & h2
+    h2
     { 
         font-family: 'Shrikhand';
         color: white;
@@ -12,18 +12,18 @@ footer
         padding-left: 20px; 
     }
 
-  & li
+    li
     {
      padding-left: 20px;
      padding-bottom: 5px;
 
-     & .margin-one
+     .margin-one
      {
       margin-left: 12px;
       font-weight: bold;
      }
 
-     & .margin-two
+     .margin-two
      {
          margin-left: 5px;
          font-weight: bold;
