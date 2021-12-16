@@ -2,29 +2,27 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="https://kit.fontawesome.com/cd1442c33f.js" crossorigin="anonymous"></script>
-    <title>OhMyFood -- Réservation de restaurant en ligne</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>La palette du goût</title>
 </head>
 
 <body class="menus">
-
     <!-- Bloc-page mobile first -->
     <div class="bloc_page">
 
         <!-- HEADER __ H1 + ICONE -->
         <header>
 
-
-
             <h1>
                 <a href="../index.html"> <img src="../assets/images/logo/ohmyfood.png" alt="Logo du site"> </a>
             </h1>
-
-
 
             <a class="arrow-position" href="../index.html"><i class="fas fa-arrow-left"></i></a>
         </header>
@@ -35,146 +33,155 @@
 
             <!-- Paragraphe pour englober l'img -->
             <p>
-                <img src="../assets/images/restaurants/a_la_francaise.jpg" alt="Image d'un plat à la francaise">
+                <img src="../assets/images/restaurants/a_la_francaise.jpg" alt="Image d'un plat de la francaise">
             </p>
-            <!-- Paragraphe pour englober l'img FIN -->
 
-            <!-- SECTION PRINCIPAL -->
+            <!-- DEBUT SECTION PRINCIPAL -->
             <section class="main__bloc">
-                <form action="404ERROR.php">
+                <!-- Div contenant un H2 et un Icone COEUR  -->
+                <div class="ban-text">
+                    <h2>À la française</h2>
+                    <a href="#div">
+                        <i class="far fa-heart">
+                            <i class="fas fa-heart"></i>
+                        </i>
+                    </a>
+                </div>
+                <!-- Div contenant un H2 et un Icone COEUR FIN -->
 
-                    <!-- Div contenant un H2 et un Icone COEUR  -->
-                    <div>
-                        <h2>À la française</h2>
-                        <a href="#div">
-                            <i class="far fa-heart">
-                                <i class="fas fa-heart"></i>
-                            </i>
-                        </a>
-                    </div>
-                    <!-- Div contenant un H2 et un Icone COEUR FIN -->
-
-                    <!-- 1 ERE ARTICLE -->
-                    <article>
-
-                        <!-- H3 + UL ( li ( h4 + text and code ascii)) -->
-                        <h3>ENTRÉES</h3>
-                        <ul>
-                            <li class="li-article item-one">
-                                <div>
-                                    <h4>Tartare de poulpe acidulé</h4>
-                                    Aux zests d'orange
-                                </div>
-                                <span>25&euro;</span>
-                            </li>
-                            <li class="li-article item-two">
-                                <div>
-                                    <h4>Velouté de légumes d'antan</h4>
-                                    Carotte, panais, topinambour
-                                </div>
-                                <span>35&euro;</span>
-                            </li>
-                            <li class="li-article item-tree">
-
-                                <label class="check-plat">
-                                    <div class="plat-text">
-                                        <strong>Soupe à l'oignon</strong>
-                                        Revisitée
-                                    </div>
-                                    <span>20&euro;</span>
-
-                                    <div class="check-anim">
-                                        <input id="plat" type="radio">
-                                        <i class="fas fa-check checked"></i>
-                                    </div>
+                <!-- partie une bloc Entrées -->
+                <section class="bloc-menu-Choice">
+                    <form class="menu-card" action="by-menu.php" method="POST">
+                        <div class="menu-card__Starter">
+                            <h3>entrées</h3>
+                            <div class="menu-bloc__Starter_one">
+                                <label for="Starter-One" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Tartare de poulpe acidulé</span>
+                                        <span>Aux zestes d'orange</span>
+                                    </span>
+                                    <span class="menu-card__Price">25€</span>
+                                    <input type="radio" name="Starter" id="Starter-One" class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
                                 </label>
-                            </li>
+                            </div>
+                            <div class="menu-bloc__Starter_two">
+                                <label for="Starter-Two" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Velouté de légumes d'antan</span>
+                                        <span>Carotte, panais, topinambour</span>
+                                    </span>
+                                    <span class="menu-card__Price">35€</span>
+                                    <input type="radio" name="Starter" id="Starter-Two" class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                            <div class="menu-bloc__Starter_tree">
+                                <label for="Starter-Three" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Soupe à l'oignon</span>
+                                        <span>Revisitée</span>
+                                    </span>
+                                    <span class="menu-card__Price">20€</span>
+                                    <input type="radio" name="Starter" id="Starter-Three" class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- fin partie une entrée -->
 
-                        </ul>
-                        <!-- H3 + UL ( li ( h4 + text and code ascii)) FIN -->
+                        <!-- debut partie Plats -->
+                        <div class="menu-card__Dishes">
+                            <h3>plats</h3>
+                            <div class="menu-bloc__Dishes_one">
+                                <label for="Dishes-One" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Coquilles Saint-Jacques</span>
+                                        <span>Accompagnées d'une purée de panais</span>
+                                    </span>
+                                    <span class="menu-card__Price">40€</span>
+                                    <input type="radio" name="Dishes" id="Dishes-One" class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                            <div class="menu-bloc__Dishes_two">
+                                <label for="Dishes-Two" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Magret de canard</span>
+                                        <span>Et parmentier de pommes de terre</span>
+                                    </span>
+                                    <span class="menu-card__Price">35€</span>
+                                    <input type="radio" name="Dishes" id="Dishes-Two" class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                            <div class="menu-bloc__Dishes_tree">
+                                <label for="Dishes-Three" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Pigeonneau d’Ille-et-Vilaine</span>
+                                        <span>Sur son lit de gnocchis aux légumes</span>
+                                    </span>
+                                    <span class="menu-card__Price">44€</span>
+                                    <input type="radio" name="Dishes" id="Dishes-Three" class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- fin partie Plats -->
 
-                    </article>
-                    <!-- 1 ERE ARTICLE FIN -->
-
-                    <!-- 2 EME ARTICLE  -->
-                    <article>
-
-                        <!-- H3 + UL ( li ( h4 + text and code ascii)) -->
-                        <h3>PLATS</h3>
-                        <ul>
-                            <li class="li-article item-one">
-                                <div>
-                                    <h4>Coquilles Saint-Jacques</h4>
-                                    Accompagnées d'une purée de panais
-                                </div>
-                                <span>40&euro;</span>
-                            </li>
-                            <li class="li-article item-two">
-                                <div>
-                                    <h4>Magret de canard</h4>
-                                    Et parmentier de pommes de terre
-                                </div>
-                                <span>35&euro;</span>
-                            </li>
-                            <li class="li-article item-tree">
-                                <div>
-                                    <h4>Pigeonneau d’Ille-et-Vilaine</h4>
-                                    Sur son lit de gnocchis aux légumes
-                                </div>
-                                <span>44&euro;</span>
-                            </li>
-                        </ul>
-                        <!-- H3 + UL ( li ( h4 + text and code ascii)) FIN -->
-
-                    </article>
-                    <!-- 2 EME ARTICLE FIN -->
-
-                    <!-- 3 EME ARTICLE -->
-                    <article>
-
-                        <!-- H3 + UL ( li ( h4 + text and code ascii)) -->
-                        <h3>DESSERTS</h3>
-                        <ul>
-
-                            <li class="li-article item-one">
-                                <div>
-                                    <h4>Pétales de violettes glacés</h4>
-                                    Et purée de noisettes
-                                </div>
-                                <span>18&euro;</span>
-                            </li>
-                            <li class="li-article item-two">
-                                <div>
-                                    <h4>Fondant au chocolat</h4>
-                                    Revisité
-                                </div>
-                                <span>22&euro;</span>
-                            </li>
-                            <li class="li-article item-tree">
-                                <div>
-                                    <h4>Millefeuille croustillant</h4>
-                                    Myrtilles et pâte d’amande
-                                </div>
-                                <span>23&euro;</span>
-                            </li>
-                        </ul>
-                        <!-- H3 + UL ( li ( h4 + text and code ascii)) FIN -->
-
-                    </article>
-                    <!-- 3 EME ARTICLE FIN -->
-
-                    <!-- Bouton commander ( Renvoie page principal) -->
-                    <p>
-                        <button class="button-valid" href="#">Commander</a>
-                    </p>
-                    <!-- Fin du bouton -->
-                </form>
+                        <!-- debut partie Dessert -->
+                        <div class="menu-card__Dessert">
+                            <h3>desserts</h3>
+                            <div class="menu-bloc__Dessert_one">
+                                <label for="Dessert-One" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Pétales de violettes glacés</span>
+                                        <span>Et purée de noisettes</span>
+                                    </span>
+                                    <span class="menu-card__Price">18€</span>
+                                    <input type="radio" name="choice-Three" id="Dessert-One" class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                            <div class="menu-bloc__Dessert_two">
+                                <label for="Dessert__Two" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Fondant au chocolat</span>
+                                        <span>Revisité</span>
+                                    </span>
+                                    <span class="menu-card__Price">22€</span>
+                                    <input type="radio" name="choice-Three" id="Dessert__Two" class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                            <div class="menu-bloc__Dessert_tree">
+                                <label for="Dessert__Three" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Millefeuille croustillant</span>
+                                        <span>Myrtilles et pâte d’amande</span>
+                                    </span>
+                                    <span class="menu-card__Price">23€</span>
+                                    <input type="radio" name="choice-Three" id="Dessert__Three"
+                                        class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- fin de la partie dessert -->
+                        <!-- Bouton commander ( Renvoie page principal) -->
+                        <p>
+                            <input class="button-valid" type="submit" name="text-submit" id="text-submit"
+                                value="Commandez">
+                        </p>
+                        <!-- Fin du bouton -->
+                    </form>
+                </section>
+                <!-- fin formulaire -->
+                <!-- fin du bloc menu-card -->
             </section>
-            <!-- FIN SECTION PRINCIPAL -->
-
+            <!-- fin de section des menus -->
         </main>
-        <!-- FIN CONTENU PRINCIPAL MAIN -->
-
+        <!-- fin de section principal -->
         <!-- FOOTER DEBUT -->
         <footer>
 
@@ -183,15 +190,15 @@
 
                 <li>
                     <a href="#">
-                        <i class="fas fa-utensils"><strong class="margin-one" class="margin-one">Proposer un
-                                restaurant</strong></i>
+                        <i class="fas fa-utensils"></i>
+                        <strong class="margin-one">Proposer un restaurant</strong>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <i class="fas fa-hands-helping"><strong class="margin-two" class="margin-two">Devenir
-                                partenaire</strong></i>
+                        <i class="fas fa-hands-helping"></i>
+                        <strong class="margin-two">Devenir partenaire</strong>
                     </a>
                 </li>
 
@@ -207,9 +214,7 @@
 
         </footer>
         <!-- FIN DU FOOTER -->
-
     </div>
-    <!-- Fin du bloc-page mobile -->
 </body>
 
 </html>

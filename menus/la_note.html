@@ -2,12 +2,15 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="https://kit.fontawesome.com/cd1442c33f.js" crossorigin="anonymous"></script>
-    <title>OhMyFood -- Réservation de restaurant en ligne</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>La palette du goût</title>
 </head>
 
 <body class="menus">
@@ -17,12 +20,9 @@
         <!-- HEADER __ H1 + ICONE -->
         <header>
 
-
             <h1>
                 <a href="../index.html"> <img src="../assets/images/logo/ohmyfood.png" alt="Logo du site"> </a>
             </h1>
-
-
 
             <a class="arrow-position" href="../index.html"><i class="fas fa-arrow-left"></i></a>
         </header>
@@ -33,18 +33,15 @@
 
             <!-- Paragraphe pour englober l'img -->
             <p>
-                <img src="../assets/images/restaurants/la_note_enchanter.jpg"
-                    alt="Image d'un plat de la note enchantée">
+                <img src="../assets/images/restaurants/la_palette_du_gout.jpg"
+                    alt="Image d'un plat de la palette du gôut">
             </p>
-            <!-- Paragraphe pour englober l'img FIN -->
 
             <!-- DEBUT SECTION PRINCIPAL -->
             <section class="main__bloc">
-
-
                 <!-- Div contenant un H2 et un Icone COEUR  -->
-                <div>
-                    <h2>La note enchantée</h2>
+                <div class="ban-text">
+                    <h2>La palette du goût</h2>
                     <a href="#div">
                         <i class="far fa-heart">
                             <i class="fas fa-heart"></i>
@@ -53,104 +50,139 @@
                 </div>
                 <!-- Div contenant un H2 et un Icone COEUR FIN -->
 
-                <!-- 1 ERE ARTICLE  -->
-                <article>
+                <!-- partie une bloc Entrées -->
+                <section class="bloc-menu-Choice">
+                    <form class="menu-card" action="by-menu.php" method="POST">
+                        <div class="menu-card__Starter">
+                            <h3>entrées</h3>
+                            <div class="menu-bloc__Starter_one">
+                                <label for="Starter-One" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Fricassée d'escargot</span>
+                                        <span>Au piment d'Espelette</span>
+                                    </span>
+                                    <span class="menu-card__Price">25€</span>
+                                    <input type="radio" name="Starter" id="Starter-One" class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                            <div class="menu-bloc__Starter_two">
+                                <label for="Starter-Two" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Foie gras de canard mi-cuit</span>
+                                        <span>Et ses copeaux de truffe noire</span>
+                                    </span>
+                                    <span class="menu-card__Price">35€</span>
+                                    <input type="radio" name="Starter" id="Starter-Two" class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                            <div class="menu-bloc__Starter_tree">
+                                <label for="Starter-Three" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Oeuf au plat</span>
+                                        <span>Assaisonné à la truffe sur lit de caviar</span>
+                                    </span>
+                                    <span class="menu-card__Price">20€</span>
+                                    <input type="radio" name="Starter" id="Starter-Three" class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- fin partie une entrée -->
 
-                    <!-- H3 + UL ( li ( h4 + text and code ascii)) -->
-                    <h3>ENTRÉES</h3>
-                    <ul>
-                        <li class="li-article item-one">
-                            <h4>Ravioles de foie gras</h4>
-                            Accompagnés de leur crème à la truffe
-                            <span>25&euro;</span>
-                        </li>
-                        <li class="li-article item-two">
-                            <h4>Caviar osciètre</h4>
-                            Sur blini à la farine de blé noir
-                            <span>35 &euro;</span>
-                        </li>
-                        <li class="li-article item-tree">
-                            <h4>Homard et espuma de potiron</h4>
-                            Mariné aux zestes d'orange
-                            <span>20&euro;</span>
-                        </li>
-                        <li class="li-article item-four">
-                            <h4>Foie gras de canard cuit entier</h4>
-                            Confiture de figue et pain toasté
-                            <span>35&euro;</span>
-                        </li>
-                    </ul>
-                    <!-- H3 + UL ( li ( h4 + text and code ascii)) FIN -->
+                        <!-- debut partie Plats -->
+                        <div class="menu-card__Dishes">
+                            <h3>plats</h3>
+                            <div class="menu-bloc__Dishes_one">
+                                <label for="Dishes-One" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Filet de boeuf aux herbes</span>
+                                        <span>Accompagné de sa ribambelle de légumes</span>
+                                    </span>
+                                    <span class="menu-card__Price">40€</span>
+                                    <input type="radio" name="Dishes" id="Dishes-One" class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                            <div class="menu-bloc__Dishes_two">
+                                <label for="Dishes-Two" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Parmentier de queue de boeuf</span>
+                                        <span>&Agrave; la truffe noire sur sa purée de panais</span>
+                                    </span>
+                                    <span class="menu-card__Price">35€</span>
+                                    <input type="radio" name="Dishes" id="Dishes-Two" class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                            <div class="menu-bloc__Dishes_tree">
+                                <label for="Dishes-Three" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Filet de turbot</span>
+                                        <span>Aux agrumes</span>
+                                    </span>
+                                    <span class="menu-card__Price">44€</span>
+                                    <input type="radio" name="Dishes" id="Dishes-Three" class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- fin partie Plats -->
 
-                </article>
-                <!-- 1 ERE ARTICLE FIN -->
-
-                <!-- 2 EME ARTICLE -->
-                <article>
-
-                    <!-- H3 + UL ( li ( h4 + text and code ascii)) -->
-                    <h3>PLATS</h3>
-                    <ul>
-                        <li class="li-article item-one">
-                            <h4>Noix de coquilles Saint-Jacques</h4>
-                            Sur lit de purée de céleri-rave
-                            <span>40&euro;</span>
-                        </li>
-                        <li class="li-article item-two">
-                            <h4>Langoustine poêlée</h4>
-                            Purée de patate douce
-                            <span>35&euro;</span>
-                        </li>
-                        <li class="li-article item-tree">
-                            <h4>Mijoté de queue de boeuf</h4>
-                            Et riz sauvage aux zestes de citron
-                            <span>44&euro;</span>
-                        </li>
-                    </ul>
-                    <!-- H3 + UL ( li ( h4 + text and code ascii)) FIN -->
-
-                </article>
-                <!-- 2 EME ARTICLE FIN -->
-
-                <!-- 3 EME ARTICLE -->
-                <article>
-
-                    <!-- H3 + UL ( li ( h4 + text and code ascii)) -->
-                    <h3>DESSERTS</h3>
-                    <ul>
-                        <li class="li-article item-one">
-                            <h4>Macaron noisette et chocolat</h4>
-                            Glace au caramel brun et sel de Guérande
-                            <span>18&euro;</span>
-                        </li>
-                        <li class="li-article item-two">
-                            <h4>Baba au rhum revisité</h4>
-                            Avec son coulis de citron
-                            <span>22&euro;</span>
-                        </li>
-                        <li class="li-article item-tree">
-                            <h4>Tarte au citron meringuée</h4>
-                            Déstructurée
-                            <span>23&euro;</span>
-                        </li>
-                    </ul>
-                    <!-- H3 + UL ( li ( h4 + text and code ascii)) FIN -->
-
-                </article>
-                <!-- 3 EME ARTICLE FIN -->
-
-                <!-- Bouton commander ( Renvoie page principal) -->
-                <p>
-                    <a class="button-valid" href="#">Commander</a>
-                </p>
-                <!-- Fin du bouton -->
-
+                        <!-- debut partie Dessert -->
+                        <div class="menu-card__Dessert">
+                            <h3>desserts</h3>
+                            <div class="menu-bloc__Dessert_one">
+                                <label for="Dessert-One" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Paris-Brest</span>
+                                        <span>Revisité</span>
+                                    </span>
+                                    <span class="menu-card__Price">18€</span>
+                                    <input type="radio" name="choice-Three" id="Dessert-One" class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                            <div class="menu-bloc__Dessert_two">
+                                <label for="Dessert__Two" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Macaron au chocolat d'exception</span>
+                                        <span> Et glace à la vanille de Madagascar</span>
+                                    </span>
+                                    <span class="menu-card__Price">22€</span>
+                                    <input type="radio" name="choice-Three" id="Dessert__Two" class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                            <div class="menu-bloc__Dessert_tree">
+                                <label for="Dessert__Three" class="menu-card__Choice">
+                                    <span class="menu-card__Title">
+                                        <span>Mousse au chocolat</span>
+                                        <span>Au piment d'espelette et à la truffe noire</span>
+                                    </span>
+                                    <span class="menu-card__Price">23€</span>
+                                    <input type="radio" name="choice-Three" id="Dessert__Three"
+                                        class="Check__checked" />
+                                    <span class="fas fa-check-circle"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- fin de la partie dessert -->
+                        <!-- Bouton commander ( Renvoie page principal) -->
+                        <p>
+                            <input class="button-valid" type="submit" name="text-submit" id="text-submit"
+                                value="Commandez">
+                        </p>
+                        <!-- Fin du bouton -->
+                    </form>
+                </section>
+                <!-- fin formulaire -->
+                <!-- fin du bloc menu-card -->
             </section>
-            <!-- FIN DE LA SECTION PRINCIPAL -->
-
+            <!-- fin de section des menus -->
         </main>
-        <!-- FIN CONTENU PRINCIPAL MAIN -->
-
+        <!-- fin de section principal -->
         <!-- FOOTER DEBUT -->
         <footer>
 
@@ -159,15 +191,15 @@
 
                 <li>
                     <a href="#">
-                        <i class="fas fa-utensils"><strong class="margin-one" class="margin-one">Proposer un
-                                restaurant</strong></i>
+                        <i class="fas fa-utensils"></i>
+                        <strong class="margin-one">Proposer un restaurant</strong>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <i class="fas fa-hands-helping"><strong class="margin-two" class="margin-two">Devenir
-                                partenaire</strong></i>
+                        <i class="fas fa-hands-helping"></i>
+                        <strong class="margin-two">Devenir partenaire</strong>
                     </a>
                 </li>
 
@@ -183,9 +215,7 @@
 
         </footer>
         <!-- FIN DU FOOTER -->
-
     </div>
-    <!-- Fin du bloc-page mobile -->
 </body>
 
 </html>
