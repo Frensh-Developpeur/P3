@@ -328,7 +328,7 @@ table {
     opacity: 1;
   }
 }
-.menus .item-four {
+.menus .menu-bloc__Starter_four {
   animation: 2s ease-in-out apparing-contenu-plat_tree 0.4s;
 }
 @keyframes apparing-contenu-plat_tree {
@@ -817,7 +817,7 @@ header .fas.fa-arrow-left:hover {
 .menus .bloc-menu-Choice {
   display: flex;
 }
-.menus .menu-bloc__Starter_one, .menus .menu-bloc__Starter_two, .menus .menu-bloc__Starter_tree {
+.menus .menu-bloc__Starter_one, .menus .menu-bloc__Starter_two, .menus .menu-bloc__Starter_tree, .menus .menu-bloc__Starter_four {
   width: 100%;
 }
 .menus .menu-bloc__Dishes_one, .menus .menu-bloc__Dishes_two, .menus .menu-bloc__Dishes_tree {
