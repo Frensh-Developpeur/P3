@@ -519,6 +519,7 @@ header .fas.fa-arrow-left:hover {
   font-size: 1.2rem;
   padding-left: 40px;
   width: 80%;
+  font-weight: initial;
 }
 .home .bloc-info div a {
   display: inline-block;
@@ -652,13 +653,16 @@ header .fas.fa-arrow-left:hover {
 }
 .home .article-one .far.fa-heart, .home .article-two .far.fa-heart {
   font-size: 30px;
-  color: #9356DC;
+  color: black;
   /* !!!!!! Permet de garder le hover même si le scale de l'enfant est trop petit !!!!! */
 }
 .home .article-one .far.fa-heart:hover > .fas.fa-heart, .home .article-two .far.fa-heart:hover > .fas.fa-heart {
   animation: 1.2s heart-progress forwards ease-in-out;
   -webkit-background-clip: text;
   background-clip: text;
+}
+.home .article-one .far.fa-heart .fas.fa-heart, .home .article-two .far.fa-heart .fas.fa-heart {
+  color: #9356DC;
 }
 .home .article-one .fas.fa-heart, .home .article-two .fas.fa-heart {
   position: absolute;
@@ -703,7 +707,7 @@ header .fas.fa-arrow-left:hover {
   /* Fin du main */
 }
 .menus main .main__bloc {
-  background-color: #f4f4f4;
+  background-color: white;
   border-radius: 40px 40px 0 0;
   margin-top: -40px;
   position: relative;
@@ -732,6 +736,7 @@ header .fas.fa-arrow-left:hover {
   left: 0px;
   bottom: 0px;
   opacity: 0;
+  color: #9356DC;
 }
 .menus main .ban-text .fas.fa-heart:hover {
   animation: 1.2s heart-progress forwards ease-in-out;
@@ -743,7 +748,7 @@ header .fas.fa-arrow-left:hover {
   right: 30px;
   top: 40px;
   font-size: 30px;
-  color: #9356DC;
+  color: black;
 }
 .menus p {
   text-align: center;
@@ -769,7 +774,6 @@ header .fas.fa-arrow-left:hover {
 }
 .menus .menu-card {
   box-sizing: border-box;
-  background-color: #f2f2f2;
   display: flex;
   justify-content: space-around;
   flex-direction: column;

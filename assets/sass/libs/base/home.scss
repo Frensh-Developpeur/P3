@@ -58,6 +58,7 @@ form
            font-size: 1.2rem;
            padding-left: 40px;
            width: 80%;   
+           font-weight: initial
 
         }   
 
@@ -220,7 +221,7 @@ main
     & .far.fa-heart
     {
       font-size: 30px;
-      color: $heart;
+      color: black;
         
       /* !!!!!! Permet de garder le hover même si le scale de l'enfant est trop petit !!!!! */
       &:hover > .fas.fa-heart {
@@ -228,6 +229,11 @@ main
         animation: 1.2s heart-progress forwards ease-in-out ;
         -webkit-background-clip: text;
         background-clip: text;
+      }
+
+      & .fas.fa-heart
+      {
+          color: $heart;
       }
     
     }
